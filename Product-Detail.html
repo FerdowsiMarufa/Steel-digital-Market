@@ -1,0 +1,1921 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Bootstrap/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="/Bootstrap/css/bootstrap copy.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="Product-Detail.css">
+    <!-- <link rel="stylesheet" href="bootstrap/css/bootstrap copy.css"> -->
+    <!-- <link rel="stylesheet" href="/bootstrap/css/style.css" class="stylesheet"> -->
+    <title>Prouct Detail</title>
+</head>
+<body>
+
+  <header class="header">
+    <div class="Logo-Container ">
+      <a  href="/home.html" class="logo">
+        <span className="  d-block  text-white">Steel Digital Market</span>
+      </a>
+      <div class="explore">
+        <p>Explore <span class="plus-icon">Plus</span></p>
+        <img src="/images/flip.logo.png" />
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light  ">
+      <div class="container-xxl all-nav">
+        
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <ul class="navbar-nav  text-white navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="search-container me-5 ">
+            <form id="search-form">
+            <input type="text" id="search-input" placeholder="Search for products brands and more" />
+            </form>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <div class="recent_search"></div>
+          </li>
+         
+          <li class="nav-item  me-5 login-button ">
+            <input type="button" id="button" class="  p-1 px-4  login  bg-white text-primary button" value="Login"></input>
+            <div class="login_menu">
+              <div class="login_menu_list">
+                <div class="login_menu_top mt-3 ">
+                    <p class="text-dark fs-small ">New Customer?</p>
+                    <a href="#" class="fs-6">Sign Up</a>
+             
+                </div>
+                
+                <div class="menu_nav_link">
+                    <a
+                        href="https://www.flipkart.com/account/login?ret=%2Faccount%2F%3Frd%3D0%26link%3Dhome_account">
+                        <i class="fa-solid fa-circle-user fs-6"></i>
+                        <p>My Profile</p> 
+                    </a>
+                    
+                  
+                    <a href="#">
+                        <img src="./images/flip.logo.png" class="menu_nav_icon fs-6" />
+                        <p>Flipkart plus zone</p>
+                    </a>
+                  
+                    <a href="#">
+                      <i class="fa-brands fa-first-order menu_nav_icon fs-6"></i>
+                        <p>Order</p> 
+                       
+                    </a>
+                
+                    <a href="#">
+                        <i class="fa-solid fa-heart menu_nav_icon fs-6"></i>  
+                        <p>Wishlist</p>
+                    </a>
+                    
+                </div>
+            </div>                   
+            
+            </div>
+          </li>
+        <li class="nav-item  me-5 ">
+          <a class="nav-link text-white " href="/Seller-Home.html">
+            Become a Seller
+          </a>
+        </li>
+        <li class="nav-item more-link more me-5">
+          <a class="nav-link  text-white" href="#contact">
+            More  <i class="fa-solid fa-angle-down icon_more"></i>
+          </a>
+          <div class="read-more">
+            <div class="more_menu_list">
+              <a href="https://www.flipkart.com/communication-preferences/push?t=all">
+                  <img src="./images/notificationIcon.svg" class="menu_nav_icon" />
+                  <p>Notification Preferences</p>
+              </a>
+              <a href="https://www.flipkart.com/helpcentre">
+                  <img src="./images/customerIcon.svg" class="menu_nav_icon" />
+                  <p>24 X 7 Customer Care</p>
+              </a>
+              <a href="https://advertising.flipkart.com/login?returl=/?otracker=ch_vn_advertise_header">
+                  <img src="./images/advertiseIcon.svg" class="menu_nav_icon" />
+                  <p>Advertise</p>
+              </a>
+              <a href="https://www.flipkart.com/mobile-apps?otracker=ch_vn_mobile_apps">
+                  <img src="./images/giftIcon.svg" class="menu_nav_icon" />
+                  <p>Download App</p>
+              </a>
+          </div>
+          </div>
+        </li>
+        <li class="nav-item   me-5">
+          <a class="nav-link text-white" href="#pricing">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span>Bag</span>
+          </a>
+        </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+
+
+   <!-- <login>    pop up         </login> -->
+   <div class="login-none  "data-bs-scroll="true"
+   data-bs-backdrop="true">
+  <div class="pop-login d-flex">
+
+   <div class="login">
+    <div class="login-description">
+      <p class="p-login"> Login</p>
+      <p class="p-content">Get access to your Orders, Wishlist and Recommendations </p>
+     </div>
+     <div class="signup-description">
+      <p class="p-login"> Looks like you'ur new here!</p>
+      <p class="p-content">Fill up with your information to get started</p>
+     </div>
+   </div>
+   <div class="login-details">
+      <div class="login-form p-4 ">
+         <div class="container-login">
+             <form class="login-form">
+              <label for="fname" class="label">Name</label><br>
+             <input type="text" class="login-input ps-2" placeholder="Enter youre name">
+             <label for="fname"  class="label">Password</label><br>
+             <input type="email" class="login-input ps-2" placeholder="Enter your password">                        
+            </form>                   
+          </div>
+          <p>By continuing, you agree to Flipkart's <a>Terms of Use</a> and <a>Privacy Policy</a></p>                 
+          <input type="button" class="login-button p-2 px-5 bg-primary text-white " value="Submit">
+      </div>
+      <div class="create-act">
+        <p class="text-primary new-account" > New to Flipkart? Create an account</p>
+
+      </div>
+   </div>
+   <div class="signUp">
+         
+    <form action="/action_page.php" class="signup-form">
+      <label for="fname">First name:</label><br>
+      <input type="text" class="signup-input" id="fname" name="fname" value="John"> <br>
+      <label for="lname">Last name:</label><br>
+      <input type="text"  class="signup-input" id="lname" name="lname" value="Doe"> <br>
+      <label for="fname">Email:</label><br>
+      <input type="text"  class="signup-input" id="fname" name="fname" value="John"><br>
+      <label for="lname">Password:</label><br>
+      <input type="text" class="signup-input" id="lname" name="lname" value="Doe"><br> 
+      <p class="">By continuing, you agree to Flipkart's <a>Terms of Use</a> and <a>Privacy Policy</a></p>   
+      <div class="signup-button">            
+      <input type="button" value="Continue" class="submit bg-primary  text-white p-2 px-6 ">
+      <input type="button" id="existing-button" value="Existing User? Login" class="submit Existing-user bg-white text-primary p-2 px-6 ">
+    </div>  
+    </form> 
+  </div>
+   <i class="fa-solid fa-xmark m-2 cross-button"></i>
+
+  </div>
+</div>
+
+
+  <div class=" mt-extra   product-menu  mt-5 bg-light">
+    <div class="container-xl   menu-container  ">
+        <div class="row justify-content-md-center pt-1     ">
+      <div class="col-md-auto  menu-bar  electronics   p-2 px-3"><div><span>Electronics</span> <i class="fa-solid fa-angle-down icon mt-half ms-text-dark mb"></i></div>
+      <div class="menu-hover border border-2  border-top-0">
+        <div class="d-flex ">
+         <div class="div1   pt-3" style="width: 100%;">
+           <ul>
+             <li class="first-li d-flex  " >Moblies<i class=" mt-half ps-2 fa-solid fa-caret-right"></i></li>
+              <li>Mi </li>
+              <li> Realme</li>
+              <li>Samsung </li>
+              <li>Infinix </li>
+              <li> OPPO</li>
+              <li>Apple </li>
+              <li>Vivo </li>
+              <li>Honor </li>
+              <li> Asus</li>
+              <li>Poco X2 </li>
+              <li> realme Nazo 10</li>
+              <li> IQOO 3</li>
+              <li>iphone SE</li>
+              <li>  Motorola razr</li>
+              <li>realme Narzo 10A</li>
+              <li>Motorola g8 power lite</li>
+              <li>  Motorola razr</li>
+              <li></li>
+              <li></li>
+           </ul>
+         </div>
+         <div  class="div2   pt-3" style="width: 100%;">
+          <ul>
+           <li class="first-li" >Moblie Accessories<i class=" mt-half ps-2 fa-solid fa-caret-right"></i></li>
+           <li>Mobile Cases</li>
+           <li>HeadPhone &Headsets</li>
+           <li>Power Bank</li>
+           <li>   Screenguards</li>
+           <li>Memory Cards</li>
+           <li>Smart Headphones</li>
+              <li> Mobile Cables</li>
+              <li>  Mobile Chargers</li>
+              <li> Mobile Holders</li>
+              <li> Smart Wearable Tech</li>
+              <li>Smart Watches</li>
+              <li> Smart Glasses (VR)</li>
+              <li> Smart Bands</li>
+              <li> Health Care Appliances</li>
+          </ul>
+         </div>
+         <div  class="div3  pt-3" style="width: 100%;">
+           <ul>
+             <li class="first-li" >Laptops<i class=" mt-half ps-2 fa-solid fa-caret-right"></i></li>
+             <li>Gaming Laptops</li>
+               <li> Apple iPads</li>
+             <li>Desktop PCs</li>
+             <li> Gaming & Accessories</li>
+             <li> Computer Accessories</li>
+             <li> External Hard Disks</li>
+             <li>Pendrives</li>
+             <li> Laptop Skins & Decals
+              </li>
+             <li> Laptop Bags</li>
+             <li> Mouse</li>
+             <li>  Computer Peripherals</li>
+             <li> Printers & Ink Cartridges</li>
+             <li> Monitors</li>
+             <li>Tablets</li>
+           </ul>
+         </div>
+         <div  class="div4  pt-3" style="width: 100%;">
+          <ul>
+           <li class="first-li">TV<i class="mt-half ps-2 fa-solid fa-caret-right"></i></li>
+           <li> Televisions</li>
+           <li>Speakers</li>
+           <li>Home Audio Speakers</li>
+           <li>Home Theatres</li>
+           <li>Soundbars</li>
+           <li>Bluetooth Speakers</li>
+           <li>DTH Set Top Box</li>
+           <li>Smart Home Automation</li>
+           <li>Google Nest</li>
+           <li>Camera</li>
+           <li>DSLR & Mirrorless</li>
+           <li>
+             Compact & Bridge Cameras</li>
+           <li>Compact & Bridge Cameras</li>
+           <li>Sports & Action</li>
+           <li>Camera Accessories</li>
+           <li>Lens</li>
+          </ul>
+         </div>
+         <div  class="div5   pt-3 pe-4" style="width: 100%;  ">
+           <ul>
+             <li class="first-li" >Featured<i class=" mt-half ps-2 fa-solid fa-caret-right"></i></li>
+             <li>Google Assistant Store</li>
+             <li>Laptops on Buyback Guarantee</li>
+             <li>Flipkart SmartBuy</li>
+             <li>Li-Polymer Power Banks</li>
+             <li>
+               Sony PS4 Pro & Slim</li>
+             <li>Apple Products</li>
+             <li>Microsoft Store</li>
+             <li>Lenovo Phab Series</li>
+             <li>JBL Speakers</li>
+             <li>Smartphones On Buyback Guarantee</li>
+             <li>Philips</li>
+             <li>Dr. Morepen</li>
+             <li>Complete Mobile Protection</li>
+             <li>Mobiles No Cost EMI</li>
+             <li>
+               Huawei Watch Gt 2e Smart Watch</li>
+           </ul>
+         </div>
+        </div>
+     </div>
+    </div>
+                <div class="col-md-auto menu-bar  px-3 p-2"><span class="">Tvs & Appliances</span><i class="fa-solid fa-angle-down icon mt-half ms-1 text-dark mb"></i></div>
+                <div class="col-md-auto  menu-bar px-3 p-2 "><span>Men</span><i class="fa-solid fa-angle-down icon mt-half ms-1 text-dark mb"></i></div>
+                <div class="col-md-auto menu-bar px-3 p-2 "><span>Women</span><i class="fa-solid fa-angle-down icon mt-half ms-1 text-dark mb"></i></div>
+                <div class="col-md-auto menu-bar px-3 p-2 "><span>Baby & Kids</span><i class="fa-solid fa-angle-down icon mt-half ms-1 text-dark mb"></i></div>
+                <div class="col-md-auto  menu-bar px-3 p-2"><span>Home & Furniture</span><i class="fa-solid fa-angle-down icon mt-half ms-1 text-dark mb"></i></div>
+                <div class="col-md-auto menu-bar  px-3 p-2"><span>Sports, Books & More</span><i class="fa-solid fa-angle-down icon mt-half ms-1 text-dark mb"></i></div>
+                <div class="col-md-auto menu-bar px-3  p-2"><span> Flights</span><i class="fa-solid fa-angle-down icon mt-half ms-1 text-dark mb"></i></div>
+                <div class="col-md-auto menu-bar px-3  p-2"><span> Offer Zone</span><i class="fa-solid fa-angle-down icon mt-half ms-1 text-dark mb"></i></div>
+        </div>
+</div>
+</div>
+
+
+
+
+
+         <section class="Container-fluid  ms-2 bg-light">
+            <div class="row ">
+                     <!-- left side   -->
+                   <div class="col-lg-4 ">
+                    <div class="img-div mb-3 ">
+                    <div class=" pt-2 pb-2 ps-2 pe-2">
+                        <img  src="/Product-Detail-img/monitor.jpg" class="img-fluid" alt="">
+                    </div>
+                   </div>
+                    <div class="d-flex ">
+                        <button class="add-cart"><i class="bi bi-cart-fill cart-icon"></i> ADD TO CART</button>
+                        <button class="add-cart buy-btn ms-2"><i class="bi bi-bag-fill cart-icon"></i></i> Buy Now</button>
+                      </div>
+                   </div>
+                     
+                      <!-- Right Side start  -->
+                   <div class="col-lg-8 mb-3 check">
+                    <div class="d-flex justify-content-between me-3">
+                        <div class="path">
+                        <p>Home > Computers > Computer co.. > Monitors > Dell Monitor...</p>
+                    </div>
+                       <div class="share">
+                       
+                         <a href=""><i class="bi bi-share-fill"></i> Share</a>
+                       </div>
+                    </div>
+
+                    <h1 class="pc-name">DELL S Series 27 inch Full HD IPS Panel Ultra Slim Bezel Monitor (S2721HNM / S2721HN)  (AMD Free Sync, Response Time: 4 ms, 75 Hz Refresh Rate)</h1>
+                     
+                    <div class="d-flex mt-2">
+                           <div class="rating-head ">
+                                 4.4
+                                 <i class="bi bi-star-fill"></i>
+                            </div>
+                            <div class="rating-and-review ms-2">
+                                1,149 Ratings & 165 Reviews
+                            </div>
+                            <div class="ms-2"> 
+                                  <img id="assure" src="/Product-Detail-img/assure.png" alt="">
+                            </div>
+                    </div>
+                      <div class="text-success speacial-price">
+                        Special price
+                      </div>
+                      <div>
+                            <span class="fw-bolder h3">৳15,399</span> 
+                            <span class="text-decoration-line-through text-secondary ms-2 me-2">৳28,719</span>
+                            <span>46% off</span>
+                      </div>
+
+                      <!-- Available Offer  -->
+
+                      <div class="fw-bolder h6 mt-3">
+                           Available offers
+                      </div>
+                          
+                      <div>
+                            <div class="d-flex fs-6">
+                                <i class="bi bi-tag-fill tag-icon me-2"></i> <p> <span class="fw-bolder"> Bank Offer </span>10% off on HSBC Bank Credit Card and EMI Transactions, up to ৳1,500. On orders of ৳5,000 and above <span class="text-primary">T&C</span> </p>
+                            </div>
+                            <div class="d-flex fs-6">
+                                <i class="bi bi-tag-fill tag-icon me-2"></i> <p> <span class="fw-bolder"> Bank Offer </span>10% off on HSBC Bank Credit Card and EMI Transactions, up to ৳1,500. On orders of ৳5,000 and above <span class="text-primary">T&C</span> </p>
+                            </div>
+                            <div class="d-flex fs-6">
+                                <i class="bi bi-tag-fill tag-icon me-2"></i> <p> <span class="fw-bolder"> Bank Offer </span>10% off on HSBC Bank Credit Card and EMI Transactions, up to ৳1,500. On orders of ৳5,000 and above <span class="text-primary">T&C</span> </p>
+                            </div>
+                            <div class="d-flex fs-6">
+                                <i class="bi bi-tag-fill tag-icon me-2"></i> <p> Buy this Product and Get Extra ৳500 Off on Two-Wheelers<span class="text-primary"> T&C</span> </p>
+                            </div>
+                      </div>
+                       <div class="text-primary view-offer">
+                        View 7 more offers
+                       </div>
+
+                       <div class="exchange w-50 d-flex justify-content-between ps-3 pt-3 pb-3 pe-2 mt-3">
+                        <div class="">
+                           <input  type="radio" checked> <label class="ms-2" for="">Buy without Exchange</label>
+                        </div>
+                        <div>
+                         <span class="up-to">৳15,399</span>
+                        </div>
+                       </div>
+
+
+                       <div class="exchange-with border border-1 w-50 d-flex justify-content-between ps-3 pt-3 pb-3 pe-2 text-secondary">
+                        <div class="">
+                           <input  type="radio" > <label class="ms-2" for="">Buy with Exchange</label>
+                           <p class="ms-4 pincode-check mt-2 ">Enter pincode to check if exchange is available</p>
+                        </div>
+                        <div>
+                         <span class="up-to">up to ৳15,399 off</span>
+                        </div>
+                       </div>
+
+                       <div class="d-flex  w-50">
+                            <div class="dell-logo mt-3">
+                                  <img src="Product-Detail-img/del-logo.jpg" class="border border-1" alt="">
+                            </div>
+                            <div class="mt-4 ms-5 ps-2">
+                                3 Years Warranty
+                            </div>
+                            <div class="mt-4 ms-2 know-more">
+                            <a href="">
+                                Know More
+                            </a>
+                        </div>
+                       </div>
+
+                       <div class="">
+                             <div class="row">
+                                 <div class="col-lg-2">
+                                          <h5 class="Del-high-sell mt-3">Delivery</h5>
+                                 </div>
+                                 <div class="col-lg-10">
+                                    <div class="delivery-pin">
+                                    <i class="bi bi-geo-alt-fill"></i>
+                                     <input placeholder="Enter Delivery Pincode" class="text-field" type="text" name="" id="">
+                                     <label class="check-pincode" for="">Check</label>
+                                    </div>
+
+                                    <div>
+                                      <b>Delivery by 22 Feb, Wednesday</b> <span class="or">|</span> <span class="free">Free</span><span> <del class="del-taka">৳40</del></span>     
+                                      <span class="question">?</span>
+                                    </div>
+
+                                    <div class="order">
+                                        if ordered before 5:05 PM
+                                    </div>
+                                    <div class="view-detail">
+                                          <span>View Details</span>
+                                    </div>
+                                 </div>
+                                  
+                             </div>
+                             <div class="row mt-3 me-3">
+                                <div class="col-lg-2">
+                                    <h5 class="Del-high-sell mt-1">Highlights</h5>
+                                </div>
+                                <div class="col-lg-4">
+                                     <ul class="high-list">
+                                         <li><span>Panel Type: IPS Panel</span></li>
+                                         <li><span>Screen Resolution Type: Full HD</span> </li>
+                                         <li><span>Response Time: 4 ms | Refresh Rate: 75 Hz</span> </li>
+                                         <li><span>HDMI Ports - 2</span> </li>
+                                     </ul>
+                                      
+                                </div>
+
+                                <div class="col-lg-2">
+                                    <div class="col-lg-2">
+                                        <h5 class="Del-high-sell mt-1">Easy Payment Options</h5>
+                                    </div>
+                                     
+                                </div>
+                                <div class="col-lg-4">
+                                    <ul class="high-list">
+                                        <li><span>No cost EMI starting from ৳1,284/month</span></li>
+                                        <li><span>Cash on Delivery</span> </li>
+                                        <li><span>Net banking & Credit/ Debit/ ATM card</span> </li>
+                                        
+                                    </ul>
+                                    <div class="view-detail ms-3">
+                                        <span>View Details</span>
+                                  </div>
+                                </div>
+                                  
+                             </div>
+
+                             <div class="row mt-3">
+                                <div class="col-lg-2">
+                                    <h5 class="Del-high-sell mt-1">Seller</h5>
+                                </div>
+
+                                <div class="col-lg-10">
+                                    <div class="view-detail d-flex">
+                                        <span>
+                                            OmniTechRetail</span>
+                                            <div class="seller-rating ms-2 ">
+                                                 4.3 
+                                                 <i class="bi bi-star-fill"></i>
+                                            </div>
+                                  </div>
+                                  <ul class="high-list">
+                                    <li><span>7 day seller replacement policy/brand assistance for device issues* <span class="question">?</span></span></li>
+                                    <li><span>GST invoice available <span class="question">?</span></span> </li>
+                                 </ul>
+                                 <div class="view-detail ">
+                                    <span>See other sellers</span>
+                               </div>
+                                </div>
+                             </div>
+
+
+                             <div class="row">
+                                     <img id="seller-coin" src="/Product-Detail-img/super-coin.jpg" alt="">
+                             </div>
+
+                             <div class="row mt-3">
+                                   <div class="col-lg-2">
+                                    <h5 class="Del-high-sell mt-1">Description
+                                    </h5>
+                                   </div>
+
+                                   <div class="col-lg-10">
+                                          <p>You can enjoy high-quality visuals with the help of the Dell 68.58 cm (27) S2721HN Monitor. Featuring a three-sided thin bezel design and a Full HD display with a resolution of up to 1920x1080p, this monitor renders exceptional clarity. It boasts In-Plane Switching technology and a wide viewing angle of 178°/178° for consistent colours and seamless viewing. Also, thanks to AMD FreeSync technology and a refresh rate of 75 Hz, this monitor offers a smooth and tear-free viewing experience.</p>
+                                   </div>
+                                 
+                             </div>
+
+                             <div class="row">
+                                    <div class="col-12 border border-1 product-des ps-3 pt-3 pb-2">
+                                           <h4>Product Description</h4>
+                                    </div>
+                             </div>
+                             <div class="row product-des border-start border-1 border-bottom border-1 border-end border-1 pt-3 ps-3 pb-5">
+                                     <div class="col-lg-9">
+                                            <p class="bezel">Three-sided Bezel</p>
+                                            <p>Owing to its three-sided thin bezel design and a Full HD display with a resolution of up to 1920x1080p, the Dell 68.58 cm (27) S2721HN Monitor offers high clarity.</p>
+                                     </div>
+                                     <div class="col-lg-3">
+                                               <img class="sided-bezel" src="Product-Detail-img/dell-monitor.jpg" alt="">
+                                     </div>
+
+                             </div>
+                             <div class="row product-des border-start border-1 border-bottom border-1 border-end border-1 pt-3 ps-3 pb-5">
+                                <div class="col-lg-3">
+                                    <img class="sided-bezel" src="Product-Detail-img/dell-monitor.jpg" alt="">
+                                    
+                                 </div>
+                                 
+                                 <div class="col-lg-9">
+                                    <p class="bezel">Viewing Angle</p>
+                                    <p>Integrated with In-Plane Switching technology and a wide viewing angle of up to 178 degrees, this monitor offers consistent colours and a seamless viewing experience.</p>
+                             </div>
+                                 
+                             </div>
+                             <div class="row border-start border-1 border-bottom border-1 border-end border-1 mb-5 product-des pt-4 pb-4">
+                             <div class="view-detail ms-3 col-12 ">
+                                <span>View All Features</span>
+                          </div>
+                        </div>
+
+                     <!-- Specification --------------- -->
+
+                        <div class="row">
+                            <div class="col-12 border border-1 product-des ps-3 pt-3 pb-2">
+                                   <h4>Specifications</h4>
+                            </div>
+                         </div>
+                         
+                         <div class="row ps-1 pt-3 pb-2 border-start border-1 border-end border-1  product-des">
+                             <div class="col-12">
+                                    <h6 class="general">General</h6>
+                             </div>
+                         </div>
+                         <div class="row product-des border border-1  pt-3 pb-2">
+                         <div class="row">
+                            <div class="col-lg-2">
+                                <h5 class="Del-high-sell mt-1">
+                                    Model Name</h5>
+                            </div>
+                            <div class="col-10">
+                                     <p>
+                                        S2721HNM / S2721HN</p>
+                            </div>
+                         </div>
+
+                         <div class="row">
+                            <div class="col-lg-2">
+                                <h5 class="Del-high-sell mt-1">
+                                    Series</h5>
+                            </div>
+                            <div class="col-10">
+                                     <p>
+                                        S Series</p>
+                            </div>
+                         </div>
+
+                         <div class="row">
+                            <div class="col-lg-2">
+                                <h5 class="Del-high-sell mt-1">
+                                    Color</h5>
+                            </div>
+                            <div class="col-10">
+                                     <p>
+                                        Grey</p>
+                            </div>
+                         </div>
+
+                         <div class="row">
+                            <div class="col-lg-2">
+                                <h5 class="Del-high-sell mt-1">
+                                    Display</h5>
+                            </div>
+                            <div class="col-10">
+                                     <p>
+                                        68.58 cm (27 inch) LED Display</p>
+                            </div>
+                         </div>
+
+                         <div class="row">
+                            <div class="col-lg-2">
+                                <h5 class="Del-high-sell mt-1">
+                                    Panel Type
+                                    </h5>
+                            </div>
+                            <div class="col-10">
+                                     <p>
+                                        
+                                    IPS Panel</p>
+                            </div>
+                         </div>
+
+                         <div class="row">
+                            <div class="col-lg-2">
+                                <h5 class="Del-high-sell mt-1">
+                                    Resolution
+                                    </h5>
+                            </div>
+                            <div class="col-10">
+                                     <p>
+                                        
+                                        1920 x 1080 pixels</p>
+                            </div>
+                         </div>
+
+                         <div class="row">
+                            <div class="col-lg-2">
+                                <h5 id="resolution" class="Del-high-sell mt-1">
+                                     Screen Resolution Type
+                                    </h5>
+                            </div>
+                            <div class="col-lg-10">
+                                     <p>
+                                        Full HD</p>
+                            </div>
+                         </div>
+
+                         <div class="row" >
+                            <div class="col-lg-2">
+                                <h5  class="Del-high-sell mt-1 seller-package">
+                                     Seller Package
+                                    </h5>
+                            </div>
+                            <div class="col-lg-10 seller-package">
+                                     <p> One Monitor HDMI Cable
+                                      </p>
+                            </div>
+                         </div>
+                        </div>
+                        <div class="row border-start border-1 border-bottom border-1 border-end border-1 mb-5 product-des pt-4 pb-4">
+                            <div class="view-detail ms-3 col-12 ">
+                               <span>Read More</span>
+                         </div>
+
+                       </div>
+                       
+                        <!-- Frequestly Brought Together  -->
+
+                       
+                       <div class="row product-des border border-1">
+                            <div class="col-12  ps-3 pt-3 pb-2">
+                                <h4>Frequently bought together</h4>
+                            </div>
+                            <div class="row">
+                                  <div class="col-lg-4 d-flex">
+                                       <div>
+                                          <div class="d-flex justify-content-center">
+                                         <img class="sided-bezel" src="Product-Detail-img/monitor.jpg" alt="">
+                                        </div>
+                                         <h6 class="fw-normal">DELL S Series 27 inch Full HD IPS Panel Ultra Slim Bezel Monitor ...</h6>
+                                         <div id="rating-frequently" class="rating-head ">
+                                            4.4
+                                            <i class="bi bi-star-fill"></i> 
+                                          </div>
+                                       <span class="text-secondary count">(1,152)</span>
+                                       <p> <span class="price-fr"> ৳15,249</span>  <del class="text-secondary">৳28,719</del> <span class="text-success off">46% off</span></p>
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center">
+                                        <i class="bi text-secondary bi-plus-lg plus-icon"></i> 
+                                    </div>
+                                  </div>
+
+
+                                  <div class="col-lg-4 d-flex">
+                                       <div>
+                                        <div class="mt-3 mb-5">
+                                            <div class="d-flex justify-content-center">
+                                         <img class="sided-bezel" src="Product-Detail-img/keyboard.jpg" alt="">
+                                         <input class="form-check-input checkbox" type="checkbox" value="" id="flexCheckDefault" checked >
+                                            </div>
+                                       
+                                        </div>
+                                         <h6 class="fw-normal">DELL KM3322W Keyboard & Mouse Combo, Anti-fade & Spill-resistant ...</h6>
+                                         <div id="rating-frequently" class="rating-head ">
+                                            4.4
+                                            <i class="bi bi-star-fill"></i> 
+                                          </div>
+                                       <span class="text-secondary count">(1,152)</span>
+                                       <p> <span class="price-fr"> ৳15,249</span>  </p>
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center">
+                                        <i class="bi text-secondary bi-plus-lg plus-icon"></i> 
+                                    </div>
+                                  </div>
+
+
+                                  <div class="col-lg-4">
+                                    <div>
+                                        <div class="mt-3 mb-3">
+                                            <div class="d-flex justify-content-center">
+                                         <img class="pc" src="Product-Detail-img/pc.jpg" alt="">
+                                         <input class="form-check-input checkbox" type="checkbox" value="" id="flexCheckDefault" checked >
+                                        </div>
+                                        
+                                        </div>
+                                         <h6 class="fw-normal">DELL KM3322W Keyboard & Mouse Combo, Anti-fade & Spill-resistant ...</h6>
+                                         <div id="rating-frequently" class="rating-head ">
+                                            4.4
+                                            <i class="bi bi-star-fill"></i> 
+                                          </div>
+                                       <span class="text-secondary count">(1,152)</span>
+                                       <p> <span class="price-fr"> ৳15,249</span>  </p>
+                                    </div>
+                                  </div>
+                                </div>  
+                            </div>
+                                  <div class="row item-cart-div border-start border-1 border-end border-1 product-des border-bottom border-1">
+                                       <div class="col-lg-8 d-flex justify-content-around">
+                                         <div>
+                                              <span>1 Item</span>
+                                              <p>৳15,249</p>
+                                         </div>
+                                         <div class="d-flex flex-column h5 justify-content-center">
+                                            <i class="bi text-secondary bi-plus-lg "></i> 
+                                        </div>
+                                        <div>
+                                            <span>2 Add-ons</span>
+                                            <p>৳5,249</p> 
+                                        </div>
+                                          <div class="d-flex flex-column h5 justify-content-center">
+                                               =
+                                          </div>
+                                          <div>
+                                            <span>Total</span>
+                                            <p>৳20,546</p> 
+                                        </div>
+                                        </div>
+
+                                        <div class="col-lg-4">
+                                            <button class="add-cart"><i class="bi bi-cart-fill cart-icon"></i> ADD TO ITEMS TO CART</button>
+                                        </div>
+                                  </div>
+                           
+                               <!-- Rating And Review  -->
+
+                          <div class="row border border-1 mt-3 product-des">
+                                <div class="d-flex justify-content-between">
+                                    <h5 class="mt-4 mb-0">Ratings & Reviews</h5> 
+
+                                    <button class="rate-product">Rate Product</button>
+                                </div>
+                                 
+                        
+                          
+                          <div class="row">
+                                 <div class="col-2"> 
+                                        <div class="h2">4.4 ★</div>
+                                       <div class="rat-rev">
+                                        1,149 Ratings &
+                                       </div>
+                                       <div class="rat-rev">
+                                        165 Reviews
+                                       </div>
+                                 </div>
+
+                                 <div class="col-10">
+                                      
+                                        <div class="d-flex">
+                                            <span>
+                                            5 ★
+                                        </span>
+                                           <div class="rating-color mt-2 ms-1">
+                                               <div class="rating ">
+                                                   
+                                               </div>
+                                           </div>
+                                          <span class="ms-2 text-secondary"> 745 </span>
+                                        </div> 
+                                        <div class="d-flex">
+                                            <span>
+                                            4 ★
+                                        </span>
+                                           <div class="rating-color mt-2 ms-1">
+                                               <div class="rating w-50">
+                                                   
+                                               </div>
+                                           </div>
+                                           <span class="ms-2 text-secondary"> 250 </span>
+                                        </div> 
+                                        <div class="d-flex">
+                                            <span>
+                                            3 ★
+                                        </span>
+                                           <div class="rating-color mt-2 ms-1">
+                                               <div class="rating w-25 ">
+                                                   
+                                               </div>
+                                           </div>
+                                           <span class="ms-2 text-secondary"> 70 </span>
+                                        </div> 
+                                        <div class="d-flex">
+                                            <span>
+                                            2 ★
+                                        </span>
+                                           <div class="rating-color mt-2 ms-1">
+                                               <div class="rating two">
+                                                   
+                                               </div>
+                                           </div>
+                                           <span class="ms-2 text-secondary"> 54 </span>
+                                        </div> 
+                                        <div class="d-flex">
+                                            <span>
+                                            1 ★
+                                        </span>
+                                           <div class="rating-color mt-2 ms-1">
+                                               <div class="rating one">
+                                                   
+                                               </div>
+                                           </div>
+                                           <span class="ms-2 text-secondary"> 22 </span>
+                                        </div> 
+                                        
+                                           
+                                      
+
+                                     
+                                 </div>
+                          </div>
+
+                             <div class="row mt-3">
+                                    <div class="col-lg-2">
+                                         <img class="rev-img" src="Product-Detail-img/review-img.jpg" alt="">
+                                    </div>
+                                    <div class="col-lg-2">
+                                        <img class="rev-img" src="Product-Detail-img/review-img.jpg" alt="">
+                                   </div>
+                                   <div class="col-lg-2">
+                                    <img class="rev-img" src="Product-Detail-img/review-img.jpg" alt="">
+                               </div>
+                               <div class="col-lg-2">
+                                <img class="rev-img" src="Product-Detail-img/review-img.jpg" alt="">
+                           </div>
+                           <div class="col-lg-2">
+                            <img class="rev-img" src="Product-Detail-img/review-img.jpg" alt="">
+                            </div>
+                            <div class="col-lg-2">
+                                <img class="rev-img" src="Product-Detail-img/review-img.jpg" alt="">
+                                </div>
+
+                            </div>
+                            <div class="row mt-2   pb-2">
+                                    <div class="col-lg-2 ">
+                                          <div class="show-more-img d-flex flex-column justify-content-center">
+                                                 <h1 class="text-center text-light">30+</h1>
+                                          </div>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="border border-1  row mt-3 p-3 product-des">
+                            <div class="d-flex">
+                                <div  class="rating-head">
+                                    4.4
+                                    <i class="bi bi-star-fill"></i> 
+                                 </div>
+                                  <div class="ms-2 fw-bolder">
+                                  <span>Awesome</span>
+                                 </div>
+                            </div>
+                            <div class="pt-2">
+                                  <p>Honestly the most value for money monitor right now, with most of the other brands offering a 24inch monitor in this price bracket and the price increase in most of them i feel that this was a great deal at near 13k. Great monitor, good panel but the build quality could have been a little better</p>
+                            </div>
+
+                            <div class="d-flex justify-content-between review ">
+                            <div class="d-flex">
+                                <div>
+                                   <span class="review-name">Khaled Jubayer</span>
+                                </div>
+                                <div class="ms-2 date">
+                                    <i class="bi bi-check-circle-fill"></i>
+                                    <span>Certified Buyer, Dhanbad 
+                                        Jul, 2021</span>
+                                    
+                                </div>
+                            </div>
+
+                            <div class="d-flex">
+                                <div class="ms-2">
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                <span>31</span>
+                                </div>
+
+                                <div class="ms-2">
+                                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                                    <span>21</span>
+                                </div>
+                                <div class="ms-2">
+                                    <i class="bi bi-chevron-down"></i>
+                                </div>
+                            </div>
+
+                            </div>
+                        </div>
+                           
+                        <div class="row  border-start border-1 border-bottom border-1 border-end border-1  product-des ps-2 pt-4 pb-3">
+                       
+                            <div  class="view-detail col-11 fw-boder h6">
+                               <span>All 164 Reviews</span>
+                            </div>
+                           <div class="col-1 ">
+                             <i class="bi bi-plus plus"></i>
+                           </div>  
+                       
+                       </div>
+
+                      
+                       </div>
+                       <div class="row border border-1 mt-3 product-des ps-3">
+                        <div class="col-11 pt-3 pb-3">
+                            <h5 class="mt-2 mb-0">Questions and Answers</h5> 
+                        </div>
+                        <div class="col-1 border-start border-1 container-fluid d-flex flex-column justify-content-center ">
+                            <i class="bi bi-search search ps-2"></i>
+                        </div>
+                     </div>
+
+                     <div class="row border-start border-1  border-end border-1 border-bottom border-1 product-des pt-2 ps-2 pb-2">
+                             <p class="fw-bolder mb-1">Q: How to do i connect power cord? Any adapter required for this 16A power cord?</p>
+                             <p class="mb-1"> <b>A:</b> Get a 6Amp to 16 Amp conversion plug.</p>
+                    
+                      <div class="row">
+                           <div class="col-10"> 
+                                 <p class="mb-1 text-secondary fw-bolder">Anonymous</p>
+                                 <div class="text-secondary">
+                                    <i class="bi bi-check-circle-fill"></i>
+                                    <span>Certified Buyer, Dhanbad 
+                                        Jul, 2021</span>
+                                 </div>
+
+                           </div>
+                           <div class="col-2 d-flex text-secondary">
+                            <div class="ms-2">
+                            <i class="bi bi-hand-thumbs-up-fill"></i>
+                            <span>31</span>
+                            </div>
+
+                            <div class="ms-2">
+                                <i class="bi bi-hand-thumbs-down-fill"></i>
+                                <span>21</span>
+                            </div>
+                            <div class="ms-2">
+                                <i class="bi bi-chevron-down"></i>
+                            </div>
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="row  border-start border-1 border-bottom border-1 border-end border-1  product-des ps-2 pt-4 pb-3">
+                       
+                        <div  class="view-detail col-11 fw-bolder h6">
+                           <span>All Questions</span>
+                        </div>
+                       <div class="col-1 ">
+                         <i class="bi bi-plus plus"></i>
+                       </div>  
+                   
+                   </div>
+                        <div class="row ">
+                          <div class="col-12 text-center">
+                            <i class="bi bi-shield-fill-check text-secondary fs-5"> </i>
+                            <span class="text-secondary text-center auth "> Safe and Secure Payments.Easy returns.100% Authentic products.</span>
+                        </div>
+                        </div>
+                   </div>
+              </div>
+         </section>
+        
+         <!-- Interested  -->
+
+       <section class="mt-1 pt-5  bg-light pb-5 container-fluid">
+              <div class="ms-3 mb-2">
+                   <h3 >You might be interested in</h3>
+              </div>
+
+              <div class="">
+                <div id="card-carousel" class="carousel slide ms-2"  data-bs-interval="false">
+                    <div class="carousel-inner  pb-1 pt-3">
+                      <div class="carousel-item active">
+                        <div class="row ms-5">
+                          <div  class="col-4 shadow rounded  card-bod f-card">
+                            <div class="d-flex mt-3 ms-2">
+                                <div>
+                              <img src="/Product-Detail-img/chair.jpg" class="card-img" alt="...">
+                               </div>
+                              <div class="card-body ms-3">
+                                <h5 class="card-title">Office Study Chairs</h5>
+                                <h5 class="text-secondary">Min. 50% Off</h5>
+                                <button class="btn btn-primary shop-now">Shop Now</button>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-4 shadow rounded  card-bod ms-2">
+                            <div class="d-flex mt-3 ms-2">
+                                <div>
+                              <img src="/Product-Detail-img/stands.jpg" class="card-img" alt="...">
+                               </div>
+                              <div class="card-body ms-3">
+                                <h5 class="card-title">Stands</h5>
+                                <h5 class="text-secondary">Min. 50% Off</h5>
+                                <button class="btn btn-primary shop-now">Shop Now</button>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-4 shadow rounded  card-bod ms-2">
+                            <div class="d-flex mt-3 ms-2">
+                                <div>
+                              <img src="/Product-Detail-img/memory.jpg" class="card-img" alt="...">
+                               </div>
+                              <div class="card-body ms-3">
+                                <h5 class="card-title">Office Study Chairs</h5>
+                                <h5 class="text-secondary">Min. 50% Off</h5>
+                                <button class="btn btn-primary shop-now">Shop Now</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="row ms-5">
+                            <div   class="col-4 shadow rounded  card-bod ms-2 f-card">
+                                <div class="d-flex mt-3 ms-2">
+                                    <div>
+                                  <img src="/Product-Detail-img/internal-hd.jpg" class="card-img" alt="...">
+                                   </div>
+                                  <div class="card-body ms-3">
+                                    <h5 class="card-title">Office Study Chairs</h5>
+                                    <h5 class="text-secondary">Min. 50% Off</h5>
+                                    <button class="btn btn-primary shop-now">Shop Now</button>
+                                  </div>
+                                </div>
+                              </div>
+                              <div   class="col-4 shadow rounded  card-bod ms-2 f-card">
+                                <div class="d-flex mt-3 ms-2">
+                                    <div>
+                                  <img src="/Product-Detail-img/chair.jpg" class="card-img" alt="...">
+                                   </div>
+                                  <div class="card-body ms-3">
+                                    <h5 class="card-title">Office Study Chairs</h5>
+                                    <h5 class="text-secondary">Min. 50% Off</h5>
+                                    <button class="btn btn-primary shop-now">Shop Now</button>
+                                  </div>
+                                </div>
+                              </div>
+                              <div   class="col-4 shadow rounded  card-bod ms-2 f-card">
+                                <div class="d-flex mt-3 ms-2">
+                                    <div>
+                                  <img src="/Product-Detail-img/stands.jpg" class="card-img" alt="...">
+                                   </div>
+                                  <div class="card-body ms-3">
+                                    <h5 class="card-title">Office Study Chairs</h5>
+                                    <h5 class="text-secondary">Min. 50% Off</h5>
+                                    <button class="btn btn-primary shop-now">Shop Now</button>
+                                  </div>
+                                </div>
+                              </div>
+                        
+                        </div>
+
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#card-carousel" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+                      <span class="visually-hidden ">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#card-carousel" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                  
+              </div>
+       </section>
+
+
+
+
+       <!-- Similar Product   -->
+
+
+
+       <section class="mt-4 bg-light container-fluid">
+        
+        <div class="ms-3 mb-2 pt-3">
+          <h4>Similar products</h4>
+     </div>
+
+       <div id="card-slider" class="carousel slide  pt-4" data-bs-interval="false">
+        <div class="carousel-inner bg-light">
+          <div class="carousel-item active">
+            <div class="row bg-light">
+              <div class="col-md-2  pe-0 ps-3">
+               
+                  <div class="self-card ms-1">
+                       <img src="/Product-Detail-img/similar-product-img.jpg" class="img-similar  img-fluid mt-4" alt="">
+                       <i class="bi bi-heart-fill  position-absolute top-30 start-75 translate-middle mt-2 love-icon"></i>
+                 
+                </div>
+                <div class=" ms-1">
+                       <p class="mb-1">HP M Series 27 inch Full HD LED Backlit IPS Panel Ultra Slim Beze...</p>
+                
+                <div id="rating-frequently" class="rating-head ">
+                 <span> 4.4</span>
+                  <i class="bi bi-star-fill"></i> 
+                </div>
+              
+             <span class="text-secondary count">(1,152)</span>
+             <p class="mt-1"> <span class="price-fr"> ৳15,249</span>  <del class="text-secondary">৳28,719</del> <span class="text-success off">46% off</span></p>
+            
+               </div>
+
+              </div>
+
+               <!-- second column  -->
+              <div class="col-md-2  pe-0 ps-3">
+               
+                <div class="self-card ms-1">
+                     <img src="/Product-Detail-img/similar-product-img.jpg" class="img-similar  img-fluid mt-4" alt="">
+                     <i class="bi bi-heart-fill  position-absolute top-30 start-75 translate-middle mt-2 love-icon"></i>
+               
+              </div>
+              <div class=" ms-1">
+                     <p class="mb-1">HP M Series 27 inch Full HD LED Backlit IPS Panel Ultra Slim Beze...</p>
+              
+              <div id="rating-frequently" class="rating-head ">
+               <span> 4.4</span>
+                <i class="bi bi-star-fill"></i> 
+              </div>
+            
+           <span class="text-secondary count">(1,152)</span>
+           <p class="mt-1"> <span class="price-fr"> ৳15,249</span>  <del class="text-secondary">৳28,719</del> <span class="text-success off">46% off</span></p>
+          
+             </div>
+
+            </div>
+
+            <!-- third  -->
+            <div class="col-md-2  pe-0 ps-3">
+               
+              <div class="self-card ms-1">
+                   <img src="/Product-Detail-img/similar-product-img.jpg" class="img-similar  img-fluid mt-4" alt="">
+                   <i class="bi bi-heart-fill  position-absolute top-30 start-75 translate-middle mt-2 love-icon"></i>
+             
+            </div>
+            <div class=" ms-1">
+                   <p class="mb-1">HP M Series 27 inch Full HD LED Backlit IPS Panel Ultra Slim Beze...</p>
+            
+            <div id="rating-frequently" class="rating-head ">
+             <span> 4.4</span>
+              <i class="bi bi-star-fill"></i> 
+            </div>
+          
+         <span class="text-secondary count">(1,152)</span>
+         <p class="mt-1"> <span class="price-fr"> ৳15,249</span>  <del class="text-secondary">৳28,719</del> <span class="text-success off">46% off</span></p>
+        
+           </div>
+
+          </div>
+          <!-- fourth  -->
+          <div class="col-md-2  pe-0 ps-3">
+               
+            <div class="self-card ms-1">
+                 <img src="/Product-Detail-img/similar-product-img.jpg" class="img-similar  img-fluid mt-4" alt="">
+                 <i class="bi bi-heart-fill  position-absolute top-30 start-75 translate-middle mt-2 love-icon"></i>
+           
+          </div>
+          <div class=" ms-1">
+                 <p class="mb-1">HP M Series 27 inch Full HD LED Backlit IPS Panel Ultra Slim Beze...</p>
+          
+          <div id="rating-frequently" class="rating-head ">
+           <span> 4.4</span>
+            <i class="bi bi-star-fill"></i> 
+          </div>
+        
+       <span class="text-secondary count">(1,152)</span>
+       <p class="mt-1"> <span class="price-fr"> ৳15,249</span>  <del class="text-secondary">৳28,719</del> <span class="text-success off">46% off</span></p>
+      
+         </div>
+
+        </div>
+         <!-- fifth  -->
+         <div class="col-md-2  pe-0 ps-3">
+               
+          <div class="self-card ms-1">
+               <img src="/Product-Detail-img/similar-product-img.jpg" class="img-similar  img-fluid mt-4" alt="">
+               <i class="bi bi-heart-fill  position-absolute top-30 start-75 translate-middle mt-2 love-icon"></i>
+         
+        </div>
+        <div class=" ms-1">
+               <p class="mb-1">HP M Series 27 inch Full HD LED Backlit IPS Panel Ultra Slim Beze...</p>
+        
+        <div id="rating-frequently" class="rating-head ">
+         <span> 4.4</span>
+          <i class="bi bi-star-fill"></i> 
+        </div>
+      
+     <span class="text-secondary count">(1,152)</span>
+     <p class="mt-1"> <span class="price-fr"> ৳15,249</span>  <del class="text-secondary">৳28,719</del> <span class="text-success off">46% off</span></p>
+    
+       </div>
+
+      </div>
+        <!-- sixth  -->
+        <div class="col-md-2  pe-0 ps-3">
+               
+          <div class="self-card ms-1">
+               <img src="/Product-Detail-img/similar-product-img.jpg" class="img-similar  img-fluid mt-4" alt="">
+               <i class="bi bi-heart-fill  position-absolute top-30 start-75 translate-middle mt-2 love-icon"></i>
+         
+        </div>
+        <div class=" ms-1">
+               <p class="mb-1">HP M Series 27 inch Full HD LED Backlit IPS Panel Ultra Slim Beze...</p>
+        
+        <div id="rating-frequently" class="rating-head ">
+         <span> 4.4</span>
+          <i class="bi bi-star-fill"></i> 
+        </div>
+      
+     <span class="text-secondary count">(1,152)</span>
+     <p class="mt-1"> <span class="price-fr"> ৳15,249</span>  <del class="text-secondary">৳28,719</del> <span class="text-success off">46% off</span></p>
+    
+       </div>
+
+      </div>
+            </div>
+
+            <!-- 2nd row start  -->
+          </div>
+          <div class="carousel-item">
+            <div class="row bg-light">
+              <div class="col-md-2  pe-0 ps-3">
+               
+                  <div class="self-card ms-1">
+                       <img src="/Product-Detail-img/similar-product-img.jpg" class="img-similar  img-fluid mt-4" alt="">
+                       <i class="bi bi-heart-fill  position-absolute top-30 start-75 translate-middle mt-2 love-icon"></i>
+                 
+                </div>
+                <div class=" ms-1">
+                       <p class="mb-1">HP M Series 27 inch Full HD LED Backlit IPS Panel Ultra Slim Beze...</p>
+                
+                <div id="rating-frequently" class="rating-head ">
+                 <span> 4.4</span>
+                  <i class="bi bi-star-fill"></i> 
+                </div>
+              
+             <span class="text-secondary count">(1,152)</span>
+             <p class="mt-1"> <span class="price-fr"> ৳15,249</span>  <del class="text-secondary">৳28,719</del> <span class="text-success off">46% off</span></p>
+            
+               </div>
+
+              </div>
+
+               <!-- second column  -->
+              <div class="col-md-2  pe-0 ps-3">
+               
+                <div class="self-card ms-1">
+                     <img src="/Product-Detail-img/similar-product-img.jpg" class="img-similar  img-fluid mt-4" alt="">
+                     <i class="bi bi-heart-fill  position-absolute top-30 start-75 translate-middle mt-2 love-icon"></i>
+               
+              </div>
+              <div class=" ms-1">
+                     <p class="mb-1">HP M Series 27 inch Full HD LED Backlit IPS Panel Ultra Slim Beze...</p>
+              
+              <div id="rating-frequently" class="rating-head ">
+               <span> 4.4</span>
+                <i class="bi bi-star-fill"></i> 
+              </div>
+            
+           <span class="text-secondary count">(1,152)</span>
+           <p class="mt-1"> <span class="price-fr"> ৳15,249</span>  <del class="text-secondary">৳28,719</del> <span class="text-success off">46% off</span></p>
+          
+             </div>
+
+            </div>
+
+            <!-- third  -->
+            <div class="col-md-2  pe-0 ps-3">
+               
+              <div class="self-card ms-1">
+                   <img src="/Product-Detail-img/similar-product-img.jpg" class="img-similar  img-fluid mt-4" alt="">
+                   <i class="bi bi-heart-fill  position-absolute top-30 start-75 translate-middle mt-2 love-icon"></i>
+             
+            </div>
+            <div class=" ms-1">
+                   <p class="mb-1">HP M Series 27 inch Full HD LED Backlit IPS Panel Ultra Slim Beze...</p>
+            
+            <div id="rating-frequently" class="rating-head ">
+             <span> 4.4</span>
+              <i class="bi bi-star-fill"></i> 
+            </div>
+          
+         <span class="text-secondary count">(1,152)</span>
+         <p class="mt-1"> <span class="price-fr"> ৳15,249</span>  <del class="text-secondary">৳28,719</del> <span class="text-success off">46% off</span></p>
+        
+           </div>
+
+          </div>
+          <!-- fourth  -->
+          <div class="col-md-2  pe-0 ps-3">
+               
+            <div class="self-card ms-1">
+                 <img src="/Product-Detail-img/similar-product-img.jpg" class="img-similar  img-fluid mt-4" alt="">
+                 <i class="bi bi-heart-fill  position-absolute top-30 start-75 translate-middle mt-2 love-icon"></i>
+           
+          </div>
+          <div class=" ms-1">
+                 <p class="mb-1">HP M Series 27 inch Full HD LED Backlit IPS Panel Ultra Slim Beze...</p>
+          
+          <div id="rating-frequently" class="rating-head ">
+           <span> 4.4</span>
+            <i class="bi bi-star-fill"></i> 
+          </div>
+        
+       <span class="text-secondary count">(1,152)</span>
+       <p class="mt-1"> <span class="price-fr"> ৳15,249</span>  <del class="text-secondary">৳28,719</del> <span class="text-success off">46% off</span></p>
+      
+         </div>
+
+        </div>
+         <!-- fifth  -->
+         <div class="col-md-2  pe-0 ps-3">
+               
+          <div class="self-card ms-1">
+               <img src="/Product-Detail-img/similar-product-img.jpg" class="img-similar  img-fluid mt-4" alt="">
+               <i class="bi bi-heart-fill  position-absolute top-30 start-75 translate-middle mt-2 love-icon"></i>
+         
+        </div>
+        <div class=" ms-1">
+               <p class="mb-1">HP M Series 27 inch Full HD LED Backlit IPS Panel Ultra Slim Beze...</p>
+        
+        <div id="rating-frequently" class="rating-head ">
+         <span> 4.4</span>
+          <i class="bi bi-star-fill"></i> 
+        </div>
+      
+     <span class="text-secondary count">(1,152)</span>
+     <p class="mt-1"> <span class="price-fr"> ৳15,249</span>  <del class="text-secondary">৳28,719</del> <span class="text-success off">46% off</span></p>
+    
+       </div>
+
+      </div>
+        <!-- sixth  -->
+        <div class="col-md-2  pe-0 ps-3">
+               
+          <div class="self-card ms-1">
+               <img src="/Product-Detail-img/similar-product-img.jpg" class="img-similar  img-fluid mt-4" alt="">
+               <i class="bi bi-heart-fill  position-absolute top-30 start-75 translate-middle mt-2 love-icon"></i>
+         
+        </div>
+        <div class=" ms-1">
+               <p class="mb-1">HP M Series 27 inch Full HD LED Backlit IPS Panel Ultra Slim Beze...</p>
+        
+        <div id="rating-frequently" class="rating-head ">
+         <span> 4.4</span>
+          <i class="bi bi-star-fill"></i> 
+        </div>
+      
+     <span class="text-secondary count">(1,152)</span>
+     <p class="mt-1"> <span class="price-fr"> ৳15,249</span>  <del class="text-secondary">৳28,719</del> <span class="text-success off">46% off</span></p>
+    
+       </div>
+
+      </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#card-slider" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#card-slider" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    
+
+
+
+
+        <!-- Bought Together  -->
+
+
+
+    <section class="mt-3 pb-2 bg-light container-fluid">
+      <div class="ms-3 mb-2 pt-3">
+        <h4>Bought Together</h4>  
+        </div>
+      <div class="d-flex">
+           <p class="text-primary border-primary border-bottom border-2 fw-bolder ms-3 pb-2 mb-0">All Categories</p>
+           <p class="ms-3 mb-1">Computer Components</p>
+           <p class="ms-3 mb-1">Gaming Accessories Combo</p>
+      </div>  
+      <div class="border-top border-1">
+        <div id="multiple-card-slider" class="carousel slide  pt-4" data-bs-interval="false">
+          <div class="carousel-inner bg-light">
+            <div class="carousel-item active">
+              <div class="row bg-light">
+                <div class="col-md-2  pe-0 ps-3">
+                 
+                    <div class="self-card ms-1">
+                         <img src="/Product-Detail-img/monitor-stand.jpg" class="img-similar  img-fluid mt-4" alt="">
+                         <i class="bi bi-heart-fill  position-absolute top-30 start-75 translate-middle mt-2 love-icon"></i>
+                   
+                  </div>
+                  <div class=" ms-1">
+                         <p class="mb-1">HP M Series 27 inch Full HD LED Backlit IPS Panel Ultra Slim Beze...</p>
+                  
+                  <div id="rating-frequently" class="rating-head ">
+                   <span> 4.4</span>
+                    <i class="bi bi-star-fill"></i> 
+                  </div>
+                
+               <span class="text-secondary count">(1,152)</span>
+               <p class="mt-1"> <span class="price-fr"> ৳15,249</span>  <del class="text-secondary">৳28,719</del> <span class="text-success off">46% off</span></p>
+              
+                 </div>
+  
+                </div>
+  
+                 <!-- second column  -->
+                <div class="col-md-2  pe-0 ps-3">
+                 
+                  <div class="self-card ms-1">
+                       <img src="/Product-Detail-img/similar-product-img.jpg" class="img-similar  img-fluid mt-4" alt="">
+                       <i class="bi bi-heart-fill  position-absolute top-30 start-75 translate-middle mt-2 love-icon"></i>
+                 
+                </div>
+                <div class=" ms-1">
+                       <p class="mb-1">HP M Series 27 inch Full HD LED Backlit IPS Panel Ultra Slim Beze...</p>
+                
+                <div id="rating-frequently" class="rating-head ">
+                 <span> 4.4</span>
+                  <i class="bi bi-star-fill"></i> 
+                </div>
+              
+             <span class="text-secondary count">(1,152)</span>
+             <p class="mt-1"> <span class="price-fr"> ৳15,249</span>  <del class="text-secondary">৳28,719</del> <span class="text-success off">46% off</span></p>
+            
+               </div>
+  
+              </div>
+  
+              <!-- third  -->
+              <div class="col-md-2  pe-0 ps-3">
+                 
+                <div class="self-card ms-1">
+                     <img src="/Product-Detail-img/similar-product-img.jpg" class="img-similar  img-fluid mt-4" alt="">
+                     <i class="bi bi-heart-fill  position-absolute top-30 start-75 translate-middle mt-2 love-icon"></i>
+               
+              </div>
+              <div class=" ms-1">
+                     <p class="mb-1">HP M Series 27 inch Full HD LED Backlit IPS Panel Ultra Slim Beze...</p>
+              
+              <div id="rating-frequently" class="rating-head ">
+               <span> 4.4</span>
+                <i class="bi bi-star-fill"></i> 
+              </div>
+            
+           <span class="text-secondary count">(1,152)</span>
+           <p class="mt-1"> <span class="price-fr"> ৳15,249</span>  <del class="text-secondary">৳28,719</del> <span class="text-success off">46% off</span></p>
+          
+             </div>
+  
+            </div>
+            <!-- fourth  -->
+            <div class="col-md-2  pe-0 ps-3">
+                 
+              <div class="self-card ms-1">
+                   <img src="/Product-Detail-img/similar-product-img.jpg" class="img-similar  img-fluid mt-4" alt="">
+                   <i class="bi bi-heart-fill  position-absolute top-30 start-75 translate-middle mt-2 love-icon"></i>
+             
+            </div>
+            <div class=" ms-1">
+                   <p class="mb-1">HP M Series 27 inch Full HD LED Backlit IPS Panel Ultra Slim Beze...</p>
+            
+            <div id="rating-frequently" class="rating-head ">
+             <span> 4.4</span>
+              <i class="bi bi-star-fill"></i> 
+            </div>
+          
+         <span class="text-secondary count">(1,152)</span>
+         <p class="mt-1"> <span class="price-fr"> ৳15,249</span>  <del class="text-secondary">৳28,719</del> <span class="text-success off">46% off</span></p>
+        
+           </div>
+  
+          </div>
+           <!-- fifth  -->
+           <div class="col-md-2  pe-0 ps-3">
+                 
+            <div class="self-card ms-1">
+                 <img src="/Product-Detail-img/similar-product-img.jpg" class="img-similar  img-fluid mt-4" alt="">
+                 <i class="bi bi-heart-fill  position-absolute top-30 start-75 translate-middle mt-2 love-icon"></i>
+           
+          </div>
+          <div class=" ms-1">
+                 <p class="mb-1">HP M Series 27 inch Full HD LED Backlit IPS Panel Ultra Slim Beze...</p>
+          
+          <div id="rating-frequently" class="rating-head ">
+           <span> 4.4</span>
+            <i class="bi bi-star-fill"></i> 
+          </div>
+        
+       <span class="text-secondary count">(1,152)</span>
+       <p class="mt-1"> <span class="price-fr"> ৳15,249</span>  <del class="text-secondary">৳28,719</del> <span class="text-success off">46% off</span></p>
+      
+         </div>
+  
+        </div>
+          <!-- sixth  -->
+          <div class="col-md-2  pe-0 ps-3">
+                 
+            <div class="self-card ms-1">
+                 <img src="/Product-Detail-img/similar-product-img.jpg" class="img-similar  img-fluid mt-4" alt="">
+                 <i class="bi bi-heart-fill  position-absolute top-30 start-75 translate-middle mt-2 love-icon"></i>
+           
+          </div>
+          <div class=" ms-1">
+                 <p class="mb-1">HP M Series 27 inch Full HD LED Backlit IPS Panel Ultra Slim Beze...</p>
+          
+          <div id="rating-frequently" class="rating-head ">
+           <span> 4.4</span>
+            <i class="bi bi-star-fill"></i> 
+          </div>
+        
+       <span class="text-secondary count">(1,152)</span>
+       <p class="mt-1"> <span class="price-fr"> ৳15,249</span>  <del class="text-secondary">৳28,719</del> <span class="text-success off">46% off</span></p>
+      
+         </div>
+  
+        </div>
+              </div>
+  
+              <!-- 2nd row start  -->
+            </div>
+            <div class="carousel-item">
+              <div class="row bg-light">
+                <div class="col-md-2  pe-0 ps-3">
+                 
+                    <div class="self-card ms-1">
+                         <img src="/Product-Detail-img/similar-product-img.jpg" class="img-similar  img-fluid mt-4" alt="">
+                         <i class="bi bi-heart-fill  position-absolute top-30 start-75 translate-middle mt-2 love-icon"></i>
+                   
+                  </div>
+                  <div class=" ms-1">
+                         <p class="mb-1">HP M Series 27 inch Full HD LED Backlit IPS Panel Ultra Slim Beze...</p>
+                  
+                  <div id="rating-frequently" class="rating-head ">
+                   <span> 4.4</span>
+                    <i class="bi bi-star-fill"></i> 
+                  </div>
+                
+               <span class="text-secondary count">(1,152)</span>
+               <p class="mt-1"> <span class="price-fr"> ৳15,249</span>  <del class="text-secondary">৳28,719</del> <span class="text-success off">46% off</span></p>
+              
+                 </div>
+  
+                </div>
+  
+                 <!-- second column  -->
+                <div class="col-md-2  pe-0 ps-3">
+                 
+                  <div class="self-card ms-1">
+                       <img src="/Product-Detail-img/similar-product-img.jpg" class="img-similar  img-fluid mt-4" alt="">
+                       <i class="bi bi-heart-fill  position-absolute top-30 start-75 translate-middle mt-2 love-icon"></i>
+                 
+                </div>
+                <div class=" ms-1">
+                       <p class="mb-1">HP M Series 27 inch Full HD LED Backlit IPS Panel Ultra Slim Beze...</p>
+                
+                <div id="rating-frequently" class="rating-head ">
+                 <span> 4.4</span>
+                  <i class="bi bi-star-fill"></i> 
+                </div>
+              
+             <span class="text-secondary count">(1,152)</span>
+             <p class="mt-1"> <span class="price-fr"> ৳15,249</span>  <del class="text-secondary">৳28,719</del> <span class="text-success off">46% off</span></p>
+            
+               </div>
+  
+              </div>
+  
+              <!-- third  -->
+              <div class="col-md-2  pe-0 ps-3">
+                 
+                <div class="self-card ms-1">
+                     <img src="/Product-Detail-img/similar-product-img.jpg" class="img-similar  img-fluid mt-4" alt="">
+                     <i class="bi bi-heart-fill  position-absolute top-30 start-75 translate-middle mt-2 love-icon"></i>
+               
+              </div>
+              <div class=" ms-1">
+                     <p class="mb-1">HP M Series 27 inch Full HD LED Backlit IPS Panel Ultra Slim Beze...</p>
+              
+              <div id="rating-frequently" class="rating-head ">
+               <span> 4.4</span>
+                <i class="bi bi-star-fill"></i> 
+              </div>
+            
+           <span class="text-secondary count">(1,152)</span>
+           <p class="mt-1"> <span class="price-fr"> ৳15,249</span>  <del class="text-secondary">৳28,719</del> <span class="text-success off">46% off</span></p>
+          
+             </div>
+  
+            </div>
+            <!-- fourth  -->
+            <div class="col-md-2  pe-0 ps-3">
+                 
+              <div class="self-card ms-1">
+                   <img src="/Product-Detail-img/similar-product-img.jpg" class="img-similar  img-fluid mt-4" alt="">
+                   <i class="bi bi-heart-fill  position-absolute top-30 start-75 translate-middle mt-2 love-icon"></i>
+             
+            </div>
+            <div class=" ms-1">
+                   <p class="mb-1">HP M Series 27 inch Full HD LED Backlit IPS Panel Ultra Slim Beze...</p>
+            
+            <div id="rating-frequently" class="rating-head ">
+             <span> 4.4</span>
+              <i class="bi bi-star-fill"></i> 
+            </div>
+          
+         <span class="text-secondary count">(1,152)</span>
+         <p class="mt-1"> <span class="price-fr"> ৳15,249</span>  <del class="text-secondary">৳28,719</del> <span class="text-success off">46% off</span></p>
+        
+           </div>
+  
+          </div>
+           <!-- fifth  -->
+           <div class="col-md-2  pe-0 ps-3">
+                 
+            <div class="self-card ms-1">
+                 <img src="/Product-Detail-img/similar-product-img.jpg" class="img-similar  img-fluid mt-4" alt="">
+                 <i class="bi bi-heart-fill  position-absolute top-30 start-75 translate-middle mt-2 love-icon"></i>
+           
+          </div>
+          <div class=" ms-1">
+                 <p class="mb-1">HP M Series 27 inch Full HD LED Backlit IPS Panel Ultra Slim Beze...</p>
+          
+          <div id="rating-frequently" class="rating-head ">
+           <span> 4.4</span>
+            <i class="bi bi-star-fill"></i> 
+          </div>
+        
+       <span class="text-secondary count">(1,152)</span>
+       <p class="mt-1"> <span class="price-fr"> ৳15,249</span>  <del class="text-secondary">৳28,719</del> <span class="text-success off">46% off</span></p>
+      
+         </div>
+  
+        </div>
+          <!-- sixth  -->
+          <div class="col-md-2  pe-0 ps-3">
+                 
+            <div class="self-card ms-1">
+                 <img src="/Product-Detail-img/similar-product-img.jpg" class="img-similar  img-fluid mt-4" alt="">
+                 <i class="bi bi-heart-fill  position-absolute top-30 start-75 translate-middle mt-2 love-icon"></i>
+           
+          </div>
+          <div class=" ms-1">
+                 <p class="mb-1">HP M Series 27 inch Full HD LED Backlit IPS Panel Ultra Slim Beze...</p>
+          
+          <div id="rating-frequently" class="rating-head ">
+           <span> 4.4</span>
+            <i class="bi bi-star-fill"></i> 
+          </div>
+        
+       <span class="text-secondary count">(1,152)</span>
+       <p class="mt-1"> <span class="price-fr"> ৳15,249</span>  <del class="text-secondary">৳28,719</del> <span class="text-success off">46% off</span></p>
+      
+         </div>
+  
+        </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#multiple-card-slider" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#multiple-card-slider" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+      <!-- Recently viewd  -->
+
+
+      <section class="mt-3 bg-light container-fluid">
+             <div class="d-flex justify-content-between ms-2 me-4">
+               <div class="ms-3 mb-2 pt-3">
+               <h4>Recently Viewed</h4>  
+              </div>
+               <div>
+                     <button class="btn btn-primary shop-now">View All</button>
+               </div>
+            </div>
+
+
+            <div class="border-top border-1">
+              <div id="multiple-card-slider" class="carousel slide  pt-4" data-bs-interval="false">
+                <div class="carousel-inner bg-light">
+                  <div class="carousel-item active">
+                    <div class="row bg-light">
+                      <div class="col-md-2  pe-0 ps-3">
+                       
+                          <div class="self-card ms-1">
+                               <img src="/Product-Detail-img/monitor-stand.jpg" class="img-similar  img-fluid mt-4" alt="">
+                               <i class="bi bi-heart-fill  position-absolute top-30 start-75 translate-middle mt-2 love-icon"></i>
+                         
+                        </div>
+                        <div class=" ms-1">
+                               <p class="mb-1">HP M Series 27 inch Full HD LED Backlit IPS Panel Ultra Slim Beze...</p>
+                        
+                        <div id="rating-frequently" class="rating-head ">
+                         <span> 4.4</span>
+                          <i class="bi bi-star-fill"></i> 
+                        </div>
+                      
+                     <span class="text-secondary count">(1,152)</span>
+                     <p class="mt-1"> <span class="price-fr"> ৳15,249</span>  <del class="text-secondary">৳28,719</del> <span class="text-success off">46% off</span></p>
+                    
+                       </div>
+        
+                      </div>
+        
+                       <!-- second column  -->
+                      <div class="col-md-2  pe-0 ps-3">
+                       
+                        <div class="self-card ms-1">
+                             <img src="/Product-Detail-img/similar-product-img.jpg" class="img-similar  img-fluid mt-4" alt="">
+                             <i class="bi bi-heart-fill  position-absolute top-30 start-75 translate-middle mt-2 love-icon"></i>
+                       
+                      </div>
+                      <div class=" ms-1">
+                             <p class="mb-1">HP M Series 27 inch Full HD LED Backlit IPS Panel Ultra Slim Beze...</p>
+                      
+                      <div id="rating-frequently" class="rating-head ">
+                       <span> 4.4</span>
+                        <i class="bi bi-star-fill"></i> 
+                      </div>
+                    
+                   <span class="text-secondary count">(1,152)</span>
+                   <p class="mt-1"> <span class="price-fr"> ৳15,249</span>  <del class="text-secondary">৳28,719</del> <span class="text-success off">46% off</span></p>
+                  
+                     </div>
+        
+                    </div>
+        
+                    <!-- third  -->
+                    <div class="col-md-2  pe-0 ps-3">
+                       
+                      <div class="self-card ms-1">
+                           <img src="/Product-Detail-img/similar-product-img.jpg" class="img-similar  img-fluid mt-4" alt="">
+                           <i class="bi bi-heart-fill  position-absolute top-30 start-75 translate-middle mt-2 love-icon"></i>
+                     
+                    </div>
+                    <div class=" ms-1">
+                           <p class="mb-1">HP M Series 27 inch Full HD LED Backlit IPS Panel Ultra Slim Beze...</p>
+                    
+                    <div id="rating-frequently" class="rating-head ">
+                     <span> 4.4</span>
+                      <i class="bi bi-star-fill"></i> 
+                    </div>
+                  
+                 <span class="text-secondary count">(1,152)</span>
+                 <p class="mt-1"> <span class="price-fr"> ৳15,249</span>  <del class="text-secondary">৳28,719</del> <span class="text-success off">46% off</span></p>
+                
+                   </div>
+        
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+ </section>
+
+ <section class="mt-3 bg-light container-fluid"> 
+  <div class="pt-5 ms-3">
+          <p> <span class="top-stories">Top Stories:</span> <span class="brand"> Brand Directory</span> </p>
+          <p class="most-search"> <span>MOST SEARCHED IN COMPUTERS & ACCESSORIES:</span> 
+              <span class="company-name">AIRTEL DONGLE PRICEAPPLE KEYBOARDAPPLE MACBOOK PRO MD101HN AASUS MOTHERBOARDGRAPHICS CARD500GB HARD DISK PRICETFT MONITORAMD PROCESSOR PRICEDATA CARDSHP DESKTOP INDIALENOVO DESKTOPBENQUSB PEN DRIVEEPSON L210 PRINTEREPSON L800 PRICEESET ANTIVIRUSHP 1020 PRINTER PRICEHP INKJET PRINTERLAPTOP BATTERY PRICEEXTERNAL DVD DRIVEMACBOOK PRO 15 INCH PRICE IN INDIALENEVO LAPTOPSMCAFEE TOTAL PROTECTIONMOBILE SIGNAL BOOSTER INDIANORTON MOBILE SECURITYANTIVIRUS QUICK HEALSANDISK 16GB MEMORY CARD</span>
+           </p>
+          </div>  
+ </section>
+
+ <section class="">
+         <footer class="container-fluid">
+                 <div class="row pt-5 pb-5 ms-5 me-5 ">
+                      <div class="col-1  foot-col">
+                           <span class="foot-head">ABOUT</span>
+                              <a href="">Contact Us</a>
+                                <a href="">About Us</a>
+                                <a href=""> Careers</a>
+                                <a href="">BDKART Stories</a>
+                                <a href="">Corporate Information</a>
+                      </div>
+                 <div class="col-2  foot-col">
+                     <span class="foot-head">HELP</span>
+                     <a href="">Payments</a>
+                     <a href=""> Shipping</a>
+                     <a href="">Cancellation & Returns</a>
+                     <a href="">FAQ</a>
+                     <a href="">Report Infringement</a>
+
+                 </div>
+                 <div class="col-2  foot-col">
+                  <span class="foot-head">POLICY</span>
+                  <a href="">Return Policy</a>
+                  <a href="">Terms Of Use</a>
+                  <a href=""> Security</a>
+                  <a href="">Privacy</a>
+                  <a href=""> Sitemap</a>
+                  <a href="">EPR Compliance</a>
+
+                </div>  
+                <div class="col-1  foot-col">
+                  
+                  <span class="foot-head">SOCIAL</span>
+                  <a href=""> Facebook</a>
+                  <a href="">Twitter</a>
+                  <a href="">YouTube</a>
+                 </div>
+                 <div class="col-3  foot-col">
+                  <span class="foot-head"> Mail Us:</span>
+                    <a href="">BDKart Internet Private Limited,</a>
+                    <a href="">Buildings Alyssa, Begonia &</a>
+                    <a href="">Clove Embassy Tech Village,</a>
+                    <a href="">Outer Ring Road, Devarabeesanahalli Village,</a>
+                    <a href="">Bengaluru, 560103,</a>
+                    <a href="">Karnataka, India</a>
+                   
+                 </div>
+                 <div class="col-3  foot-col">
+                <span class="foot-head">Registered Office Address:</span> 
+                  
+                  <a href="">BDKart Internet Private Limited,</a>
+                  <a href="">Buildings Alyssa, Begonia &</a>
+                  <a href="">Clove Embassy Tech Village,</a>
+                  <a href="">Outer Ring Road, Devarabeesanahalli Village,</a>
+                  <a href="">Bengaluru, 560103,</a>
+                  <a href="">Karnataka, India</a>
+                  <a href=""> CIN : U51109KA2012PTC066107</a>
+                  <a href="">Telephone: 044-45614700</a>
+                 </div>
+                 </div>
+
+                 <div class="d-flex justify-content-around align-items-center border-top border-1 pb-3 pt-3 ">
+                        <div class=" d-flex justify-content-around w-50">
+                          <div class="d-flex ">
+                          <i class="bi bi-briefcase-fill foot-icon"></i>
+                          <p class="ms-2">Become a Seller</p>
+                        </div>
+                        <div class="d-flex ">
+                          <i class="bi bi-star-fill foot-icon"></i>
+                          <p class="ms-2">Advertise</p>
+                        </div>
+                        <div class="d-flex ">
+                          <i class="bi bi-gift-fill foot-icon"></i>
+                          <p class="ms-2">Gift Cards</p>
+                        </div>
+                        <div class="d-flex ">
+                          <i class="bi bi-question-circle-fill foot-icon"></i>
+                          <p class="ms-2">Help Center</p>
+                        </div>
+                          <p>© 2007-2023 BDKart.com</p>
+                        </div>
+
+                        <div class="">
+                             <img src="/Product-Detail-img/payment-final.png" class="payment-img" alt="">
+                        </div>
+                 </div>
+                
+         </footer>
+   
+ </section>
+
+</body>
+
+<script src="/Bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- <script src="/script.js"></script> -->
+<script src="/product-detail.js"></script>
+
+</html>

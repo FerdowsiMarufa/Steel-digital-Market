@@ -1,0 +1,346 @@
+body{
+    font-family: 'Inter', sans-serif;
+}
+.nav-txt a{
+       color: rgb(96, 112, 128);
+       font-size: 18px;
+}
+.nav-btn{
+      color: rgb(61, 70, 77);
+}
+.login-btn{
+     background-color: rgb(0, 102, 204);
+}
+
+.ban{
+    background-image: url("/Seller-img/welcome_potal_banner_Desktop_V2_02.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    height: 356px;
+    width: 100%;
+}
+.phone{
+     background-color: white;
+     border-color: 1px solid white;
+   
+}
+.form-control{
+       padding: 10px;
+}
+.inp::placeholder{
+    opacity: 0.5;
+     color: rgb(166, 158, 158);
+     font-size: 15px;
+}
+.icon-input{
+       width: 350px;
+}
+.seller-section{
+     background-color: rgb(239 239 239);
+     border-bottom: 1px solid rgb(205, 199, 199);
+    
+}
+.para{
+       
+       font-style: italic;
+       opacity: 0.5;
+}
+.seller-name{
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 20px
+}
+.seller-info{
+       width: 350px;
+      
+}
+.para-div{
+       margin-left: 20px;
+}
+
+.why-option{
+    font-size: 23px;
+    font-weight: 600;
+    color: rgb(61, 70, 77);;
+}
+
+/* Seller Why Section  */
+
+.p-header{
+       font-weight: 600;
+       font-size: 18px;
+       line-height: 30px;
+}
+.be-sel-btn{
+       width: 220px;
+    height: 40px;
+    border-radius: 4px;
+       font-size: 15px;
+      font-weight: 600;
+      line-height: 20px;
+       cursor: pointer;
+       min-width: 90px;
+       white-space: nowrap;
+       color: rgb(255, 255, 255);
+       border: 1px solid rgb(0, 102, 204);
+       background-color: rgb(0 102 204);
+}
+a{
+     text-decoration: none;     
+}
+.know{
+       background-color: rgb(245, 246, 247);
+       overflow-x: auto;
+       border-top:1px solid rgb(205, 199, 199);
+}
+.tool-header{
+       margin-top: 50px;
+       margin-bottom: 0;
+       font-size: 25px;
+       line-height: 34px;
+       text-align: center;
+       font-weight: 500;
+}
+.cards p{
+       padding: 2px 12px;
+       font-size: 14px;
+       font-weight: 400;
+       line-height: 22px;
+       color: rgb(61, 70, 77);
+}
+.cards h4{
+       padding: 0px 12px;
+        font-weight: 700;
+        font-size: 18px;
+}
+.per-card{
+         padding-bottom: 33px;
+}
+
+#start-selling-btn{
+       font-family: Inter, sans-serif;
+       font-style: normal;
+       font-weight: 600;
+       font-size: 20px;
+       background: rgb(255, 204, 0);
+       color: rgb(61, 70, 77);
+       border-radius: 8px;
+       border: none;
+       width: 195px;
+       height: 40px;
+}
+.event-card img{
+         height: 170px;
+}
+.events{
+       text-align: left;
+       font-size: 20px;
+       font-weight: 600;
+       line-height: 33px;
+       margin: 10px 0px;
+}
+.events-p{
+         font-size: 12px;
+}
+.item-category{
+    display: flex;
+    flex-flow: row wrap;
+    margin: 20px 5%;
+}
+.item-category p{
+       width: 20%;
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 140%;
+    margin: 0px;
+    text-align: left;
+    padding: 10px;
+}
+
+.sell-on{
+       padding: 40px 125px;
+       border-bottom: 1px solid rgb(193, 199, 208);
+}
+ul li{
+        
+        list-style: none;
+        display: block;
+        margin: 8px 0px;
+        font-size: 15px;
+       font-weight: 300;
+       color: #ebe5e5;
+}
+li a{
+         color: white;
+         font-size: 20px;
+    font-weight: 600;
+    display: block;
+    margin: 8px 0px;
+}
+footer{
+       background: rgb(0, 102, 204);
+       color: rgb(255, 255, 255);
+}
+
+.ft-img{
+       width: 121px;
+       height: 40px;
+       margin: 10px 30px 10px 0px;
+}
+
+.icon img{
+       height: 30px;
+         
+}
+
+
+/********************** login */
+.login-none {
+       position: absolute;
+       top: 12%;
+       right: 15%;
+       z-index: 110;
+       height: 500px;
+       width: 100%;
+       width: 680px;
+       background-color: white;
+       box-shadow: -5px -0px 5px rgba(0, 0, 0, 0.1), 5px 5px 5px rgba(0, 0, 0, 0.1);
+       transform: translateX(-30%);
+       display: none;
+     }
+     
+     .login-none.active {
+       display: block;
+     }
+    
+     
+     .pop-login .login {
+       background-color: #2874f0;
+       width: 280px;
+     
+       height: 500px;
+     }
+     .pop-login .login .login-description {
+       padding: 30px;
+       margin-right: 10px;
+     }
+     
+     .pop-login .login .signup-description {
+       padding: 30px;
+       padding-top: 40px;
+       display: none;
+     }
+     .pop-login .login .signup-description .p-login {
+       font-size: 26px;
+       font-weight: 500;
+       color: #fff;
+     }
+     
+     .pop-login .login .signup-description .p-content {
+       font-size: 17px;
+       font-weight: 400;
+       color: #e7e4e4;
+     }
+     
+     .pop-login .login .login-description .p-login {
+       font-size: 28px;
+       font-weight: 500;
+       color: #fff;
+     }
+     
+     .pop-login .login .login-description .p-content {
+       font-size: 17px;
+       font-weight: 400;
+       color: #fff;
+     }
+     .pop-login .login-input hr {
+       width: 100%;
+       border-bottom: 1px solid rgb(59, 57, 57);
+       padding-bottom: 10px;
+     }
+     
+     .pop-login .login-input:hover {
+       width: 100%;
+       border-bottom: 1px solid rgb(77, 45, 255);
+     }
+     .container-login {
+       position: relative;
+     }
+     
+     .pop-login .login-details {
+       padding: 10px;
+       padding-top: 20px;
+     }
+     
+     .login-details .create-act {
+       text-align: center;
+       margin-top: 120px;
+       font-weight: 500;
+       font-size: 14px;
+       cursor: pointer;
+     }
+     .pop-login .login-details .login-form {
+       align-items: center;
+       justify-content: s;
+     }
+     
+     .pop-login .login-details .login-form p,
+     .pop-login .signUp .signup-form p {
+       padding-top: 35px;
+       color: #7e8083;
+       font-size: 12px;
+     }
+     .pop-login .login-details .login-form p a,
+     .pop-login .signUp .signup-form p a {
+       color: #2874f0;
+       cursor: pointer;
+     }
+     
+     .login-details .login-form .label {
+       font-size: 14.5px;
+     }
+     
+     .pop-login .login-details .login-form .login-input {
+       border: 1px solid rgb(189, 188, 188);
+       width: 100%;
+       margin-bottom: 4px;
+       font-size: 12px;
+       padding: 4px;
+     }
+     .login-form .login-button {
+       margin-left: 80px;
+       margin-top: 20px;
+     }
+     .pop-login .signUp {
+       padding: 20px;
+       padding-top: 20px;
+       width: 60%;
+       padding-left: 40px;
+       display: none;
+     }
+
+
+.pop-login .signUp .signup-form label {
+  font-weight: 500;
+}
+.signUp .signup-form .signup-input {
+  border: 1px solid rgb(211, 208, 208);
+  width: 100%;
+  margin-bottom: 4px;
+  border-radius: 3px;
+  font-size: 12px;
+  padding: 6px;
+}
+.signUp .signup-form .signup-button {
+  text-align: center;
+}
+.signUp .signup-form .signup-button input .Existing-user {
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.5);
+}  
+.signup-form button{
+    border: none;
+}

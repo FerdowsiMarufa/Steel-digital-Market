@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.card-slider {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-slider-wrapper {
+  display: flex;
+  transition: transform 0.3s ease;
+}
+
+.card {
+  width: 300px;
+  margin-right: 20px;
+  position: relative;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  position: absolute;
+  bottom: 0;
+  padding: 20px;
+  background-color: #fff;
+  width: 100%;
+}
+
+.card-content h3 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.card-content p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.card-slider-controls {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.card-slider-controls button {
+  background-color: transparent;
+  border: none;
+  color: #000;
+  font-size: 32px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.card-slider-controls button:focus {
+  outline: none;
+}
+
+.card-slider-controls button:hover {
+  color: #aaa;
+}
+
+.prev-btn {
+  transform: rotate(180deg);
+}
+
+
+</style>
+<body>
+  <div class="card-slider">
+    <div class="card-slider-wrapper">
+      <div class="card">
+        <img src="image1.jpg" alt="Card image">
+        <div class="card-content">
+          <h3>Card 1</h3>
+          <p>Some text goes here</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="image2.jpg" alt="Card image">
+        <div class="card-content">
+          <h3>Card 2</h3>
+          <p>Some text goes here</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="image3.jpg" alt="Card image">
+        <div class="card-content">
+          <h3>Card 3</h3>
+          <p>Some text goes here</p>
+        </div>
+      </div>
+    </div>
+    <div class="card-slider-controls">
+      <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+      <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+    </div>
+  </div>
+</body>
+<script>
+  const wrapper = document.querySelector('.card-slider-wrapper');
+const prevBtn = document.querySelector('.prev-btn');
+const nextBtn = document.querySelector('.next-btn');
+const cardWidth = document.querySelector('.card').offsetWidth;
+let position = 0;
+
+prevBtn.addEventListener('click', () => {
+  position += cardWidth + 20;
+  position = Math.min(position, 0);
+  wrapper.style.transform = `translateX(${position}px)`;
+});
+
+nextBtn.addEventListener('click', () => {
+  position -= cardWidth + 20;
+  position = Math.max(position, -((cardWidth + 20) * (wrapper.children.length - 3)));
+  wrapper.style.transform = `translateX(${position}px)`;
+});
+
+</script>
+</html>

@@ -58,13 +58,26 @@ body {
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: transparent;
 }
+/* hr {
+  margin: 1rem 0;
+  color: #9b9797;
+  background-color: currentColor;
+  border: 0;
+  opacity: 0.25;
+} */
 hr {
+  color: #9b9797;
+  background-color: currentColor;
+  border: 0;
+  opacity: 0.25;
+}
+/* hr {
   margin: 1rem 0;
   color: inherit;
   background-color: currentColor;
   border: 0;
   opacity: 0.25;
-}
+} */
 hr:not([size]) {
   height: 1px;
 }
@@ -152,7 +165,6 @@ address {
 }
 ol,
 ul {
-  padding-left: 2rem;
 }
 dl,
 ol,
@@ -4055,7 +4067,7 @@ fieldset:disabled .btn {
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
+  /* border: 1px solid rgba(0, 0, 0, 0.125); */
   border-radius: 0.25rem;
 }
 .card > hr {
@@ -6471,6 +6483,9 @@ fieldset:disabled .btn {
 .mt-1 {
   margin-top: 0.25rem !important;
 }
+.mt-half {
+  margin-top: 0.4rem !important;
+}
 .mt-2 {
   margin-top: 0.5rem !important;
 }
@@ -6481,7 +6496,14 @@ fieldset:disabled .btn {
   margin-top: 1.5rem !important;
 }
 .mt-5 {
-  margin-top: 3rem !important;
+  margin-top: 30rem !important;
+}
+
+.mt-extra {
+  margin-top: 47px !important;
+}
+.mt-e {
+  margin-top: 100px !important;
 }
 .mt-auto {
   margin-top: auto !important;
@@ -6707,6 +6729,9 @@ fieldset:disabled .btn {
 }
 .fs-6 {
   font-size: 1rem !important;
+}
+.fs-small {
+  font-size: 14px !important;
 }
 .fst-italic {
   font-style: italic !important;

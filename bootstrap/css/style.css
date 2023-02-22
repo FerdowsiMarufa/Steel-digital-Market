@@ -6,13 +6,15 @@
 body {
   background: #f1f3f6;
 }
+
+/* navbar */
 .header {
   background-color: #2874f0;
   height: 55px;
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 10;
+  z-index: 100;
   position: fixed;
   top: 0;
   left: 0;
@@ -20,12 +22,16 @@ body {
 }
 
 .logo {
-  width: 80px;
+  width: 100%;
   position: relative;
+  font-size: 12px;
   top: 2px;
 }
-.logo img {
-  width: 100%;
+.logo span {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  font-style: italic;
 }
 .explore {
   width: 80px;
@@ -47,9 +53,12 @@ body {
 .explore img {
   width: 10px;
   height: 10px;
+  margin-top: 4px;
+  padding: 1px;
 }
 .plus-icon {
   color: #ffe500;
+  font-size: 12px;
 }
 
 .search-container {
@@ -105,14 +114,18 @@ form {
 }
 .login_menu {
   position: absolute;
-  top: 45px;
-  height: 300px;
+  position: fixed;
+  top: 55px;
+  height: 280px;
   width: 100%;
-  width: 240px;
+  width: 230px;
   background-color: white;
   box-shadow: -5px -0px 5px rgba(0, 0, 0, 0.1), 5px 5px 5px rgba(0, 0, 0, 0.1);
   transform: translateX(-30%);
   display: none;
+}
+.login_menu.active {
+  display: block;
 }
 .login_menu::before {
   position: absolute;
@@ -147,20 +160,26 @@ a {
 .login_menu_top {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 15px;
 }
 .login_menu_top a:hover {
   text-decoration: underline;
 }
 
+.cross-button {
+  font-size: 28px;
+  padding-right: 5px;
+}
+
 .more {
   position: relative;
 }
-.icon_more {
+.more .icon,
+.menu-item .icon {
   font-size: 10px;
   transition: transform 0.5s;
 }
-.more-link:hover .icon_more {
+.more-link:hover .icon,
+.menu-item:hover .icon {
   transform: rotate(-180deg);
 }
 
@@ -175,6 +194,9 @@ a {
   transform: translateX(-33%);
   display: none;
 }
+li {
+  list-style: none;
+}
 
 .more:hover .read-more {
   display: block;
@@ -182,7 +204,6 @@ a {
 
 .read-more::before {
   position: absolute;
-
   content: "";
   margin-left: 100px;
   top: -10px;
@@ -201,9 +222,11 @@ a {
   flex-direction: column;
   justify-content: space-between;
 }
+
 .more_menu_list a {
   display: flex;
   font-size: 14px;
+  text-decoration: none;
 }
 .more_menu_list i {
   color: #2874f0;
@@ -215,16 +238,64 @@ a {
   font-weight: 500;
 }
 
+/* fashion */
+.fashion {
+  position: relative;
+}
+.fashion-display {
+  display: none;
+}
+
+.fashion:hover .fashion-display {
+  display: block;
+}
+.fashion-more {
+  position: absolute;
+  top: 100px;
+  height: 460px;
+  width: 100%;
+  width: 450px;
+  background-color: white;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  transform: translateX(-33%);
+  display: none;
+  z-index: 20;
+}
+.fashion-list {
+  box-shadow: -5px -0px 5px rgba(0, 0, 0, 0.1), 5px 5px 5px rgba(0, 0, 0, 0.1);
+  text-align: start;
+}
+.list-indiviual {
+  box-shadow: -3px -0px 100px rgba(0, 0, 0, 0.1), 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+.fashion-more li {
+  color: #000000;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 8px 14px;
+  margin-left: -18px;
+  margin-right: 15px;
+}
+.fashion-more li:hover {
+  background-color: #eeeded;
+  color: #2874f0;
+}
+.fashion-more li:hover i {
+  display: block;
+}
+
+.fashion-more i {
+  font-size: 8px;
+  margin-top: 6px;
+  display: none;
+}
+
 .menu_nav_link {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 80%;
 }
 .menu_nav_link a {
-  padding-top: 10px;
   font-size: 14px;
   display: flex;
+  text-decoration: none;
 }
 .menu_nav_link a p {
   padding-left: 10px;
@@ -270,61 +341,304 @@ a {
   font-weight: 500;
   font-size: 13px;
   opacity: 0.95;
+  color: #181414;
   text-align: center;
 }
+/* menu a {
+  text-decoration: none;
+  color: #181414;
+} */
 .menu-item img {
   width: 70px;
 }
+.menu-item:hover p,
+.menu-item:hover .icon {
+  color: #2874f0;
+}
 
-/********************** login */
-
-.pop-login {
+/********************** pop up login */
+.login-none {
   position: absolute;
-
-  top: 20%;
-  right: 18%;
-
-  z-index: 30;
+  top: 12%;
+  right: 15%;
+  z-index: 110;
   height: 500px;
   width: 100%;
-  width: 650px;
+  width: 680px;
   background-color: white;
   box-shadow: -5px -0px 5px rgba(0, 0, 0, 0.1), 5px 5px 5px rgba(0, 0, 0, 0.1);
   transform: translateX(-30%);
+  display: none;
 }
+
+.login-none.active {
+  display: block;
+}
+
+.pop-login .login {
+  background-color: #2874f0;
+  width: 280px;
+
+  height: 500px;
+}
+.pop-login .login .login-description {
+  padding: 30px;
+  margin-right: 10px;
+}
+
+.pop-login .login .signup-description {
+  padding: 30px;
+  padding-top: 40px;
+  display: none;
+}
+.pop-login .login .signup-description .p-login {
+  font-size: 26px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.pop-login .login .signup-description .p-content {
+  font-size: 17px;
+  font-weight: 400;
+  color: #e7e4e4;
+}
+
+.pop-login .login .login-description .p-login {
+  font-size: 28px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.pop-login .login .login-description .p-content {
+  font-size: 17px;
+  font-weight: 400;
+  color: #fff;
+}
+.pop-login .login-input hr {
+  width: 100%;
+  border-bottom: 1px solid rgb(59, 57, 57);
+  padding-bottom: 10px;
+}
+
+.pop-login .login-input:hover {
+  width: 100%;
+  border-bottom: 1px solid rgb(77, 45, 255);
+}
+.container-login {
+  position: relative;
+}
+
+.pop-login .login-details {
+  padding: 10px;
+  padding-top: 20px;
+}
+
+.login-details .create-act {
+  text-align: center;
+  margin-top: 120px;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+}
+.pop-login .login-details .login-form {
+  align-items: center;
+}
+
+.pop-login .login-details .login-form p,
+.pop-login .signUp .signup-form p {
+  padding-top: 35px;
+  color: #7e8083;
+  font-size: 12px;
+}
+.pop-login .login-details .login-form p a,
+.pop-login .signUp .signup-form p a {
+  color: #2874f0;
+  cursor: pointer;
+}
+
+.login-details .login-form .label {
+  font-size: 14.5px;
+}
+
+.pop-login .login-details .login-form .login-input {
+  border: 1px solid rgb(189, 188, 188);
+  width: 100%;
+  margin-bottom: 4px;
+  font-size: 12px;
+  padding: 4px;
+}
+.login-form .login-button {
+  margin-left: 80px;
+  margin-top: 20px;
+}
+
+/*pop up  create account */
+
+.pop-login .signUp {
+  padding: 20px;
+  padding-top: 20px;
+  width: 60%;
+  padding-left: 40px;
+  display: none;
+}
+.pop-login .signUp .signup-form {
+}
+.pop-login .signUp .signup-form label {
+  font-weight: 500;
+}
+.signUp .signup-form .signup-input {
+  border: 1px solid rgb(211, 208, 208);
+  width: 100%;
+  margin-bottom: 4px;
+  border-radius: 3px;
+  font-size: 12px;
+  padding: 6px;
+}
+.signUp .signup-form .signup-button {
+  text-align: center;
+}
+.signUp .signup-form .signup-button input .Existing-user {
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.5);
+}
+/*pop up  create account end */
+
+/* product */
 .card {
   border: none;
 }
 .products {
-  width: 400px;
-}
-/* section {
-  padding: 2rem 9%;
-  width: 400px;
-} */
-section .product-slider {
-  align-items: center;
+  width: 200px;
+  height: 300px;
 }
 
-section .product-slider {
+.product-slider {
   display: flex;
   align-items: center;
   background: rgb(255, 255, 255);
-
-  /* overflow-x: auto; */
+  overflow-x: auto;
 }
-section .product-slider::-webkit-scrollbar {
-  /* display: none; */
+.product-slider::-webkit-scrollbar {
+  display: none;
 }
 
-.product-slider .product {
-  min-width: 10.5%;
-  background: rgb(255, 255, 255);
-
+/* .product-slider .product {
+  min-width: 23.5%;
+  background: whitesmoke;
+  margin: 0 20px 0 0;
+  border-radius: 2px;
   position: relative;
-  justify-content: center;
   left: 0;
   text-align: center;
+  place-items: center;
+  transition: 0.5s;
+  padding: 3rem 2rem;
+  box-shadow: #fff;
+  outline: var(--outline);
+} */
+
+.product-slider .product:hover {
+  outline-offset: -1rem;
+}
+.product img {
+  height: 50rem;
+  /* width: 400rem; */
+}
+
+.product-slider .product .price {
+  font-size: 1.5rem;
+  color: var(--light-color);
+  padding: 0.5rem 0;
+}
+
+.product-slider .product h3 {
+  font-size: 2rem;
+  color: var(--black);
+}
+.product-slider .product .stars i {
+  font-size: 1.7rem;
+  color: var(--orange);
+  padding: 0.5rem 0;
+}
+
+.product-slider .e-product {
+  width: 23.5%;
+  background: whitesmoke;
+  /* margin: 0 20px 0 0; */
+  border-radius: 2px;
+  position: relative;
+  left: 0;
+  text-align: center;
+  place-items: center;
+  transition: 0.5s;
+  /* padding: 3rem 2rem; */
+  box-shadow: #fff;
+  outline: var(--outline);
+}
+
+.product-slider .product,
+.product-slider .product-bannder {
+  min-width: 14%;
+  background: rgb(255, 255, 255);
+  width: 100%;
+
+  justify-content: start;
+  left: 0;
+  height: 260px;
+  text-align: center;
+}
+
+/* .card-body p {
+  font-weight: 700;
+}
+
+.card-body a {
+  font-weight: 400;
+}
+.card-body p {
+} */
+
+.product-slider .product-bannder {
+  z-index: 10;
+  background: url(https://rukminim1.flixcart.com/fk-p-flap/278/278/image/7593e7b6640822c1.jpg?);
+
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+.product-slider .product-bannder p {
+  font-size: 30px;
+}
+
+.carousel-button {
+  position: absolute;
+  z-index: 20;
+  background: none;
+  border: none;
+  font-size: 5rem;
+  margin-top: 6rem;
+  color: #444;
+}
+
+.carousel-button:hover {
+  color: black;
+}
+
+.carousel-button.prev {
+  left: 10rem;
+  margin-left: 14.4rem;
+}
+.carousel-button.next {
+  right: 12rem;
+}
+.product h5 {
+  font-size: 13px;
+}
+
+.next-beauty {
+  right: 12rem;
+}
+.prev-beauty {
+  left: 10rem;
+  margin-left: 14.4rem;
 }
 
 .product-slider .product:hover {
@@ -332,11 +646,17 @@ section .product-slider::-webkit-scrollbar {
 }
 .product img {
   width: 150px;
+  height: 130px;
 }
 .card-body {
   width: 100%;
   margin-top: 3px;
   padding-top: 9px;
+}
+.card-body span {
+  display: block;
+  margin-bottom: 3px;
+  cursor: pointer;
 }
 
 .Product-name {
@@ -346,10 +666,43 @@ section .product-slider::-webkit-scrollbar {
 }
 
 .Shop {
-  color: rgb(31, 71, 43);
-  padding-top: -40;
+  color: #388e3c;
+  font-weight: 400;
+  font-size: 13.5px;
 }
 .product-description {
   font-size: 12px;
-  color: #474545;
+  color: #6e6b6b;
+}
+
+.footer ul li a {
+  font-size: 11px;
+}
+
+.footer .row .gray {
+  font-size: 11px;
+  color: #838181;
+}
+
+footer {
+  background-color: #172337;
+  color: white;
+}
+.foot-head {
+  color: #878787;
+  margin-bottom: 9px;
+  font-size: 13px;
+  line-height: 2;
+}
+.foot-col a {
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+  display: block;
+}
+.payment-img {
+  height: 50px;
+}
+.foot-icon {
+  color: yellow;
 }

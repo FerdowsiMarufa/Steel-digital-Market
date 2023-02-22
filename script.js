@@ -21,13 +21,14 @@ let recent_SearchEl = document.querySelector(".recent_search");
 
 input_search.onclick = () => {
   recent_SearchEl.classList.toggle("active");
+  input_search.style.value;
 };
 
 let recentArray = ["mobile", "phone"];
 form_search.addEventListener("submit", (e) => {
   e.preventDefault();
   recentArray.unshift(input_search.value);
-
+  input_search.value = "";
   renderRecent();
   recent_SearchEl.classList.remove("active");
 });

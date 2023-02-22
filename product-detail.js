@@ -23,6 +23,8 @@ function resetActiveImg(){
 }
 
 
+//  zoom image 
+
 
 
 

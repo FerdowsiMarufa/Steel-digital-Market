@@ -15,9 +15,7 @@ body{
 .ban{
     background-image: url("/Seller-img/welcome_potal_banner_Desktop_V2_02.svg");
     background-repeat: no-repeat;
-    background-size: cover;
     position: relative;
-
     height: 356px;
     width: 100%;
 }

@@ -1,3 +1,39 @@
+// Header image hover change 
+
+const allHoverImages = document.querySelectorAll('.side img');
+const imgContainer = document.querySelector('.img-container');
+
+window.addEventListener('DOMContentLoaded', () => {
+    allHoverImages[0].parentElement.classList.add('active');
+});
+
+allHoverImages.forEach((image) => {
+  console.log("ashche");
+    image.addEventListener('mouseover', () =>{
+        imgContainer.querySelector('img').src = image.src;
+        resetActiveImg();
+        image.parentElement.classList.add('active');
+    });
+});
+
+function resetActiveImg(){
+    allHoverImages.forEach((img) => {
+        img.parentElement.classList.remove('active');
+    });
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 let hover_login = document.querySelector(".login_menu");
 
 let button = document.querySelector(".button");

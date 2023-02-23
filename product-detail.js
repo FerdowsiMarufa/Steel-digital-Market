@@ -22,6 +22,8 @@ function resetActiveImg() {
   });
 }
 
+//  zoom image
+
 let hover_login = document.querySelector(".login_menu");
 
 let button = document.querySelector(".button");

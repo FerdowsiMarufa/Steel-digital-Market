@@ -15,9 +15,7 @@ body{
 .ban{
     background-image: url("/Seller-img/welcome_potal_banner_Desktop_V2_02.svg");
     background-repeat: no-repeat;
-    background-size: cover;
     position: relative;
-
     height: 356px;
     width: 100%;
 }
@@ -86,6 +84,14 @@ body{
        color: rgb(255, 255, 255);
        border: 1px solid rgb(0, 102, 204);
        background-color: rgb(0 102 204);
+}
+.why-steel{
+    border-bottom: 4px solid rgb(0, 102, 204);
+    padding-bottom: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+    /* border-radius: 3px; */
+   
 }
 a{
      text-decoration: none;     
@@ -187,9 +193,9 @@ footer{
 }
 
 .ft-img{
-       width: 121px;
-       height: 40px;
-       margin: 10px 30px 10px 0px;
+  width: 85px;
+  height: 60px;
+  margin: 0px 0px 2px 0px;
 }
 
 .icon img{

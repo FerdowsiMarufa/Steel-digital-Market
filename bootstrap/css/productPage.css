@@ -220,3 +220,28 @@ a {
   text-decoration: underline;
 }
   */
+
+/* product not found page */
+
+.not-found-outer-div {
+  position: absolute;
+
+  background-color: #838181;
+}
+.product-not-found {
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+.product-not-found span {
+  font-size: 16px;
+  color: gray;
+  font-weight: 400;
+  /* position: absolute; */
+}
+
+.product-not-found a {
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+}

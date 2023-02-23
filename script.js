@@ -141,24 +141,24 @@ beautybuttonPrev.onclick = () => {
   left_mover_beauty();
 };
 
-let searchForm = document.querySelector("#search-form");
-let products = document.querySelector(".product-slider");
-let product2 = products.querySelectorAll(".product");
-let searchbar = document.querySelector("#search-input");
+// let searchForm = document.querySelector("#search-form");
+// let products = document.querySelector(".product-slider");
+// let product2 = products.querySelectorAll(".product");
+// let searchbar = document.querySelector("#search-input");
 
-const searchProduct = () => {
-  const value = searchbar.value.toLowerCase();
-  console.log(value);
-  product2.forEach((element) => {
-    let name = element.querySelector("h5").textContent.toLowerCase();
-    if (name.indexOf(value) != -1) {
-      element.style.display = "flex";
-    } else {
-      element.style.display = "none";
-    }
-  });
-};
-searchForm.addEventListener("keyup", searchProduct);
+// const searchProduct = () => {
+//   const value = searchbar.value.toLowerCase();
+//   console.log(value);
+//   product2.forEach((element) => {
+//     let name = element.querySelector("h5").textContent.toLowerCase();
+//     if (name.indexOf(value) != -1) {
+//       element.style.display = "flex";
+//     } else {
+//       element.style.display = "none";
+//     }
+//   });
+// };
+// searchForm.addEventListener("keyup", searchProduct);
 
 //Product page
 

@@ -2,7 +2,30 @@
 let x;
 let allproduct = document.querySelector(".product-row");
 let singleproduct = allproduct.querySelectorAll(".card");
-console.log(singleproduct);
+
+// let i=0;
+// console.log(singleproduct.forEach((element)=>{
+//   let key="id"+i;
+// let obj={
+//     name:"",
+//     img:"",
+//     after_price:"",
+//     before_price:""
+    
+// };
+
+//     console.log(element.querySelector("img"));
+//     obj.name=element.querySelector("span").textContent.toLowerCase();
+//     obj.img=element.querySelector("img").src;
+//     obj.after_price=element.getElementsByClassName("after-price")[0].innerHTML;
+//     obj.before_price=element.getElementsByClassName("before-price")[0].innerHTML;
+//     console.log(obj);
+
+//      localStorage.setItem(key,JSON.stringify(obj));
+//      i++;
+// }));
+
+// console.log(localStorage.length);
 let searchbox = document.querySelector("#search-input");
 let searchForm2 = document.querySelector("#search-form");
 const searchProduct2 = () => {
@@ -12,12 +35,13 @@ const searchProduct2 = () => {
   x = 0;
   singleproduct.forEach((element) => {
     // document.querySelector(".product-not-found ").style.display = "none";
-   
+    //console.log(element," sdsdsd");
     let name = element.querySelector("span").textContent.toLowerCase();
+    console.log(name);
     if (name.indexOf(value) != -1) {
       element.style.display = "flex";
       x = 1;
-      console.log(x);
+      // console.log(x);
     } else {
       element.style.display = "none";
     }
@@ -25,7 +49,7 @@ const searchProduct2 = () => {
     
   });
   if (x == 0) {
-    console.log("x0: ", x);
+    // console.log("x0: ", x);
     document.querySelector(".product-not-found ").style.display = "block";
   }
 };

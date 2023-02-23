@@ -638,10 +638,9 @@ li {
 }
 
 .next-beauty {
-  right: 12rem;
+  padding-right: 20px;
 }
 .prev-beauty {
-  left: 10rem;
   margin-left: 14.4rem;
 }
 

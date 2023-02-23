@@ -651,6 +651,11 @@ li {
   width: 150px;
   height: 130px;
 }
+.product img:hover {
+  width: 160px;
+  height: 140px;
+}
+
 .card-body {
   width: 100%;
   margin-top: 3px;

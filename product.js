@@ -12,6 +12,7 @@ const searchProduct2 = () => {
     document.querySelector(".product-not-found ").style.display = "none";
     x = 0;
     let name = element.querySelector("span").textContent.toLowerCase();
+    console.log(name);
     if (name.indexOf(value) != -1) {
       element.style.display = "flex";
       x = 1;

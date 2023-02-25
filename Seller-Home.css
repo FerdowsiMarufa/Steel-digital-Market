@@ -18,8 +18,9 @@ body{
 .ban{
     background-image: url("/Seller-img/banner.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
-    height: 356px;
+    background-position: relative;
+    background-size:cover;
+    height: 350px;
     width: 100%;
 }
 .phone{

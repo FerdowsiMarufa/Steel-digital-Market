@@ -2,6 +2,10 @@
   text-decoration: none;
 }
 
+hr {
+  padding-top: -9px !important;
+}
+
 /* .main-body {
   /* margin-top: 100px; */
 /* border-top: 1px solid rgb(224, 224, 224); */
@@ -105,12 +109,14 @@
   max-height: 580px;
 }
 
-.electronics .first-li {
+.electronics .first-li,
+.appliances .first-li {
   font-weight: 500;
   color: #161515;
   font-size: 14px;
 }
-.electronics li {
+.electronics li,
+.appliances li {
   font-size: 12.3px;
   padding: 6px 0px;
   cursor: pointer;
@@ -122,53 +128,31 @@
 
 /* ***************menu bar end */
 
-
-
-/* *********appliance */
-
-
-
-
-.electronics {
+.appliances {
   position: relative;
 }
-/**************** pop up on hover start*/
-.electronics:hover .menu-hover {
-  display: block;
-}
-
-.menu-hover {
+.appliances-hover {
+  /* position: absolute;
+  background-color: #504f4f;
+  width: 600px;
+  height: 300px;
+  margin-top: 80px;
+  z-index: 1; */
   position: absolute;
   margin-top: 8px;
-  width: 1200px;
+  width: 500px;
   background-color: #fff;
-  height: 610px;
+  height: 510px;
   max-height: 580px;
   z-index: 1;
   margin-left: -100px;
+  justify-content: space-between;
   /* box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1); */
   display: none;
 }
-.menu-hover .div2,
-.menu-hover .div4 {
-  background-color: #f4f3f5;
-  max-height: 580px;
+.appliances:hover .appliances-hover {
+  display: block;
 }
-
-.electronics .first-li {
-  font-weight: 500;
-  color: #161515;
-  font-size: 14px;
-}
-.electronics li {
-  font-size: 12.3px;
-  padding: 6px 0px;
-  cursor: pointer;
-  text-align: start;
-  font-weight: 500;
-  color: #857d7d;
-}
-
 
 .foot-head {
   font-size: 13px;
@@ -292,4 +276,8 @@ a {
   font-size: 16px;
   font-weight: 400;
   text-decoration: none;
+}
+
+.Appliances {
+  position: relative;
 }

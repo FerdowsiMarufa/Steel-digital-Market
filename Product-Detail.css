@@ -336,6 +336,10 @@ body {
 
 /* slider  */
 
+.slider-row{
+  width: 85%;
+  margin-left: 98px;
+}
 .card-img {
   height: 120px;
   width: 130px;

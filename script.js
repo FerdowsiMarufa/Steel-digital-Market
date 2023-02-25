@@ -224,13 +224,13 @@ function myFunction() {
       let fp=document.createElement("p");
       let sp=document.createElement("p");
       let tp=document.createElement("p");
-      fp.className="text-primary mb-0 fs-6";
+      fp.className="text-primary mb-0 fs-6 af";
       sp.className="mb-0 text-warning";
-      tp.className="mb-0 text-secondary";
+      tp.className="mb-0 text-secondary bef";
       imgdiv.className="d-flex flex-column align-items-center";
 
       imgdiv.appendChild(img);
-      fdiv.className="w-25 px-3";
+      fdiv.className="w-25 px-5 py-2";
       img.style.height="150px"
       img.src=dataArray[i].img;
       fp.innerText=dataArray[i].name;
@@ -242,6 +242,11 @@ function myFunction() {
       fdiv.appendChild(sp);
       fdiv.appendChild(tp);
       items.appendChild(fdiv);
+
+      fdiv.className = "py-5";
+      fdiv.style.padding = "3px 20px";
+      fdiv.style.width = "18%";
+      img.style.width = "190px";
 
             //  div.innerText=name;
             //  show.appendChild(div);

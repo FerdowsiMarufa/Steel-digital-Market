@@ -773,7 +773,7 @@ li {
   font-weight: 500;
 }
 
-/* ////////////////////////  */
+/* ////////////////////////  deletef */
 
 .menu-bar span {
   font-size: 12.5px;
@@ -828,18 +828,46 @@ li {
   background-color: #f4f3f5;
   max-height: 580px;
 }
-.electronics .first-li {
+
+.electronics .first-li,
+.appliances .first-li {
   font-weight: 500;
   color: #161515;
   font-size: 14px;
 }
-.electronics li {
+.electronics li,
+.appliances li {
   font-size: 12.3px;
   padding: 6px 0px;
   cursor: pointer;
   text-align: start;
   font-weight: 500;
   color: #857d7d;
+}
+.appliances {
+  position: relative;
+}
+.appliances-hover {
+  /* position: absolute;
+  background-color: #504f4f;
+  width: 600px;
+  height: 300px;
+  margin-top: 80px;
+  z-index: 1; */
+  position: absolute;
+  margin-top: 8px;
+  width: 500px;
+  background-color: #fff;
+  height: 510px;
+  max-height: 580px;
+  z-index: 1;
+  margin-left: -100px;
+  justify-content: space-between;
+  /* box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1); */
+  display: none;
+}
+.appliances:hover .appliances-hover {
+  display: block;
 }
 
 .login-none {
@@ -853,7 +881,7 @@ li {
   background-color: white;
   box-shadow: -5px -0px 5px rgba(0, 0, 0, 0.1), 5px 5px 5px rgba(0, 0, 0, 0.1);
   transform: translateX(-30%);
-  display: none;
+  /* display: none; */
 }
 .login-none.active {
   display: block;

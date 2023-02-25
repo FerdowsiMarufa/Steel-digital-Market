@@ -1032,12 +1032,13 @@ li {
 
 .lens {
   position: absolute;
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   top: 0;
   left: 0;
   /* border: 2px solid black; */
   background-color: rgba(255, 255, 255, 0.3);
+  /* display: none; */
 }
 
 .result {

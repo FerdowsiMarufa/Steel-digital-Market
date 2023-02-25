@@ -22,8 +22,6 @@ function resetActiveImg() {
   });
 }
 
-//  zoom image
-
 let hover_login = document.querySelector(".login_menu");
 
 let button = document.querySelector(".button");
@@ -131,8 +129,8 @@ function getMousepositon(e) {
 
   let minX = 0;
   let minY = 0;
-  let maxX = containerRact.width - lensRact.width;
-  let maxY = containerRact.height - lensRact.height;
+  let maxX = imageRact.width - lensRact.width;
+  let maxY = imageRact.height - lensRact.height;
 
   if (x <= minX) {
     x = minX;

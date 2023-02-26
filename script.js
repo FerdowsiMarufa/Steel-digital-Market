@@ -169,14 +169,95 @@ beautybuttonPrev.onclick = () => {
 
 // product search
 
+const dataArray = [];
+fetch('/data/AllData.json')
+  .then(response => response.json())
+  .then(data => {
+    // Initialize the array
+    
+    
+    // Loop through the data and create objects
+    data.forEach(item => {
+      const obj = {};
+      obj.category = item.category;
+      obj.img = item.img;
+      obj.name = item.name;
+      obj.after_price = item.after_price;
+      obj.before_price = item.before_price;
+      dataArray.push(obj);
+    });
+
+    // Print the array
+  // console.log(dataArray); 
+   done();
+    // [{name: "John", age: 30, city: "New York"}, {name: "Jane", age: 25, city: "San Francisco"}]
+  });
+
 let searchbar = document.querySelector("#search-input");
 let searchForm = document.querySelector("#search-form");
 
+function done(){
+
+ for(let i=0;i<dataArray.length;i++){
+      console.log(dataArray[i].category);
+ }
+}
+
 function myFunction() {
   const value = searchbar.value.toLowerCase();
-  if (value == "mobile") {
-    window.location.href = "/productPage.html";
-  } else {
-    window.location.href = "/electronics.html";
-  }
+   document.getElementById("after-ban").style.display="none"; 
+   let show=document.getElementById("show-search");
+   show.innerHTML=` <section id="show-search" class="bg-light pt-3">
+   <div id="items" class="w-100 d-flex flex-wrap bg-light">
+         
+       </div>
+</section>`
+
+   let items=document.getElementById("items");
+  for(let i=0;i<dataArray.length;i++){
+      let name=dataArray[i].name.toLowerCase();
+    //  if(name)
+     if(name.includes(value)){
+      let fdiv=document.createElement("div");
+      let imgdiv=document.createElement("div");
+      let img=document.createElement("img");
+      let fp=document.createElement("p");
+      let sp=document.createElement("p");
+      let tp=document.createElement("p");
+      fp.className="text-primary mb-0 fs-6 af";
+      sp.className="mb-0 text-warning";
+      tp.className="mb-0 text-secondary bef";
+      imgdiv.className="d-flex flex-column align-items-center";
+
+      imgdiv.appendChild(img);
+      fdiv.className="w-25 px-5 py-2";
+      img.style.height="150px"
+      img.src=dataArray[i].img;
+      fp.innerText=dataArray[i].name;
+      sp.innerText=dataArray[i].after_price;
+      tp.innerText=dataArray[i].before_price;
+      
+      fdiv.appendChild(imgdiv);
+      fdiv.appendChild(fp);
+      fdiv.appendChild(sp);
+      fdiv.appendChild(tp);
+      items.appendChild(fdiv);
+
+      fdiv.className = "py-5";
+      fdiv.style.padding = "3px 20px";
+      fdiv.style.width = "18%";
+      img.style.width = "190px";
+
+            //  div.innerText=name;
+            //  show.appendChild(div);
+     }
+    // console.log(name);
+}
+ 
+
+  // if (value == "mobile") {
+  //   window.location.href = "/productPage.html";
+  // } else {
+  //   window.location.href = "/electronics.html";
+  // }
 }

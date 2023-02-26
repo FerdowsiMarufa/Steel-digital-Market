@@ -5,20 +5,22 @@ body{
        color: rgb(96, 112, 128);
        font-size: 18px;
 }
+.navbar-brand{
+   background-color: #3A98B9;
+}
 .nav-btn{
-      color: rgb(61, 70, 77);
+      color: white;
 }
 .login-btn{
-     background-color: rgb(0, 102, 204);
+     background-color: #3A98B9;
 }
 
 .ban{
-    background-image: url("/Seller-img/welcome_potal_banner_Desktop_V2_02.svg");
+    background-image: url("/Seller-img/banner.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-
-    height: 356px;
+    background-position: relative;
+    background-size:cover;
+    height: 350px;
     width: 100%;
 }
 .phone{
@@ -84,8 +86,16 @@ body{
        min-width: 90px;
        white-space: nowrap;
        color: rgb(255, 255, 255);
-       border: 1px solid rgb(0, 102, 204);
-       background-color: rgb(0 102 204);
+       border: 1px solid #3A98B9;
+       background-color: #3A98B9;
+}
+.why-steel{
+    border-bottom: 4px solid #3A98B9;
+    padding-bottom: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+    /* border-radius: 3px; */
+   
 }
 a{
      text-decoration: none;     
@@ -182,14 +192,14 @@ li a{
     margin: 8px 0px;
 }
 footer{
-       background: rgb(0, 102, 204);
+       background: #3A98B9;
        color: rgb(255, 255, 255);
 }
 
 .ft-img{
-       width: 121px;
-       height: 40px;
-       margin: 10px 30px 10px 0px;
+  width: 85px;
+  height: 60px;
+  margin: 0px 0px 2px 0px;
 }
 
 .icon img{
@@ -219,7 +229,7 @@ footer{
     
      
      .pop-login .login {
-       background-color: #2874f0;
+       background-color: #3A98B9;
        width: 280px;
      
        height: 500px;
@@ -265,7 +275,7 @@ footer{
      
      .pop-login .login-input:hover {
        width: 100%;
-       border-bottom: 1px solid rgb(77, 45, 255);
+       border-bottom: 1px solid #3A98B9;
      }
      .container-login {
        position: relative;
@@ -296,7 +306,7 @@ footer{
      }
      .pop-login .login-details .login-form p a,
      .pop-login .signUp .signup-form p a {
-       color: #2874f0;
+       color: #3A98B9;
        cursor: pointer;
      }
      

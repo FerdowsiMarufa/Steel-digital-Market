@@ -84,6 +84,11 @@ body {
   font-weight: 500;
   cursor: pointer;
 }
+
+.tc, .view-offer, .know-more a{
+  color: var(--main-color);
+
+}
 .exchange {
   background-color: #f5faff;
   border-top: 1px solid #e0e0e0;

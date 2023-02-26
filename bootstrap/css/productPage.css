@@ -35,7 +35,7 @@ hr {
 }
 .body-card .title {
   font-size: 13px;
-  color: rgb(55, 125, 255);
+  color: var(--main-color);
   padding-bottom: -10px;
 }
 .body-card .after-price {
@@ -66,10 +66,10 @@ hr {
 }
 .menu-bar:hover .icon {
   transform: rotate(-180deg);
-  color: cornflowerblue;
+  color: var(--main-color);
 }
 .menu-bar:hover span {
-  color: cornflowerblue;
+  color: var(--main-color);
 }
 
 .menu-bar-display {
@@ -173,6 +173,10 @@ hr {
 
 .path a {
   text-decoration: none;
+  color: var(--main-color);
+}
+.list .view-more {
+  color: var(--main-color);
 }
 
 /* list */

@@ -3,20 +3,23 @@
   border: none;
   text-decoration: none;
 }
+:root {
+  --main-color: #3a98b9;
+}
 body {
   background: #f1f3f6;
 }
 
-.bef{
-    font-size: 12px;
+.bef {
+  font-size: 12px;
 }
-.af{
-    color: #2874f0;
+.af {
+  color: var(--main-color);
 }
 
 /* navbar */
 .header {
-  background-color: #3A98B9;
+  background-color: var(--main-color);
   height: 55px;
   display: flex;
   justify-content: center;
@@ -85,7 +88,7 @@ body {
   position: relative;
 }
 .search-container i {
-  color: #2874f0;
+  color: var(--main-color);
 }
 
 .search-container input {
@@ -115,6 +118,9 @@ form {
 }
 .login-button {
   position: relative;
+}
+.login-button .button {
+  color: var(--main-color);
 }
 .login {
   margin-top: 2px;
@@ -235,8 +241,8 @@ li {
   font-size: 14px;
   text-decoration: none;
 }
-.more_menu_list i {
-  color: #2874f0;
+.more_menu_list img {
+  color: var(--main-color);
 }
 .more_menu_list p {
   color: #474545;
@@ -244,7 +250,6 @@ li {
   white-space: nowrap;
   font-weight: 500;
 }
-
 
 .menu_nav_link a {
   font-size: 14px;
@@ -307,7 +312,7 @@ li {
 }
 .menu-item:hover p,
 .menu-item:hover .icon {
-  color: #2874f0;
+  color: var(--main-color);
 }
 
 /********************** pop up login */
@@ -330,7 +335,7 @@ li {
 }
 
 .pop-login .login {
-  background-color: #2874f0;
+  background-color: var(--main-color);
   width: 280px;
 
   height: 500px;
@@ -406,7 +411,7 @@ li {
 }
 .pop-login .login-details .login-form p a,
 .pop-login .signUp .signup-form p a {
-  color: #2874f0;
+  color: var(--main-color);
   cursor: pointer;
 }
 
@@ -495,7 +500,7 @@ li {
 }
 .fashion-more li:hover {
   background-color: #eeeded;
-  color: #2874f0;
+  color: var(--main-color);
 }
 .fashion-more li:hover i {
   display: block;
@@ -515,7 +520,9 @@ li {
   width: 200px;
   height: 350px;
 }
-
+.banner-button {
+  background-color: var(--main-color);
+}
 .product-slider {
   display: flex;
   align-items: center;

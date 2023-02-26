@@ -341,7 +341,7 @@ li {
 /********************** pop up login */
 .login-none {
   position: absolute;
-  top: 12%;
+  top: 17%;
   right: 15%;
   z-index: 110;
   height: 500px;

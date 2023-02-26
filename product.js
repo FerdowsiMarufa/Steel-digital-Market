@@ -11,7 +11,7 @@ let singleproduct = allproduct.querySelectorAll(".card");
 //     img:"",
 //     after_price:"",
 //     before_price:""
-    
+
 // };
 
 //     console.log(element.querySelector("img"));
@@ -42,7 +42,7 @@ let searchForm2 = document.querySelector("#search-form");
 
 //          }
 //          allval.push(val);
-        
+
 //          let pre=document.querySelector("#msg pre");
 //          console.log(pre);
 //          pre.textContent='\n'+JSON.stringify(allval,'\t',2);
@@ -60,7 +60,7 @@ const searchProduct2 = () => {
     // document.querySelector(".product-not-found ").style.display = "none";
     //console.log(element," sdsdsd");
     let name = element.querySelector("span").textContent.toLowerCase();
-    
+
     if (name.indexOf(value) != -1) {
       element.style.display = "flex";
       x = 1;
@@ -68,8 +68,6 @@ const searchProduct2 = () => {
     } else {
       element.style.display = "none";
     }
-
-    
   });
   if (x == 0) {
     // console.log("x0: ", x);

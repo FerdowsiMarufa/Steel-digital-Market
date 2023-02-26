@@ -434,6 +434,14 @@ footer {
   color: yellow;
 }
 
+/* check button color changed after click */
+
+.checkbox:checked,
+.radio:checked {
+  background-color: var(--main-color) !important;
+  border-color: var(--main-color) !important;
+}
+
 /* /////////////////  */
 
 .login-button {

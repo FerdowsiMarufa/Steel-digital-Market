@@ -154,6 +154,15 @@ hr {
   display: block;
 }
 
+/* input[type="radio"]:checked {
+  accent-color: var(--main-color);
+} */
+
+.form-check-input:checked {
+  background-color: var(--main-color) !important;
+  border-color: var(--main-color) !important;
+}
+
 .foot-head {
   font-size: 13px;
 }

@@ -26,7 +26,7 @@
 form {
   display: flex;
   flex-direction: row;
-  border: 1px solid rgb(0, 102, 204);
+  border: 1px solid  #3a98b9;
   padding: 6px;
 }
 
@@ -36,10 +36,10 @@ input {
   border: none;
 }
 #fpage {
-  color: skyblue;
+  color: #0a8bba;
 }
 #spage {
-  color: blue;
+  color: #3a98b9;
 }
 
 input:focus {
@@ -47,7 +47,7 @@ input:focus {
 }
 
 form:focus-within {
-  outline: 1px solid rgb(0, 102, 204);
+  outline: 1px solid  #3a98b9;
 }
 
 .button-otp {
@@ -58,12 +58,12 @@ form:focus-within {
   color: rgb(125 183 241);
 }
 .catagory-btn {
-  border: 1px solid rgb(0, 102, 204);
+  border: 1px solid #3a98b9;
   border-radius: 10px;
   background: rgb(233 242 251);
   font-weight: 400;
   font-size: 20px;
-  color: rgb(0, 102, 204);
+  color: #3a98b9;
 }
 .icon-box {
   font-size: 23px;
@@ -107,7 +107,7 @@ form:focus-within {
   color: rgb(96, 112, 128);
 }
 .terms-privacy {
-  color: rgb(0, 102, 204);
+  color: #3a98b9;
 }
 .register-continue {
   border: none;

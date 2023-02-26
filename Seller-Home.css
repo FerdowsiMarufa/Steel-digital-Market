@@ -15,14 +15,7 @@ body{
      background-color: #3A98B9;
 }
 
-.ban{
-    background-image: url("/Seller-img/banner.jpg");
-    background-repeat: no-repeat;
-    background-position: relative;
-    background-size:cover;
-    height: 350px;
-    width: 100%;
-}
+
 .phone{
      background-color: white;
      border-color: 1px solid white;
@@ -30,6 +23,15 @@ body{
 }
 .form-control{
        padding: 10px;
+}
+.ban-txt{
+   position: relative;
+}
+.frm{
+   position: absolute;
+   top:0%;
+   right: 8%;
+  
 }
 .inp::placeholder{
     opacity: 0.5;
@@ -142,7 +144,8 @@ a{
        height: 40px;
 }
 .event-card img{
-         height: 170px;
+         height: 220px;
+         width: 335px;
 }
 .events{
        text-align: left;

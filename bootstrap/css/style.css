@@ -118,9 +118,17 @@ form {
 }
 .login-button {
   position: relative;
+  background-color: var(--main-color);
+}
+.new-account {
+  color: var(--main-color);
 }
 .login-button .button {
   color: var(--main-color);
+}
+.signUp .button-continue {
+  background-color: var(--main-color);
+  color: #fff;
 }
 .login {
   margin-top: 2px;
@@ -225,7 +233,7 @@ li {
   border-right: 9px solid transparent;
   border-bottom: 10px solid white;
 }
-_menu_list_menu_list .more_menu_list {
+.more_menu_list {
   background-color: white;
   height: 100%;
   box-shadow: -5px -0px 5px rgba(0, 0, 0, 0.1), 5px 5px 5px rgba(0, 0, 0, 0.1);
@@ -264,6 +272,9 @@ _menu_list_menu_list .more_menu_list {
   width: 18px;
   height: 18px;
   margin-top: -5;
+  color: var(--main-color);
+}
+.login_menu_list a {
   color: var(--main-color);
 }
 

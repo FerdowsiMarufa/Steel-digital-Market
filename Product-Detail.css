@@ -336,7 +336,7 @@ body {
 
 /* slider  */
 
-.slider-row{
+.slider-row {
   width: 85%;
   margin-left: 98px;
 }
@@ -432,6 +432,7 @@ footer {
 
 .login-button {
   position: relative;
+  background-color: var(--main-color);
 }
 .login {
   margin-top: 2px;
@@ -524,7 +525,7 @@ a {
 /* ////////////////////  Navbar */
 
 .header {
-  background-color: #2874f0;
+  background-color: var(--main-color);
   height: 55px;
   display: flex;
   justify-content: center;
@@ -591,7 +592,7 @@ a {
   position: relative;
 }
 .search-container i {
-  color: #2874f0;
+  color: var(--main-color);
 }
 .search-container input {
   width: 100%;
@@ -768,7 +769,7 @@ li {
   text-decoration: none;
 }
 .more_menu_list i {
-  color: #2874f0;
+  color: var(--main-color);
 }
 .more_menu_list p {
   color: #474545;
@@ -787,10 +788,10 @@ li {
 }
 .menu-bar:hover .icon {
   transform: rotate(-180deg);
-  color: cornflowerblue;
+  color: var(--main-color);
 }
 .menu-bar:hover span {
-  color: cornflowerblue;
+  color: var(--main-color);
 }
 
 .menu-bar-display {
@@ -891,7 +892,7 @@ li {
   display: block;
 }
 .pop-login .login {
-  background-color: #2874f0;
+  background-color: var(--main-color);
   width: 280px;
   height: 500px;
 }
@@ -958,7 +959,7 @@ li {
 }
 .pop-login .login-details .login-form p a,
 .pop-login .signUp .signup-form p a {
-  color: #2874f0;
+  color: var(--main-color);
   cursor: pointer;
 }
 .login-details .login-form .label {
@@ -1018,7 +1019,7 @@ li {
 }
 
 .side:hover {
-  border-color: blue;
+  border-color: var(--main-color);
 }
 
 /* ****************  image zoomer  ************/

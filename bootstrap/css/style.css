@@ -212,8 +212,7 @@ li {
   border-right: 9px solid transparent;
   border-bottom: 10px solid white;
 }
-
-.more_menu_list {
+_menu_list_menu_list .more_menu_list {
   background-color: white;
   height: 100%;
   box-shadow: -5px -0px 5px rgba(0, 0, 0, 0.1), 5px 5px 5px rgba(0, 0, 0, 0.1);
@@ -254,6 +253,7 @@ li {
   width: 18px;
   height: 18px;
   margin-top: -5;
+  color: var(--main-color);
 }
 
 .navbar {

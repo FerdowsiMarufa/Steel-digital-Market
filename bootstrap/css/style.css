@@ -451,6 +451,9 @@ li {
   padding-left: 40px;
   display: none;
 }
+.after-ban{
+      height: 100px;
+}
 
 .pop-login .signUp .signup-form label {
   font-weight: 500;

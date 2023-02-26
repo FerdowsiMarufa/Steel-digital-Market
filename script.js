@@ -206,12 +206,14 @@ function done(){
 function myFunction() {
   const value = searchbar.value.toLowerCase();
    document.getElementById("after-ban").style.display="none"; 
+   document.getElementById("electronic-menu").style.backgroundColor="white";
+   document.getElementById("mobile-menu").style.backgroundColor="white";
    let show=document.getElementById("show-search");
    show.innerHTML=` <section id="show-search" class="bg-light pt-3">
    <div id="items" class="w-100 d-flex flex-wrap bg-light">
          
        </div>
-</section>`
+    </section>`
 
    let items=document.getElementById("items");
   for(let i=0;i<dataArray.length;i++){
@@ -228,10 +230,16 @@ function myFunction() {
       sp.className="mb-0 text-warning";
       tp.className="mb-0 text-secondary bef";
       imgdiv.className="d-flex flex-column align-items-center";
-
+      console.log(dataArray[i].category);
+      if(dataArray[i].category=="Electronics"){
+           document.getElementById("electronic-menu").style.backgroundColor="#cee2eb";
+      }
+      else{
+        document.getElementById("mobile-menu").style.backgroundColor="#cee2eb";
+      }
       imgdiv.appendChild(img);
       fdiv.className="w-25 px-5 py-2";
-      img.style.height="150px"
+      img.style.height="186px"
       img.src=dataArray[i].img;
       fp.innerText=dataArray[i].name;
       sp.innerText=dataArray[i].after_price;

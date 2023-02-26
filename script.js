@@ -61,7 +61,7 @@ createAccount.onclick = () => {
 };
 
 let login = document.querySelector("#existing-button");
-console.log(login);
+// console.log(login);
 login.onclick = () => {
   document.querySelector(".login-description").style.display = "";
 
@@ -75,12 +75,20 @@ login.onclick = () => {
 let buttonPrev = document.querySelector(".prev");
 let buttonNext = document.querySelector(".next");
 let product = document.getElementsByClassName("e-product");
-console.log(product);
+// console.log(product);
 let product_page = Math.ceil(product.length / 6);
 let l = 0;
+let t = 0;
+let b = 0;
 let movePer = 14;
 
 let right_mover = () => {
+  t = t + 1;
+  if (t == 7) {
+    t = 0;
+    l = 0;
+  }
+  console.log(t);
   l = l + movePer;
   if (product == 1) {
     l = 0;
@@ -90,6 +98,11 @@ let right_mover = () => {
   }
 };
 let left_mover = () => {
+  t = t - 1;
+  if (t < 0) {
+    t = 0;
+  }
+  console.log(t);
   l = l - movePer;
   if (l <= 0) {
     l = 0;
@@ -115,6 +128,11 @@ let beautyproduct = document.getElementsByClassName("beauty");
 console.log(beautyproduct);
 
 let right_mover_beauty = () => {
+  b = b + 1;
+  if (b == 4) {
+    b = 0;
+    l = 0;
+  }
   l = l + movePer;
   if (beautyproduct == 1) {
     l = 0;
@@ -124,6 +142,10 @@ let right_mover_beauty = () => {
   }
 };
 let left_mover_beauty = () => {
+  b = b - 1;
+  if (b < 0) {
+    b = 0;
+  }
   l = l - movePer;
   if (l <= 0) {
     l = 0;
@@ -170,14 +192,13 @@ beautybuttonPrev.onclick = () => {
 // product search
 
 const dataArray = [];
-fetch('/data/AllData.json')
-  .then(response => response.json())
-  .then(data => {
+fetch("/data/AllData.json")
+  .then((response) => response.json())
+  .then((data) => {
     // Initialize the array
-    
-    
+
     // Loop through the data and create objects
-    data.forEach(item => {
+    data.forEach((item) => {
       const obj = {};
       obj.category = item.category;
       obj.img = item.img;
@@ -188,63 +209,63 @@ fetch('/data/AllData.json')
     });
 
     // Print the array
-  // console.log(dataArray); 
-   done();
+    // console.log(dataArray);
+    done();
     // [{name: "John", age: 30, city: "New York"}, {name: "Jane", age: 25, city: "San Francisco"}]
   });
 
 let searchbar = document.querySelector("#search-input");
 let searchForm = document.querySelector("#search-form");
 
-function done(){
-
- for(let i=0;i<dataArray.length;i++){
-      console.log(dataArray[i].category);
- }
+function done() {
+  for (let i = 0; i < dataArray.length; i++) {
+    console.log(dataArray[i].category);
+  }
 }
 
 function myFunction() {
   const value = searchbar.value.toLowerCase();
-   document.getElementById("after-ban").style.display="none"; 
-   document.getElementById("electronic-menu").style.backgroundColor="white";
-   document.getElementById("mobile-menu").style.backgroundColor="white";
-   let show=document.getElementById("show-search");
-   show.innerHTML=` <section id="show-search" class="bg-light pt-3">
+  document.getElementById("after-ban").style.display = "none";
+  document.getElementById("electronic-menu").style.backgroundColor = "white";
+  document.getElementById("mobile-menu").style.backgroundColor = "white";
+  let show = document.getElementById("show-search");
+  show.innerHTML = ` <section id="show-search" class="bg-light pt-3">
    <div id="items" class="w-100 d-flex flex-wrap bg-light">
          
        </div>
-    </section>`
+    </section>`;
 
-   let items=document.getElementById("items");
-  for(let i=0;i<dataArray.length;i++){
-      let name=dataArray[i].name.toLowerCase();
+  let items = document.getElementById("items");
+  for (let i = 0; i < dataArray.length; i++) {
+    let name = dataArray[i].name.toLowerCase();
     //  if(name)
-     if(name.includes(value)){
-      let fdiv=document.createElement("div");
-      let imgdiv=document.createElement("div");
-      let img=document.createElement("img");
-      let fp=document.createElement("p");
-      let sp=document.createElement("p");
-      let tp=document.createElement("p");
-      fp.className="text-primary mb-0 fs-6 af";
-      sp.className="mb-0 text-warning";
-      tp.className="mb-0 text-secondary bef";
-      imgdiv.className="d-flex flex-column align-items-center";
-      console.log(dataArray[i].category);
-      if(dataArray[i].category=="Electronics"){
-           document.getElementById("electronic-menu").style.backgroundColor="#cee2eb";
-      }
-      else{
-        document.getElementById("mobile-menu").style.backgroundColor="#cee2eb";
+    if (name.includes(value)) {
+      let fdiv = document.createElement("div");
+      let imgdiv = document.createElement("div");
+      let img = document.createElement("img");
+      let fp = document.createElement("p");
+      let sp = document.createElement("p");
+      let tp = document.createElement("p");
+      fp.className = "text-primary mb-0 fs-6 af";
+      sp.className = "mb-0 text-warning";
+      tp.className = "mb-0 text-secondary bef";
+      imgdiv.className = "d-flex flex-column align-items-center";
+      // console.log(dataArray[i].category);
+      if (dataArray[i].category == "Electronics") {
+        document.getElementById("electronic-menu").style.backgroundColor =
+          "#cee2eb";
+      } else {
+        document.getElementById("mobile-menu").style.backgroundColor =
+          "#cee2eb";
       }
       imgdiv.appendChild(img);
-      fdiv.className="w-25 px-5 py-2";
-      img.style.height="186px"
-      img.src=dataArray[i].img;
-      fp.innerText=dataArray[i].name;
-      sp.innerText=dataArray[i].after_price;
-      tp.innerText=dataArray[i].before_price;
-      
+      fdiv.className = "w-25 px-5 py-2";
+      img.style.height = "186px";
+      img.src = dataArray[i].img;
+      fp.innerText = dataArray[i].name;
+      sp.innerText = dataArray[i].after_price;
+      tp.innerText = dataArray[i].before_price;
+
       fdiv.appendChild(imgdiv);
       fdiv.appendChild(fp);
       fdiv.appendChild(sp);
@@ -256,12 +277,11 @@ function myFunction() {
       fdiv.style.width = "18%";
       img.style.width = "190px";
 
-            //  div.innerText=name;
-            //  show.appendChild(div);
-     }
+      //  div.innerText=name;
+      //  show.appendChild(div);
+    }
     // console.log(name);
-}
- 
+  }
 
   // if (value == "mobile") {
   //   window.location.href = "/productPage.html";

@@ -1,7 +1,8 @@
 //search box//
 let x;
 let allproduct = document.querySelector(".product-row");
-let singleproduct = allproduct.querySelectorAll(".card");
+let singleproduct = document.querySelectorAll(".card");
+console.log(singleproduct);
 
 // let i=0;
 // console.log(singleproduct.forEach((element)=>{

@@ -304,6 +304,7 @@ footer {
 .pop-login .signUp .signup-form p a {
   color: #3a98b9;
   cursor: pointer;
+  font-size: 12px;
 }
 
 .login-details .login-form .label {
@@ -323,7 +324,7 @@ footer {
 }
 .pop-login .signUp {
   padding: 20px;
-  padding-top: 20px;
+  padding-top: 50px;
   width: 60%;
   padding-left: 40px;
   display: none;

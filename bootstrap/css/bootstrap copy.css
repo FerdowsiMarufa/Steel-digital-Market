@@ -66,10 +66,11 @@ body {
   opacity: 0.25;
 } */
 hr {
-  color: #9b9797;
-  background-color: currentColor;
-  border: 0;
-  opacity: 0.25;
+  color: #9b9797 !important;
+  background-color: currentColor !important;
+  border: 0 !important;
+  opacity: 0.25 !important;
+  margin-top: -8px !important;
 }
 /* hr {
   margin: 1rem 0;

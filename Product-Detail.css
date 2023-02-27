@@ -631,6 +631,14 @@ form {
 .recent_search.active {
   display: block;
 }
+.login-button #login-button-hover {
+  background-color: var(--main-color);
+  color: #fff;
+}
+.login-button #login-button-hover:hover {
+  background-color: #fff;
+  color: var(--main-color);
+}
 .login-button {
   position: relative;
 }

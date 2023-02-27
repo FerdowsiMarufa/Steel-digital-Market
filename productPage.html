@@ -62,12 +62,12 @@
       <header class="header">
         <div class="Logo-Container ">
           <a  href="/home.html" class="logo">
-            <span className="  d-block  text-white">NDE Digital Market</span>
+            <img src="/images/final-logo-6.png" class="logo-img" alt="">
           </a>
-          <div class="explore">
+          <!-- <div class="explore">
             <p>Explore <span class="plus-icon">Plus</span></p>
             <img src="/images/flip.logo.png" />
-          </div>
+          </div> -->
         </div>
         <nav class="navbar navbar-expand-lg navbar-light  ">
           <div class="container-xxl all-nav">
@@ -87,7 +87,7 @@
               </li>
 
               <li class="nav-item  me-5 login-button mt-1 ">
-                <input type="button" id="button" class="  p-1 px-4  login  bg-white   button" value="Login"></input>
+                <input type="button" id="login-button-hover" class="  p-1 px-4  login  border border-1   button" style="" value="Login"></input>
                 <div class="login_menu">
                   <div class="login_menu_list">
                     <div class="login_menu_top mt-3 ">
@@ -181,6 +181,63 @@
           </div>
         </nav>
       </header>
+
+      
+            <!-- <login>            </login> -->
+            <div class="login-none  "data-bs-scroll="true"
+            data-bs-backdrop="true">
+           <div class="pop-login d-flex">
+        
+            <div class="login ">
+             <div class="login-description">
+               <p class="p-login"> Login</p>
+               <p class="p-content">Get access to your Orders, Wishlist and Recommendations </p>
+              </div>
+              <div class="signup-description">
+               <p class="p-login"> Looks like you'ur new here!</p>
+               <p class="p-content">Fill up with your information to get started</p>
+              </div>
+            </div>
+            <div class="login-details">
+               <div class="login-form p-4 mt-2">
+                  <div class="container-login">
+                      <form class="login-form">
+                       <label for="fname" class="label">Name</label><br>
+                      <input type="text" class="login-input ps-2" placeholder="Enter youre name">
+                      <label for="fname"  class="label">Password</label><br>
+                      <input type="email" class="login-input ps-2" placeholder="Enter your password">                        
+                     </form>                   
+                   </div>
+                   <p>By continuing, you agree to NDE  Digital Market's <a>Terms of Use</a> and <a>Privacy Policy</a></p>                 
+                   <input type="button" class="login-button p-2 px-5  text-white " value="Submit">
+               </div>
+               <div class="create-act">
+                 <p class="new-account" > New to Stee Digital Market? Create an account</p>
+
+               </div>
+            </div>
+            <div class="signUp pt-4">
+                  
+             <form action="/action_page.php" class="signup-form">
+               <label for="fname">First name:</label><br>
+               <input type="text" class="signup-input" id="fname" name="fname" value="John"> <br>
+               <label for="lname">Last name:</label><br>
+               <input type="text"  class="signup-input" id="lname" name="lname" value="Doe"> <br>
+               <label for="fname">Email:</label><br>
+               <input type="text"  class="signup-input" id="fname" name="fname" value="John"><br>
+               <label for="lname">Password:</label><br>
+               <input type="text" class="signup-input" id="lname" name="lname" value="Doe"><br> 
+               <p class="">By continuing, you agree to NDE Digital Market's <a>Terms of Use</a> and <a>Privacy Policy</a></p>   
+               <div class="signup-button ">            
+               <input type=" button button-continue" value="Continue" class="submit text-white p-2 px-6 mb-3 align-items-center text-center " style="background-color: var(--main-color);">
+               <input type="button" id="existing-button" value="Existing User? Login" class="submit Existing-user   p-2 px-6 "style="background-color:#fff; color:var(--main-color);">
+             </div>  
+             </form> 
+           </div>
+            <i class="fa-solid fa-xmark m-2 cross-button"></i>
+ 
+           </div>
+         </div>
 
               <div class=" mt-extra mb-3  product-menu  ">
                   <div class="container-xl   menu-container  ">
@@ -1499,7 +1556,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
     <script src="/product.js"></script>
     <script src="/bootstrap/js/bootstrap.min.js"></script>
-     
+     <script src="/script.js"></script>
     
   </body>
 </html>

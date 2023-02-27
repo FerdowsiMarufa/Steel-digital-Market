@@ -5,6 +5,7 @@
 }
 :root {
   --main-color: #3a98b9;
+  --second-color:#0a8bba;
 }
 body {
   background: #f1f3f6;
@@ -706,13 +707,13 @@ li {
 }
 
 .Product-name {
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 500;
   padding-top: 25px;
 }
 
 .Shop {
-  color: #388e3c;
+  color: #024f6b;
   font-weight: 400;
   font-size: 13.5px;
 }

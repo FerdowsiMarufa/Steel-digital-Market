@@ -540,7 +540,7 @@ a {
   background-color: var(--main-color);
   height: 55px;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   z-index: 100;
   position: fixed;

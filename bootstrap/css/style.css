@@ -10,7 +10,11 @@
 body {
   background: #f1f3f6;
 }
-
+.logo-img{
+  height: 70px;
+  width: 244px;
+  margin-right: 32px;
+}
 .bef {
   font-size: 12px;
 }
@@ -21,7 +25,7 @@ body {
 /* navbar */
 .header {
   background-color: var(--main-color);
-  height: 55px;
+  height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;

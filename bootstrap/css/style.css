@@ -677,24 +677,28 @@ li {
   color: black;
 }
 
-.carousel-button.prev {
+.carousel-button.prev,
+.prev-beauty,
+.prev-steel,
+.prev-plate {
   margin-left: 14.4rem;
-  margin-bottom: 3px;
 }
-.carousel-button.next {
+.carousel-button.next,
+.next-beauty,
+.next-steel,
+.next-plate {
   padding-right: 20px;
-  margin-bottom: 3px;
 }
 .product h5 {
   font-size: 13px;
 }
 
-.next-beauty {
+/* .next-beauty {
   padding-right: 20px;
 }
 .prev-beauty {
   margin-left: 14.4rem;
-}
+} */
 
 .product-slider .product:hover {
   outline-offset: -1rem;
@@ -726,8 +730,6 @@ li {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
- 
-  
 }
 
 .Shop {

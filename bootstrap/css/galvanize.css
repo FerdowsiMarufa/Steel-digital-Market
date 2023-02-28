@@ -1,5 +1,4 @@
 * {
-
   text-decoration: none;
 }
 
@@ -59,6 +58,10 @@ hr {
 }
 
 /*************** menu bar **************/
+
+.menu-bar {
+  margin: 2px 10px;
+}
 .menu-bar span {
   font-size: 12.5px;
   text-align: center;
@@ -67,10 +70,10 @@ hr {
 }
 .menu-bar:hover .icon {
   transform: rotate(-180deg);
-  color:  var(--second-color);
+  color: var(--second-color);
 }
 .menu-bar:hover span {
-  color:  var(--second-color);
+  color: var(--second-color);
 }
 
 .menu-bar-display {
@@ -94,8 +97,8 @@ hr {
 
 .menu-hover {
   position: absolute;
-  margin-top: 8px;
-  width: 1200px;
+  margin-top: 3px;
+  width: 500px;
   background-color: #fff;
   height: 610px;
   max-height: 580px;
@@ -160,8 +163,8 @@ hr {
 } */
 
 .form-check-input:checked {
-  background-color:  var(--second-color)!important;
-  border-color:var(--second-color)!important;
+  background-color: var(--second-color) !important;
+  border-color: var(--second-color) !important;
 }
 
 .foot-head {
@@ -183,7 +186,7 @@ hr {
 
 .path a {
   text-decoration: none;
-  color:var(--second-color);
+  color: var(--second-color);
 }
 .list .view-more {
   color: var(--second-color);

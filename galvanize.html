@@ -11,12 +11,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- <link rel="stylesheet" href="/Product-Detail.css"> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="Product-Detail.css">
     <link
       rel="stylesheet"
       type="text/css"
-      href="/bootstrap/css/productPage.css"
+      href="/bootstrap/css/galvanize.css"
     />
     <link
       rel="stylesheet"
@@ -34,7 +34,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&family=Roboto:wght@300;400;500;700;900&family=Urbanist:wght@100;200;400;500;700&display=swap"
       rel="stylesheet"
     />
-    <title> Electronics page</title>
+    <title>Product page</title>
   </head>
   <body class="bg-white">
   
@@ -60,7 +60,7 @@
       </div> -->
 
       <header class="header">
-        <div class="Logo-Container  ms-2 ">
+        <div class="Logo-Container  ms-2  ">
           <a  href="/home.html" class="logo">
             <img src="/images/final-logo-6.png" class="logo-img" alt="">
           </a>
@@ -69,7 +69,6 @@
             <img src="/images/flip.logo.png" />
           </div> -->
         </div>
- 
         <nav class="navbar navbar-expand-lg navbar-light ms-5 ">
           <div class="container-xxl all-nav">
            
@@ -87,36 +86,36 @@
                 <div class="recent_search"></div>
               </li>
 
-              <li class="nav-item  me-4 login-button ">
+              <li class="nav-item  me-4 login-button mt-1 ">
                 <input type="button" id="login-button-hover" class="  p-1 px-4  login  border border-1   button" style="" value="Login"></input>
                 <div class="login_menu">
                   <div class="login_menu_list">
                     <div class="login_menu_top mt-3 ">
                         <p class="text-dark fs-small ">New Customer?</p>
-                        <a href="#" class="fs-6">Sign Up</a>
+                        <a href="#" class="fs-6" >Sign Up</a>
                        
                     </div>
                     <hr>
                     <div class="menu_nav_link">
-                        <a
-                            href="https://www.flipkart.com/account/login?ret=%2Faccount%2F%3Frd%3D0%26link%3Dhome_account">
+                        <a class="mt-3"
+                            href="">
                             <i class="fa-solid fa-circle-user fs-6"></i>
-                            <p>My Profile</p>
+                            <p>My Profile</p> 
                         </a>
                         <hr>
                       
-                        <a href="#">
+                        <a class="mt-3" href="#">
                             <img src="./images/flip.logo.png" class="menu_nav_icon fs-6" />
-                            <p>Flipkart plus zone</p>
+                            <p>NDE Digital Market plus zone</p>
                         </a>
                         <hr>
-                        <a href="#">
+                        <a class="mt-3" href="#">
                           <i class="fa-brands fa-first-order menu_nav_icon fs-6"></i>
                             <p>Order</p> 
                            
                         </a>
                         <hr>
-                        <a href="#">
+                        <a class="mt-3" href="#">
                             <i class="fa-solid fa-heart menu_nav_icon fs-6"></i>  
                             <p>Wishlist</p>
                         </a>
@@ -140,21 +139,30 @@
               <div class="read-more">
 
                 <div class="more_menu_list">
-
-                  <a href="https://www.flipkart.com/communication-preferences/push?t=all">
-                      <img src="./images/notificationIcon.svg" class="menu_nav_icon" />
+                       
+                  <a href=" ">
+                   
+                      <i class="fa-solid fa-bell menu_nav_icon fs-6 mt-1"></i>
                       <p>Notification Preferences</p>
+                   
                   </a>
-                  <a href="https://www.flipkart.com/helpcentre">
-                      <img src="./images/customerIcon.svg" class="menu_nav_icon" />
+            
+                  <a href=" ">
+                      <!-- <img src="./images/customerIcon.svg" class="menu_nav_icon" /> -->
+                      <i class="fa-brands fa-servicestack fs-6 mt-1"></i>
                       <p>24 X 7 Customer Care</p>
                   </a>
-                  <a href="https://advertising.flipkart.com/login?returl=/?otracker=ch_vn_advertise_header">
-                      <img src="./images/advertiseIcon.svg" class="menu_nav_icon" />
+                 
+
+                  <a href=" ">
+                      <!-- <img src="./images/advertiseIcon.svg" class="menu_nav_icon" /> -->
+                      <i class="fa-solid fa-rectangle-ad fs-6 mt-1"></i>
                       <p>Advertise</p>
                   </a>
-                  <a href="https://www.flipkart.com/mobile-apps?otracker=ch_vn_mobile_apps">
-                      <img src="./images/giftIcon.svg" class="menu_nav_icon" />
+                
+                  <a href=" ">
+                      <!-- <img src="./images/giftIcon.svg" class="menu_nav_icon" /> -->
+                      <i class="fa-solid fa-down-long fs-6 mt-1"></i>
                       <p>Download App</p>
                   </a>
 
@@ -173,7 +181,6 @@
           </div>
         </nav>
       </header>
-
 
       
             <!-- <login>            </login> -->
@@ -232,143 +239,149 @@
            </div>
          </div>
 
-              <div class=" mt-extra mb-3  product-menu  ">
-                  <div class="container-xl   menu-container  ">
-                      <div class="row justify-content-md-center  p-2 pt-3">
-                    <div class="col-md-auto  menu-bar  electronics   px-3"><div><span>Electronics</span> <i class="fa-solid fa-angle-down icon mt-half ms-text-dark mb"></i></div>
+              <div class=" mt-extra  product-menu  ">
+                  <div class="container-xxl  menu-container  ">
+                      <div class="row    d-flex  justify-content-center   ">
+                    <div class="col-md-auto  menu-bar  electronics   "><div><span>Electric Item</span> <i class="fa-solid fa-angle-down icon mt-half ms-text-dark mb"></i></div>
                   
                     <div class="menu-hover border border-2  border-top-0">
                       <div class="d-flex ">
-                       <div class="div1   pt-3" style="width: 100%;">
+                       <div class="div1   pt-2" style="width: 100%;">
                          <ul>
-                           <li class="first-li d-flex  " >Moblies<i class=" mt-half ps-2 fa-solid fa-caret-right"></i></li>
-                            <li>Mi </li>
-                            <li> Realme</li>
-                            <li>Samsung </li>
-                            <li>Infinix </li>
-                            <li> OPPO</li>
-                            <li>Apple </li> 
-                            <li>Vivo </li>
-                            <li>Honor </li>
-                            <li> Asus</li>
-                            <li>Poco X2 </li>
-                            <li> realme Nazo 10</li>
-                            <li> IQOO 3</li>
-                            <li>iphone SE</li>
-                            <li>  Motorola razr</li>
-                            <li>realme Narzo 10A</li>
+                           <!-- <li class="first-li d-flex  " >Moblies<i class=" mt-half ps-2 fa-solid fa-caret-right"></i></li> -->
+                            <li>3 Pin Socket</li>
+                            <li>Air Inlet Fan </li>
+                            <li>Air Terminal</li>
+                            <li>Welding Cable</li>
+                            <li>Thermostat</li>
+                            <li>Terminal Block</li> 
+                            <li>Super Enamel Copper Wire </li>
+                            <li>Step Aluminium Ladder</li>
+                            <li>Stablizer</li>
+                            <li>Square Base Relay</li>
+                            <li>Solonoid Coil</li>
+                            <li>SDB Box</li>
+                            <li>Resistor</li>
+                            <li>RECTIFIER DIODE</li>
+                            <li>N2xY FRLS Cable</li>
                             <li>Motorola g8 power lite</li>
-                            <li>  Motorola razr</li>
+                            <li> Toggle Switch</li>
                             <li></li>
                             <li></li>
                          </ul>
                        
                        </div>
-                       <div  class="div2   pt-3" style="width: 100%;">
+                       <div  class="div2   pt-2" style="width: 100%;">
                         <ul>
-                         <li class="first-li" >Moblie Accessories<i class=" mt-half ps-2 fa-solid fa-caret-right"></i></li>
-                         <li>Mobile Cases</li>
-                         <li>HeadPhone &Headsets</li>
+                         <!-- <li class="first-li" >Moblie Accessories<i class=" mt-half ps-2 fa-solid fa-caret-right"></i></li> -->
+                         <li>Wiring cable</li>
+                         <li>Welding Holder </li>
                          <li>Power Bank</li>
-                         <li>   Screenguards</li>
-                         <li>Memory Cards</li>
-                         <li>Smart Headphones</li>
-                            <li> Mobile Cables</li>
-                            <li>  Mobile Chargers</li>
-                            <li> Mobile Holders</li>
-                            <li> Smart Wearable Tech</li>
-                            <li>Smart Watches</li>
-                            <li> Smart Glasses (VR)</li>
-                            <li> Smart Bands</li>
-                            <li> Health Care Appliances</li>
+                         <li> VARISTOR</li>
+                         <li>Varistor ASSY</li>
+                         <li>Voltage monitoring relays </li>
+                            <li>Voltage Stabilizer</li>
+                            <li>U-Saddle(PVC) </li>
+                            <li> Tumbler Socket </li>
+                            <li> Thermal Overload Realy</li>
+                            <li>Terminal Block </li>
+                            <li>Super Enamel Copper Wire</li>
+                            <li>Stoper Cable</li>
+                            <li>Servo Drive</li>
                         </ul>
-                       </div>
-                       <div  class="div3  pt-3" style="width: 100%;">
-                         <ul>
-                           <li class="first-li" >Laptops<i class=" mt-half ps-2 fa-solid fa-caret-right"></i></li>
-                           <li>Gaming Laptops</li>
-                             <li> Apple iPads</li>
-                           <li>Desktop PCs</li>
-                           <li> Gaming & Accessories</li>
-                           <li> Computer Accessories</li>
-                           <li> External Hard Disks</li>
-                           <li>Pendrives</li>
-                           <li> Laptop Skins & Decals
-                            </li>
-                           <li> Laptop Bags</li>
-                           <li> Mouse</li>
-                           <li>  Computer Peripherals</li>
-                           <li> Printers & Ink Cartridges</li>
-                           <li> Monitors</li>
-                           <li>Tablets</li>
-                            
-                         </ul>
-                       </div>
-                       <div  class="div4  pt-3" style="width: 100%;">
-                        <ul>
-                         <li class="first-li">TV<i class="mt-half ps-2 fa-solid fa-caret-right"></i></li>
-                         <li> Televisions</li>
-                         <li>Speakers</li>
-                         <li>Home Audio Speakers</li>
-                         <li>Home Theatres</li>
-                         <li>Soundbars</li>
-                         <li>Bluetooth Speakers</li>
-                         <li>DTH Set Top Box</li>
-                         <li>Smart Home Automation</li>
-                         <li>Google Nest</li>
-                         <li>Camera</li>
-                         <li>DSLR & Mirrorless</li>
-                         <li>
-                           Compact & Bridge Cameras</li>
-                         <li>Compact & Bridge Cameras</li>
-                         <li>Sports & Action</li>
-                         <li>Camera Accessories</li>
-                         <li>Lens</li>
-
-                        </ul>
-                       </div>
-                       <div  class="div5   pt-3 pe-4" style="width: 100%;  ">
-                         <ul>
-                           <li class="first-li" >Featured<i class=" mt-half ps-2 fa-solid fa-caret-right"></i></li>
-                           <li>Google Assistant Store</li>
-                           <li>Laptops on Buyback Guarantee</li>
-                           <li>Flipkart SmartBuy</li>
-                           <li>Li-Polymer Power Banks</li>
-                           <li>
-                             Sony PS4 Pro & Slim</li>
-                           <li>Apple Products</li>
-                           <li>Microsoft Store</li>
-                           <li>Lenovo Phab Series</li>
-                           <li>JBL Speakers</li>
-                           <li>Smartphones On Buyback Guarantee</li>
-                           <li>Philips</li>
-                           <li>Dr. Morepen</li>
-                           <li>Complete Mobile Protection</li>
-                           <li>Mobiles No Cost EMI</li>
-                           <li>
-                             Huawei Watch Gt 2e Smart Watch</li>
-                         </ul>
-                       </div>
-
+                       </div>              
                       </div>
-                   </div>                 
-                  
-                  
+                   </div>                             
                   </div>
-                              <div class="col-md-auto menu-bar  px-3"><span class="">Tvs & Appliances</span><i class="fa-solid fa-angle-down icon mt-half ms-1 text-dark mb"></i></div>
-                              <div class="col-md-auto  menu-bar  px-3 "><span>Men</span><i class="fa-solid fa-angle-down icon mt-half ms-1 text-dark mb"></i></div>
-                              <div class="col-md-auto menu-bar px-3 "><span>Women</span><i class="fa-solid fa-angle-down icon mt-half ms-1 text-dark mb"></i></div>
-                              <div class="col-md-auto menu-bar px-3 "><span>Baby & Kids</span><i class="fa-solid fa-angle-down icon mt-half ms-1 text-dark mb"></i></div>
-                              <div class="col-md-auto  menu-bar px-3"><span>Home & Furniture</span><i class="fa-solid fa-angle-down icon mt-half ms-1 text-dark mb"></i></div>
-                              <div class="col-md-auto menu-bar  px-3"><span>Sports, Books & More</span><i class="fa-solid fa-angle-down icon mt-half ms-1 text-dark mb"></i></div>
-                              <div class="col-md-auto menu-bar  px-3"><span> Flights</span><i class="fa-solid fa-angle-down icon mt-half ms-1 text-dark mb"></i></div>
-                              <div class="col-md-auto menu-bar px-3"><span> Offer Zone</span><i class="fa-solid fa-angle-down icon mt-half ms-1 text-dark mb"></i></div>
+                             <div class="col-md-auto menu-bar appliances  " ><div  ><span class="">HR Plate 50 Grade</span><i class=" appliances fa-solid fa-angle-down icon mt-half ms-1 text-dark mb"></i></div>
+
+
+                              <div class="appliances-hover border border-2  border-top-0"  > 
+
+                                  <div class=" d-flex  ">
+                                    <div style="width: 100%;">
+                                      <ul>
+                                        <!-- <li class="first-li "  >Kitchen Appliances<i class=" mt-half ps-2 fa-solid fa-caret-right"></i></li> -->
+                                        <li>02 mm</li>
+                                        <li>03 mm</li>
+                                        <li>02 mm</li>
+                                        <li>02 mm</li>
+                                        <li>
+                                          02 mm</li>
+                                        <li>02 mm</li>
+                                        <li>02 mm</li>
+                                        <li>02 mm</li>
+                                        <li>02 mm</li>
+                                        <li>02 mm</li>
+                                        <li>02 mm</li>
+                                        <li>02 mm</li>
+                                        <li>02 mm</li>
+                                        <li>02 mm</li>
+                                         
+                                      </ul>
+                                    </div>
+
+                                    <div style="background-color: #f4f3f5;width: 100%;">
+                                      <ul>
+                                   <!-- <li class="first-li" >Small Home Appliances<i class=" mt-half ps-2 fa-solid fa-caret-right"></i></li> -->
+                                        <li>Irons</li>
+                                        <li>Water Purifiers</li>
+                                        <li>Fans</li>
+                                        <li>Li-Polymer Power Banks</li>
+                                        <li>
+                                          Air Coolers</li>
+                                        <li>Inverters</li>
+                                        <li>Vacuum Cleaners</li>
+                                        <li>Voltage Stabilizers</li>
+                                        <li>Sewing Machines</li>
+                                        <li>
+                                          Water Geysers</li>
+                                        <li>Immersion Rods</li>
+                                        <li>Top Brands</li>
+                                        <li>Livpure</li>
+                                        <li>Bajaj</li>
+                                        <li>
+                                          IFB</li>
+                                      </ul>
+                                    </div>
+
+                                  </div>
+                                
+                              </div></div> 
+                              <div class="col-md-auto  menu-bar "><span>Insulation</span><i class="fa-solid fa-angle-down icon mt-half ms-1 text-dark mb"></i></div>
+                              <div class="col-md-auto menu-bar   "><span>MS Shaft Rod </span><i class="fa-solid fa-angle-down icon mt-half ms-1 text-dark mb"></i></div>
+                              <div class="col-md-auto menu-bar  "><span>Net</span><i class="fa-solid fa-angle-down icon mt-half ms-1 text-dark mb"></i></div>
+                              <div class="col-md-auto  menu-bar  "><span>Nut</span><i class="fa-solid fa-angle-down icon mt-half ms-1 text-dark mb"></i></div>
+                              <div class="col-md-auto menu-bar   "><span>Sug rod</span><i class="fa-solid fa-angle-down icon mt-half ms-1 text-dark mb"></i></div>
+                              <div class="col-md-auto menu-bar  "><span> Shear Stud</span><i class="fa-solid fa-angle-down icon mt-half ms-1 text-dark mb"></i></div>
+                              <div class="col-md-auto menu-bar  "><span> Structural Bolt</span><i class="fa-solid fa-angle-down icon mt-half ms-1 text-dark mb"></i></div>
                       </div>
                 
     
                 
              </div>
             </div>
+
+            <!-- <div class="  not-found-outer-div  d-flex align-items-center justify-content-center " style="width: 100%;height: 650px;
+            background-color: gray"> --><div class="bg-primary  d-flex justify-content-center ">
+                <div  class="product-not-found mt-4    "style="width: 25%;height: 40%;" >
+                  <div class=" d-flex justify-content-center">    <img  class=" d-flex justify-content-center mt-4 "
+                    src="/images/product not found/pic-2.jpg">
+                  </div>
+               
+                     
+                    <div class=" d-flex justify-content-center "> <span>
+                     your search did not match any products 
+                    </span>
+                   
+                  </div>  
+                  <a href="/productPage.html" class=" d-flex    justify-content-center">Please try again</a>               
+                </div> 
+              </div>  
+            <!-- </div> -->
+    
+
+
              <div class="product-body">
               <div class="container  ">
       <div class="sort d-flex ">    
@@ -394,29 +407,29 @@
     </div>
       <!-- <hr> -->
       <div class="main-body d-flex ">
-        <div class="list w-25">
+        <div class="list me-5" style="width: 220px;">
 
                     <!-- categories -->
-                    <div class="categories d-block mb-4 ">
+                    <div class="categories d-block mb-4  ">
                       <p  class="gray">Category</p>
-                      <div>
-                        <span class="d-block" >Smart watch</span>
-                        <span class="d-block" >Electic Kettle</span>
-                        <span class="d-block">Power bank</span>
-                        <span class="d-block">Electric Fragrance</span>
-                        <span>Irons</span>
-                        <span>Electric Insect Killers</span>
-                        <span>Electrical Batteries</span>
-                        <span>Earphone</span>
-                        <span class="view-more text-primary">View more</span>
+                      <div class="mb-3">
+                        <span class="d-block" >Moblies</span>
+                        <span class="d-block" >Phone Screen Protectors</span>
+                        <span class="d-block">Mobile Phone Cases</span>
+                        <span class="d-block">In-Ear Headphones</span>
+                        <span>Phone Cables & Converters</span>
+                        <span>Smart Televisions</span>
+                        <span>Wireless Earbuds</span>
+                        <span>Phone Wall Chargers</span>
+                        <span class="view-more">View more</span>
                       </div>
                       <hr>
                     </div>
           
-          <div class="brand">
-            <a href="/electronics.html"><p class="gray">Brands</p></a>
+          <div class="brand mb-4">
+            <a href="/productPage.html"><p class="gray">Brands</p></a>
 
-            <ul class="list-unstyled mb-4">
+            <ul class="list-unstyled mb-3">
            
               <li>
                 <input
@@ -426,7 +439,7 @@
                   id="checkbox"
                 />
                 <label class="form-check-label" for="flexCheckDefault"
-                  >Vision</label
+                  >Realme</label
                 >
               </li>
               <li>
@@ -437,7 +450,7 @@
                   id="checkbox"
                 />
                 <label class="form-check-label" for="flexCheckDefault"
-                  >Philips</label
+                  >Samsung</label
                 >
               </li>
               <li>
@@ -448,7 +461,7 @@
                   id="checkbox"
                 />
                 <label class="form-check-label" for="flexCheckDefault"
-                  >HP</label
+                  >OPPO</label
                 >
               </li>
               <li>
@@ -459,7 +472,7 @@
                   id="checkbox"
                 />
                 <label class="form-check-label" for="flexCheckDefault"
-                  >Rolex</label
+                  >Symphony</label
                 >
               </li>
               <li>
@@ -481,7 +494,7 @@
                   id="checkbox"
                 />
                 <label class="form-check-label" for="flexCheckDefault"
-                  >lenovo</label
+                  >Infinix</label
                 >
               </li>
               <li>
@@ -492,7 +505,7 @@
                   id="checkbox"
                 />
                 <label class="form-check-label" for="flexCheckDefault"
-                  >Niico</label
+                  >Tecno</label
                 >
               </li>
               <li>
@@ -503,117 +516,21 @@
                   id="checkbox"
                 />
                 <label class="form-check-label" for="flexCheckDefault"
-                  >Midea</label
+                  >UMIDIGI</label
                 >
               </li>
-              <li class="view-more text-primary">View more</li>
+              <li class="view-more  ">View more</li>
             </ul>
             <hr>
-          </div>
-   
-           <!-- color family -->
-          <div class="warranty Type mb-4">
-            <p  class="gray">Color Family</p>
-            <ul class="list-unstyled mb-4">
-              <li></li>
-              <li>
-                <input
-                  class="form-check-input"
-                  type="radio"  
-                  name="flexRadioDefault"
-                  id="checkbox"          
-                />
-                <label class="form-check-label" for="flexCheckDefault"
-                  >White</label
-                >
-              </li>
-              <li>
-                <input
-                  class="form-check-input"
-                  type="radio" 
-                  name="flexRadioDefault"
-                  id="checkbox"          
-                />
-                <label class="form-check-label" for="flexCheckDefault"
-                  >Multicolor</label >
-              </li>
-               
-                <li>
-                  <input
-                    class="form-check-input"
-                    type="radio"  
-                    name="flexRadioDefault"
-                    id="checkbox"          
-                  />
-                  <label class="form-check-label" for="flexCheckDefault"
-                    >Black</label
-                  >
-                </li>
-                <li>
-                  <input
-                    class="form-check-input"
-                    type="radio" 
-                    name="flexRadioDefault"
-                    id="checkbox"          
-                  />
-                  <label class="form-check-label" for="flexCheckDefault"
-                    >Blue</label
-                  >
-                </li>
-                <li>
-                  <input
-                    class="form-check-input"
-                    type="radio" 
-                    name="flexRadioDefault"
-                    id="checkbox"          
-                  />
-                  <label class="form-check-label" for="flexCheckDefault"
-                    >Red</label
-                  >
-                </li>
-                <li>
-                  <input
-                    class="form-check-input"
-                    type="radio" 
-                    name="flexRadioDefault"
-                    id="checkbox"          
-                  />
-                  <label class="form-check-label" for="flexCheckDefault"
-                    >Silver</label
-                  >
-                </li>
-                <li>
-                  <input
-                    class="form-check-input"
-                    type="radio" 
-                    name="flexRadioDefault"
-                    id="checkbox"          
-                  />
-                  <label class="form-check-label" for="flexCheckDefault"
-                    >Yellow</label
-                  >
-                </li>
-                <li>
-                  <input
-                    class="form-check-input"
-                    type="radio" 
-                    name="flexRadioDefault"
-                    id="checkbox"          
-                  />
-                  <label class="form-check-label" for="flexCheckDefault"
-                    >Gray</label
-                  >
-                </li>
-                <hr>
           </div>
 
 
 
         <!-- Service -->
 
-        <div class="service">
+        <div class="service mb-4">
           <p class="gray">Service</p>
-          <ul class="list-unstyled mb-4">
+          <ul class="list-unstyled mb-3">
             <li></li>
             <li>
               <input
@@ -626,7 +543,7 @@
                 >Installment</label
               >
             </li>
-            <li>
+            <li>  
               <input
                 class="form-check-input"
                 type="radio" 
@@ -637,7 +554,17 @@
                 >Cash On Delivery</label
               >
             </li>
-          
+            <li>
+              <input
+                class="form-check-input"
+                type="radio" 
+                name="flexRadioDefault"
+                id="checkbox"       
+              />
+              <label class="form-check-label" for="flexCheckDefault"
+                >Fulfilled by Daraz</label
+              >
+            </li>
             <li>
               <input
                 class="form-check-input"
@@ -656,7 +583,7 @@
         <div class="Location mb-4">
 
           <p class="gray">Location</p>
-          <ul class="list-unstyled mb-4">
+          <ul class="list-unstyled mb-3">
             <li></li>
             <li>
               <input
@@ -684,7 +611,7 @@
             <hr>
         </div>
 
-        <div class="Rating mb-4">
+        <div class="Rating mb-3">
           <p class="gray" >Rating</p>
           <div class="star">
             <i class="fas fa-star"></i>
@@ -721,12 +648,13 @@
             <i class="fa-regular fa-star"></i>
             <i class="fa-regular fa-star"></i>
           </div>
-            <hr>         
+            <!-- <hr>      -->
         </div>
+        <hr class="mb-4">
         <div class="warranty Type mb-4">
           <p  class="gray">Warranty type</p>
-          <ul class="list-unstyled mb-4">
-            <li></li>
+          <ul class="list-unstyled mb-3">
+       
             <li>
               <input
                 class="form-check-input"
@@ -738,17 +666,7 @@
                 >Brand Warranty</label
               >
             </li>
-            <li>
-              <input
-                class="form-check-input"
-                type="radio" 
-                name="flexRadioDefault"
-                id="checkbox"          
-              />
-              <label class="form-check-label" for="flexCheckDefault"
-                >China</label >
-            </li>
-             
+            
               <li>
                 <input
                   class="form-check-input"
@@ -782,36 +700,13 @@
                   >Non-local warranty</label
                 >
               </li>
-              <hr>
+              <!-- <hr> -->
         </div>
-
-        
-        <div class="Battery mb-4">
-          <p  class="gray">Waranty Period</p>
-          <ul class="list-unstyled mb-4">
-            <li></li>
-            <li>
-                <input
-                  class="form-check-input"
-                  type="radio"  
-                  name="flexRadioDefault"
-                  id="checkbox"          
-                />
-                <label class="form-check-label" for="flexCheckDefault"
-                  > 3 month</label
-                >
-              </li>
-              <li>
-                <input
-                  class="form-check-input"
-                  type="radio"  
-                  name="flexRadioDefault"
-                  id="checkbox"          
-                />
-                <label class="form-check-label" for="flexCheckDefault"
-                  > 6 month</label
-                >
-              </li>
+        <hr>
+        <div class="warranty Type mb-4">
+          <p  class="gray">RAM Memory</p>
+          <ul class="list-unstyled mb-3">
+         
             <li>
               <input
                 class="form-check-input"
@@ -820,7 +715,7 @@
                 id="checkbox"          
               />
               <label class="form-check-label" for="flexCheckDefault"
-                > 1 Year</label
+                >4GB</label
               >
             </li>
             <li>
@@ -831,7 +726,7 @@
                 id="checkbox"          
               />
               <label class="form-check-label" for="flexCheckDefault"
-                >2 Year</label >
+                >8GB</label >
             </li>
              
               <li>
@@ -842,37 +737,383 @@
                   id="checkbox"          
                 />
                 <label class="form-check-label" for="flexCheckDefault"
-                  >3 Year</label
+                  >6GB</label
                 >
               </li>
+              <li>
+                <input
+                  class="form-check-input"
+                  type="radio" 
+                  name="flexRadioDefault"
+                  id="checkbox"          
+                />
+                <label class="form-check-label" for="flexCheckDefault"
+                  >2GB</label
+                >
+              </li>
+              <li>
+                <input
+                  class="form-check-input"
+                  type="radio" 
+                  name="flexRadioDefault"
+                  id="checkbox"          
+                />
+                <label class="form-check-label" for="flexCheckDefault"
+                  >3GB</label
+                >
+              </li>
+          </ul>
+              <hr>
+        </div>
+        <div class="Battery mb-4">
+          <p  class="gray">Battery Capacity(mAh)</p>
+          <ul class="list-unstyled mb-3">
+            
+            <li>
+              <input
+                class="form-check-input"
+                type="radio"  
+                name="flexRadioDefault"
+                id="checkbox"          
+              />
+              <label class="form-check-label" for="flexCheckDefault"
+                >5000-5999mAh</label
+              >
+            </li>
+            <li>
+              <input
+                class="form-check-input"
+                type="radio" 
+                name="flexRadioDefault"
+                id="checkbox"          
+              />
+              <label class="form-check-label" for="flexCheckDefault"
+                >4000-4999</label >
+            </li>
+             
+              <li>
+                <input
+                  class="form-check-input"
+                  type="radio"  
+                  name="flexRadioDefault"
+                  id="checkbox"          
+                />
+                <label class="form-check-label" for="flexCheckDefault"
+                  >3000-3999</label
+                >
+              </li>
+              </ul>
               <hr>
         </div>
 
- 
+        <div class="camera  mb-4">
+          <p  class="gray">Camera Back(Megapixels)</p>
+          <ul class="list-unstyled mb-3">
          
-
-
+            <li>
+              <input
+                class="form-check-input"
+                type="radio"  
+                name="flexRadioDefault"
+                id="checkbox"          
+              />
+              <label class="form-check-label" for="flexCheckDefault"
+                >46-50 MP</label
+              >
+            </li>
+            <li>
+              <input
+                class="form-check-input"
+                type="radio" 
+                name="flexRadioDefault"
+                id="checkbox"          
+              />
+              <label class="form-check-label" for="flexCheckDefault"
+                >11-15 MP</label >
+            </li>
+             
+              <li>
+                <input
+                  class="form-check-input"
+                  type="radio"  
+                  name="flexRadioDefault"
+                  id="checkbox"          
+                />
+                <label class="form-check-label" for="flexCheckDefault"
+                  >56 and Above</label
+                >
+              </li>
+              <li>
+                <input
+                  class="form-check-input"
+                  type="radio" 
+                  name="flexRadioDefault"
+                  id="checkbox"          
+                />
+                <label class="form-check-label" for="flexCheckDefault"
+                  >6-10 MP</label
+                >
+              </li>
+              <li>
+                <input
+                  class="form-check-input"
+                  type="radio" 
+                  name="flexRadioDefault"
+                  id="checkbox"          
+                />
+                <label class="form-check-label" for="flexCheckDefault"
+                  >16-20 MP</label
+                >
+              </li>
+              </ul>
+              <hr>
+        </div>
+        
+        <div class="camera  mb-4">
+          <p  class="gray">Camera Front(Megapixels)</p>
+          <ul class="list-unstyled mb-3">
+            <li></li>
+            <li>
+              <input
+                class="form-check-input"
+                type="radio"  
+                name="flexRadioDefault"
+                id="checkbox"          
+              />
+              <label class="form-check-label" for="flexCheckDefault"
+                >6-10 MP</label
+              >
+            </li>
+            <li>
+              <input
+                class="form-check-input"
+                type="radio" 
+                name="flexRadioDefault"
+                id="checkbox"          
+              />
+              <label class="form-check-label" for="flexCheckDefault"
+                >1-5 MP</label >
+            </li>
+             
+              <li>
+                <input
+                  class="form-check-input"
+                  type="radio"  
+                  name="flexRadioDefault"
+                  id="checkbox"          
+                />
+                <label class="form-check-label" for="flexCheckDefault"
+                  >16-20  </label
+                >
+              </li>
+              <li>
+                <input
+                  class="form-check-input"
+                  type="radio" 
+                  name="flexRadioDefault"
+                  id="checkbox"          
+                />
+                <label class="form-check-label" for="flexCheckDefault"
+                  >11-20 MP</label
+                >
+              </li>
+              <li>
+                <input
+                  class="form-check-input"
+                  type="radio" 
+                  name="flexRadioDefault"
+                  id="checkbox"          
+                />
+                <label class="form-check-label" for="flexCheckDefault"
+                  >31-35 MP</label
+                >
+              </li>
+        </div>
         </div>
         <div class="products-list mb-4">
           <div class="container">
             <div class="row product-row">
-             
+              <div
+                class="card m-2 py-2  col-lg-3 col-md-3 col-sm-4 col-2"
+                style="width: 23%"
+              >
+                <img
+                  src="images/galvanize/g-1.jpg"
+                  class="card-img-top  "
+                   
+                  alt="..."
+                />
+                <div class="body-card d-block pb-2">
+                  <span class="title">Alum (Aluminum Sulphate)</span
+                  ><br />
+                  <span class="after-price">39,166</span><br />
+                  <span class="before-price">42,999</span><br />
+                  <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                  </div>
+                </div>
+              </div>
 
-             
+              <div
+                class="card m-2  py-2 col-lg-3 col-md-3 col-sm-4 col-2"
+                style="width: 23%"
+              >
+                <img
+                  src="images/galvanize/g-2.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="body-card d-block pb-2">
+                  <span class="title"
+                    >Ammonium Chloride</span
+                  ><br />
+                  <span class="after-price">33,166</span><br />
+                  <span class="before-price">35,999</span><br />
+                  <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                </div>
+              </div>
 
               <div
                 class="card m-2 py-2 col-lg-3 col-md-3 col-sm-4 col-2"
                 style="width: 23%"
               >
                 <img
-                  src="images/a-electonic/hair carler Keimie.jpg"
+                  src="images/galvanize/g-3.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="body-card d-block pb-2">
+                  <span class="title">Ammonium Hydroxide</span><br />
+                  <span class="after-price">16,166</span><br />
+                  <span class="before-price">19,999</span><br />
+                  <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="card m-2 py-2  col-lg-3 col-md-3 col-sm-4 col-2"
+                style="width: 23%"
+              >
+                <img
+                  src="images/galvanize/g4.jpg"
                   class="card-img-top"
                   alt="..."
                 />
                 <div class="body-card d-block pb-2">
                   <span class="title"
-                    >
-                    Kemei KM-1213 Professional Electric</span
+                    >Degreasing Agent</span
+                  ><br />
+                  <span class="after-price">55,166</span><br />
+                  <span class="before-price">56,999</span><br />
+                  <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="card m-2 py-2  col-lg-3 col-md-3 col-sm-4 col-2"
+                style="width: 23%"
+              >
+                <img
+                  src="images/galvanize/g5.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="body-card d-block pb-2">
+                  <span class="title"
+                    >Lead Ingot</span
+                  ><br />
+                  <span class="after-price">22,166</span><br />
+                  <span class="before-price">23,999</span><br />
+                  <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="card m-2 py-2 col-lg-3 col-md-3 col-sm-4 col-2"
+                style="width: 23%"
+              >
+                <img
+                  src="images/galvanize/g-6.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="body-card d-block pb-2">
+                  <span class="title">HCL</span
+                  ><br />
+                  <span class="after-price">39,166</span><br />
+                  <span class="before-price">42,999</span><br />
+                  <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="card m-2 py-2  col-lg-3 col-md-3 col-sm-4 col-2"
+                style="width: 23%"
+              >
+                <img
+                  src="images/galvanize/g7.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="body-card d-block pb-2">
+                  <span class="title">Acid Inhibitor</span><br />
+                  <span class="after-price">40,166</span><br />
+                  <span class="before-price">42,999</span><br />
+                  <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="card m-2 py-2 col-lg-3 col-md-3 col-sm-4 col-2"
+                style="width: 23%"
+              >
+                <img
+                  src="images/galvanize/g8.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="body-card d-block pb-2">
+                  <span class="title"> Acid Inhibitor</span
                   ><br />
                   <span class="after-price">60,166</span><br />
                   <span class="before-price">63,999</span><br />
@@ -890,13 +1131,12 @@
                 style="width: 23%"
               >
                 <img
-                  src="images/a-electonic/smart watch.jpg"
+                  src="images/galvanize/g9.jpg"
                   class="card-img-top"
                   alt="..."
                 />
                 <div class="body-card d-block pb-2">
-                  <span class="title">
-                     Smart Watch Compatible</span
+                  <span class="title">Na2CO3 (Sodium carbonate)</span
                   ><br />
                   <span class="after-price">39,166</span><br />
                   <span class="before-price">42,999</span><br />
@@ -915,14 +1155,13 @@
                 style="width: 23%"
               >
                 <img
-                  src="images/a-electonic/watch pink.jpg"
+                  src="images/galvanize/g10.jpg"
                   class="card-img-top"
                   alt="..."
                 />
                 <div class="body-card d-block pb-2">
                   <span class="title"
-                    >
-                    Y68 Waterproof Pink Digital Smart</span
+                    >KCL</span
                   ><br />
                   <span class="after-price">39,166</span><br />
                   <span class="before-price">42,999</span><br />
@@ -940,12 +1179,12 @@
                 style="width: 23%"
               >
                 <img
-                  src="images/a-electonic/watch green.jpg"
+                  src="images/galvanize/g11.jpg"
                   class="card-img-top"
                   alt="..."
                 />
                 <div class="body-card d-block pb-2">
-                  <span class="title">Y68 Smart Watch D20 Health Fitness</span
+                  <span class="title">Na2CO3 (Sodium carbonate)</span
                   ><br />
                   <span class="after-price">39,166</span><br />
                   <span class="before-price">42,999</span><br />
@@ -964,12 +1203,12 @@
                 style="width: 23%"
               >
                 <img
-                  src="images/a-electonic/kids watch.jpg"
+                  src="images/galvanize/g12.jpg"
                   class="card-img-top"
                   alt="..."
                 />
                 <div class="body-card d-block pb-2">
-                  <span class="title"> Kids Smart Watch for Children</span
+                  <span class="title">Salfuric Acid</span
                   ><br />
                   <span class="after-price">39,166</span><br />
                   <span class="before-price">42,999</span><br />
@@ -987,12 +1226,12 @@
                 style="width: 23%"
               >
                 <img
-                  src="images/electronics/wooden fragrance diffusor.webp"
+                  src="images/galvanize/g13.jpg"
                   class="card-img-top"
                   alt="..."
                 />
                 <div class="body-card d-block pb-2">
-                  <span class="title">Kids Instant Print Kids Camera</span
+                  <span class="title">KCL</span
                   ><br />
                   <span class="after-price">39,166</span><br />
                   <span class="before-price">42,999</span><br />
@@ -1011,13 +1250,12 @@
                 style="width: 23%"
               >
                 <img
-                  src="images/a-electonic/wooden cametra.jpg"
+                  src="images/galvanize/g14.jpg"
                   class="card-img-top"
                   alt="..."
                 />
                 <div class="body-card d-block pb-2">
-                  <span class="title">
-                    Portable Mini Wooden Camera </span
+                  <span class="title">Alum (Aluminum Sulphate)</span
                   ><br />
                   <span class="after-price">39,166</span><br />
                   <span class="before-price">42,999</span><br />
@@ -1032,259 +1270,16 @@
               </div>
 
               <div
-              class="card m-2 py-2  col-lg-3 col-md-3 col-sm-4 col-2"
-              style="width: 23%"
-            >
-              <img
-                src="images/a-electonic/hair dryer.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="body-card d-block pb-2">
-                <span class="title"> Panasonic EH-ND11 Compact Hair Dryer for Fast Drying for Women</span
-                ><br />
-                <span class="after-price">3,166</span><br />
-                <span class="before-price">3,999</span><br />
-                <div class="star">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star-half-alt"></i>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="card m-2  py-2 col-lg-3 col-md-3 col-sm-4 col-2"
-              style="width: 23%"
-            >
-              <img
-                src="images/a-electonic/philips hair dryer.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="body-card d-block pb-2">
-                <span class="title"
-                  >Philips HP8108/00 DryCare Essential Compact Hair Dryer</span
-                ><br />
-                <span class="title"
-                >Black</span
-              ><br />
-                <span class="after-price">1,166</span><br />
-                <span class="before-price">1,999</span><br />
-                <div class="star">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fa-regular fa-star"></i>
-                </div>
-              </div>
-            </div>
-
-            <div
-            class="card m-2 py-2 col-lg-3 col-md-3 col-sm-4 col-2"
-            style="width: 23%"
-          >
-            <img
-              src="images/a-electonic/headphone wes.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="body-card d-block pb-2">
-              <span class="title">Wiresto 07S Wireless Bluetooth 5.0
-              </span><br />
-              <span class="title"
-              >Pink, Golden, silver</span
-            ><br />
-              <span class="after-price">6,16</span><br />
-              <span class="before-price">9,99</span><br />
-              <div class="star">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-              </div>
-            </div>
-          </div>
-
-          <div
-          class="card m-2 py-2 col-lg-3 col-md-3 col-sm-4 col-2"
-          style="width: 23%"
-        >
-          <img
-            src="images/a-electonic/speacker.jpg"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="body-card d-block pb-2">
-            <span class="title">Lenovo L01 Portable Bluetooth
-            </span><br />
-            <span class="title"
-            >Pink, Golden, silver</span
-          ><br />
-            <span class="after-price">6,16</span><br />
-            <span class="before-price">9,99</span><br />
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-            </div>
-          </div>
-        </div>
-
-        <div
-        class="card m-2 py-2 col-lg-3 col-md-3 col-sm-4 col-2"
-        style="width: 23%"
-      >
-        <img
-          src="images/a-electonic/vision kettly.jpg"
-          class="card-img-top"
-          alt="..."
-        />
-        <div class="body-card d-block pb-2">
-          <span class="title">VISION Electric Kettle 1.8L VIS-EK-005
-          </span><br />
-          <span class="title"
-          >Pink, Golden, silver</span
-        ><br />
-          <span class="after-price">6,16</span><br />
-          <span class="before-price">9,99</span><br />
-          <div class="star">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-          </div>
-        </div>
-      </div>
-
-          <div
-            class="card m-2 py-2  col-lg-3 col-md-3 col-sm-4 col-2"
-            style="width: 23%"
-          >
-            <img
-              src="images/a-electonic/vision iron.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="body-card d-block pb-2">
-              <span class="title"
-                >Vision Electronic Dry Iron  pink</span
-              ><br />
-              <span class="title"
-              >green</span
-            ><br />
-              <span class="after-price">866</span><br />
-              <span class="before-price">999</span><br />
-              <div class="star">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="card m-2 py-2  col-lg-3 col-md-3 col-sm-4 col-2"
-            style="width: 23%"
-          >
-            <img
-              src="images/a-electonic/vision toaster.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="body-card d-block pb-2">
-              <span class="title"
-                >VISION 2 SLICE ELECTRONIC TOASTER</span
-              ><br />
-              <span class="title"
-              >Multicolor</span
-            ><br />
-              <span class="after-price">766</span><br />
-              <span class="before-price">999</span><br />
-              <div class="star">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="card m-2 py-2 col-lg-3 col-md-3 col-sm-4 col-2"
-            style="width: 23%"
-          >
-            <img
-              src="images/a-electonic/vision kettle golden.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="body-card d-block pb-2">
-              <span class="title">
-                Vision Electronic Kettle 1.8L </span
-              ><br />
-              <span class="title"
-              >Multicolor</span
-            ><br />
-              <span class="after-price">1966</span><br />
-              <span class="before-price">2,999</span><br />
-              <div class="star">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="card m-2 py-2  col-lg-3 col-md-3 col-sm-4 col-2"
-            style="width: 23%"
-          >
-            <img
-              src="images/electronics/watch.webp"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="body-card d-block pb-2">
-              <span class="title">Rolex watch</span><br />
-              <span class="title"
-              >red</span
-            ><br />
-              <span class="after-price">40,166</span><br />
-              <span class="before-price">42,999</span><br />
-              <div class="star">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-              </div>
-            </div>
-          </div>
-
-              <div
                 class="card m-2 col-lg-3 col-md-3 col-sm-4 col-2"
                 style="width: 23%"
               >
                 <img
-                  src="images/a-electonic/earphone.jpg"
+                  src="images/galvanize/g15.jpg"
                   class="card-img-top"
                   alt="..."
                 />
                 <div class="body-card d-block pb-2">
-                  <span class="title">Music Wired Earphone Headset</span
+                  <span class="title">Salfuric Acid</span
                   ><br />
                   <span class="after-price">39,166</span><br />
                   <span class="before-price">42,999</span><br />
@@ -1327,13 +1322,13 @@
                 <a href="#!" class="text-white">Careers</a>
               </li>
               <li>
-                <a href="#!" class="text-white">Filpkart Stories</a>
+                <a href="#!" class="text-white">NDE Digital Market Stories</a>
               </li>
               <li>
                 <a href="#!" class="text-white">Press</a>
               </li>
               <li>
-                <a href="#!" class="text-white">Flipkart Wholesale</a>
+                <a href="#!" class="text-white">NDE Digital Market Wholesale</a>
               </li>
               <li>
                 <a href="#!" class="text-white">Corporate Information</a>
@@ -1411,70 +1406,38 @@
           <!--Grid column-->
 
           <!--Grid column-->
-          <div class="col-lg-2 col-md-4 col-sm-4 col-2 mb-4 mb-md-0">
-            <p class="gray">Mail Us</p>
-
+          <div class="col-lg-2 col-md-4  col-sm-4  col-2 mb-4 mb-md-0">
+            <p class=" gray">Mail Us</p>
+    
             <ul class="list-unstyled mb-0">
+             
               <li>
-                <a href="#!" class="text-white"
-                  >Filpkart Internet Private Limited,</a
-                >
+                <a href="#!" class="text-white">NDE.digital@NDE.com</a>
               </li>
-              <li>
-                <a href="#!" class="text-white">Building Alyssa, Begonia &</a>
-              </li>
-              <li>
-                <a href="#!" class="text-white">Clove Embassy Tech Village,</a>
-              </li>
-              <li>
-                <a href="#!" class="text-white"
-                  >Outer Ring Road, Devarabeesanahalli Village,</a
-                >
-              </li>
-              <li>
-                <a href="#!" class="text-white">Bengaluru, 560103,</a>
-              </li>
-              <li>
-                <a href="#!" class="text-white">Karnataka, India</a>
-              </li>
+      
             </ul>
           </div>
           <!--Grid column-->
-          <!--Grid column-->
-          <div class="col-lg-2 col-md-4 col-sm-4 col-4 mb-4 mb-md-0">
-            <p class="gray">Registered Office Address:</p>
-
-            <ul class="list-unstyled mb-0">
-              <li>
-                <a href="#!" class="text-white">
-                  Flipkart Internet Private Limited,</a
-                >
-              </li>
-              <li>
-                <a href="#!" class="text-white">Buildings Alyssa, Begonia &</a>
-              </li>
-              <li>
-                <a href="#!" class="text-white">Clove Embassy Tech Village,</a>
-              </li>
-              <li>
-                <a href="#!" class="text-white"
-                  >Outer Ring Road, Devarabeesanahalli Village,</a
-                >
-              </li>
-              <li>
-                <a href="#!" class="text-white">Bengaluru, 560103,</a>
-              </li>
-              <li>
-                <a href="#!" class="text-white">Karnataka, India</a>
-              </li>
-              <li>
-                <a href="#!" class="text-white">CIN : U51109KA2012PTC066107</a>
-              </li>
-              <li>
-                <a href="#!" class="text-white">Telephone: 044-45614700</a>
-              </li>
-            </ul>
-          </div>
+            <!--Grid column-->
+            <div class="col-lg-2 col-md-4 col-sm-4 col-4 mb-4 mb-md-0 ">
+              <p class="gray ">Registered Office Address:</p>
+  
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="#!" class="text-white">  NDE Digital Market Limited,</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">House: 22, Road: 4,</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Block: C, Banani,</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Dhaka, Bangladesh.</a>
+                </li>
+               
+              </ul>
+            </div>
           <!--Grid column-->
 
           <!--Grid column-->
@@ -1502,7 +1465,7 @@
           <i class="bi bi-question-circle-fill foot-icon"></i>
           <p class="ms-2">Help Center</p>
         </div>
-          <p>© 2007-2023 BDKart.com</p>
+          <p>© 2007-2023 NDE-Digital.com</p>
         </div>
 
         <div class="">
@@ -1510,21 +1473,20 @@
         </div>
  </div>
 
- <!-- <section>
-  <div id="msg">
-       <pre>
-          
-       </pre>
-      </div>
- </section> -->
-
+     <!-- <section>
+      <div id="msg">
+           <pre>
+              
+           </pre>
+          </div>
+     </section> -->
+    
       <!-- Copyright -->
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
     <script src="/product.js"></script>
-    <script src="/script.js"></script>
-
     <script src="/bootstrap/js/bootstrap.min.js"></script>
+     <script src="/script.js"></script>
     
   </body>
 </html>

@@ -540,7 +540,7 @@ a {
   background-color: var(--main-color);
   height: 55px;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   z-index: 100;
   position: fixed;
@@ -630,6 +630,14 @@ form {
 }
 .recent_search.active {
   display: block;
+}
+.login-button #login-button-hover {
+  background-color: var(--main-color);
+  color: #fff;
+}
+.login-button #login-button-hover:hover {
+  background-color: #fff;
+  color: var(--main-color);
 }
 .login-button {
   position: relative;

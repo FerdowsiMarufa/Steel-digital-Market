@@ -723,7 +723,12 @@ li {
 .Product-name {
   font-size: 15px;
   font-weight: 500;
-  padding-top: 25px;
+  padding-top: 10px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+ 
+  
 }
 
 .Shop {

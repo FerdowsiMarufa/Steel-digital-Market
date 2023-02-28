@@ -84,7 +84,7 @@ let movePer = 14;
 
 let right_mover = () => {
   t = t + 1;
-  if (t == 7) {
+  if (t == 4) {
     t = 0;
     l = 0;
   }

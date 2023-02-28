@@ -32,7 +32,8 @@ body {
 .frm {
   position: absolute;
   top: 0%;
-  right: 8%;
+  /* right: 8%; */
+  left: 8%;
 }
 .inp::placeholder {
   opacity: 0.5;

@@ -325,8 +325,8 @@ li {
   font-weight: 500;
 }
 .menubar {
-  margin-top: 50px;
-  height: 110px;
+  margin-top: 60px;
+  height: 120px;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
   justify-content: center;
   text-align: center;
@@ -341,9 +341,8 @@ li {
   color: #181414;
   text-align: center;
 }
-/* menu a {
-  text-decoration: none;
-  color: #181414;
+/* .menu-item {
+  width: 160%;
 } */
 .menu-item img {
   width: 70px;
@@ -636,7 +635,7 @@ li {
 .product-slider .product-bannder {
   min-width: 14%;
   background: rgb(255, 255, 255);
-  width: 100%;
+  width: 1;
 
   justify-content: start;
   left: 0;

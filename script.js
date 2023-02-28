@@ -125,7 +125,7 @@ buttonPrev.onclick = () => {
 let beautybuttonPrev = document.querySelector(".prev-beauty");
 let beautybuttonNext = document.querySelector(".next-beauty");
 let beautyproduct = document.getElementsByClassName("beauty");
-console.log(beautyproduct);
+// console.log(beautyproduct);
 
 let right_mover_beauty = () => {
   b = b + 1;
@@ -161,6 +161,92 @@ beautybuttonNext.onclick = () => {
 };
 beautybuttonPrev.onclick = () => {
   left_mover_beauty();
+};
+
+// steel slider//
+
+let steelbuttonPrev = document.querySelector(".prev-steel");
+let steelbuttonNext = document.querySelector(".next-steel");
+let steelproduct = document.getElementsByClassName("steel");
+// console.log(steelproduct);
+
+let right_mover_steel = () => {
+  b = b + 1;
+  if (b == 4) {
+    b = 0;
+    l = 0;
+  }
+  l = l + movePer;
+  if (steelproduct == 1) {
+    l = 0;
+  }
+  for (const i of steelproduct) {
+    i.style.left = "-" + l + "%";
+  }
+};
+let left_mover_steel = () => {
+  b = b - 1;
+  if (b < 0) {
+    b = 0;
+  }
+  l = l - movePer;
+  if (l <= 0) {
+    l = 0;
+  }
+  for (const i of steelproduct) {
+    if (product_page > 1) {
+      i.style.left = "-" + l + "%";
+    }
+  }
+};
+steelbuttonNext.onclick = () => {
+  right_mover_steel();
+};
+steelbuttonPrev.onclick = () => {
+  left_mover_steel();
+};
+
+// plate slider//
+
+let platebuttonPrev = document.querySelector(".prev-plate");
+let platebuttonNext = document.querySelector(".next-plate");
+let plateproduct = document.getElementsByClassName("plate");
+console.log(plateproduct);
+
+let right_mover_plate = () => {
+  b = b + 1;
+  if (b == 4) {
+    b = 0;
+    l = 0;
+  }
+  l = l + movePer;
+  if (plateproduct == 1) {
+    l = 0;
+  }
+  for (const i of plateproduct) {
+    i.style.left = "-" + l + "%";
+  }
+};
+let left_mover_plate = () => {
+  b = b - 1;
+  if (b < 0) {
+    b = 0;
+  }
+  l = l - movePer;
+  if (l <= 0) {
+    l = 0;
+  }
+  for (const i of plateproduct) {
+    if (product_page > 1) {
+      i.style.left = "-" + l + "%";
+    }
+  }
+};
+platebuttonNext.onclick = () => {
+  right_mover_plate();
+};
+platebuttonPrev.onclick = () => {
+  left_mover_plate();
 };
 
 // let searchForm = document.querySelector("#search-form");

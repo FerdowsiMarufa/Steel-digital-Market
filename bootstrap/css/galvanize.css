@@ -46,6 +46,7 @@ hr {
 .body-card .before-price {
   font-size: 11px;
   color: rgb(163, 163, 163);
+  text-decoration: line-through;
 }
 
 .star {
@@ -100,8 +101,8 @@ hr {
   margin-top: 3px;
   width: 500px;
   background-color: #fff;
-  height: 610px;
-  max-height: 580px;
+  height: 550px;
+
   z-index: 1;
   margin-left: -100px;
   /* box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1); */
@@ -110,7 +111,7 @@ hr {
 .menu-hover .div2,
 .menu-hover .div4 {
   background-color: #f4f3f5;
-  max-height: 580px;
+  height: 550px;
 }
 
 .electronics .first-li,
@@ -143,11 +144,11 @@ hr {
   margin-top: 80px;
   z-index: 1; */
   position: absolute;
-  margin-top: 8px;
-  width: 500px;
+  margin-top: 4px;
+  width: 400px;
   background-color: #fff;
-  height: 510px;
-  max-height: 580px;
+  height: 475px;
+  max-height: 550px;
   z-index: 1;
   margin-left: -100px;
   justify-content: space-between;

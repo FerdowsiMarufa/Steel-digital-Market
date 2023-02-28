@@ -251,7 +251,7 @@ function myFunction() {
       tp.className = "mb-0 text-secondary bef";
       imgdiv.className = "d-flex flex-column align-items-center";
       // console.log(dataArray[i].category);
-      if (dataArray[i].category == "Electronics") {
+      if (dataArray[i].category == "consumable") {
         document.getElementById("electronic-menu").style.backgroundColor =
           "#cee2eb";
       } else {

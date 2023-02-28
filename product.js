@@ -30,28 +30,6 @@ console.log(singleproduct);
 let searchbox = document.querySelector("#search-input");
 let searchForm2 = document.querySelector("#search-form");
 
-// let allval=[];
-// singleproduct.forEach((element) => {
-//         // let image=element.querySelector("img").currentSrc;
-//         // console.log(image);
-//          let val={
-//               category:"Electronics",
-//               img:element.querySelector("img").currentSrc,
-//               name:element.querySelectorAll("span")[0].textContent,
-//               after_price:element.querySelectorAll("span")[1].textContent,
-//               before_price:element.querySelectorAll("span")[2].textContent,
-
-//          }
-//          allval.push(val);
-
-//          let pre=document.querySelector("#msg pre");
-//          console.log(pre);
-//          pre.textContent='\n'+JSON.stringify(allval,'\t',2);
-//         // console.log(element.querySelector("img").currentSrc);
-//         // console.log(element.querySelectorAll("span")[0].textContent);
-//         // console.log(element.querySelectorAll("span")[1].textContent);
-//         // console.log(element.querySelectorAll("span")[2].textContent);
-// });
 const searchProduct2 = () => {
   document.querySelector(".product-not-found ").style.display = "none";
   const value = searchbox.value.toLowerCase();
@@ -64,6 +42,10 @@ const searchProduct2 = () => {
 
     if (name.indexOf(value) != -1) {
       element.style.display = "flex";
+      element.style.height = "320px";
+      element.style.width = "225px";
+      element.querySelector("img").style.height = "200px";
+      element.querySelector("img").style.width = "200px";
       x = 1;
       // console.log(x);
     } else {

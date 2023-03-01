@@ -84,10 +84,12 @@ let movePer = 14;
 
 let right_mover = () => {
   t = t + 1;
-
+  if (l > 42) {
+    l = 0;
+  }
   console.log(t, l);
   l = l + movePer;
-  if (t == 5) {
+  if (t == 4) {
     t = 0;
     l = 0;
   }
@@ -105,9 +107,9 @@ let left_mover = () => {
   }
   console.log(t, l);
   l = l - movePer;
-  // if (l <= 0) {
-  //   l = 0;
-  // }
+  if (l <= 0) {
+    l = 14 * 3;
+  }
   for (const i of product) {
     if (product_page > 1) {
       i.style.left = "-" + l + "%";
@@ -130,6 +132,9 @@ console.log(beautyproduct);
 
 let right_mover_beauty = () => {
   b = b + 1;
+  if (l > 42) {
+    l = 0;
+  }
   l = l + movePer;
   if (b == 4) {
     b = 0;
@@ -150,7 +155,7 @@ let left_mover_beauty = () => {
   }
   l = l - movePer;
   if (l <= 0) {
-    l = 0;
+    l = 14 * 3;
   }
   console.log(b, l);
   for (const i of beautyproduct) {
@@ -172,12 +177,15 @@ let steelbuttonPrev = document.querySelector(".prev-steel");
 let steelbuttonNext = document.querySelector(".next-steel");
 let steelproduct = document.getElementsByClassName("steel");
 console.log(steelproduct);
-
+let s = 0;
 let right_mover_steel = () => {
-  b = b + 1;
+  if (l > 42) {
+    l = 0;
+  }
+  s = s + 1;
   l = l + movePer;
-  if (b == 4) {
-    b = 0;
+  if (s == 4) {
+    s = 0;
     l = 0;
   }
 
@@ -189,13 +197,13 @@ let right_mover_steel = () => {
   }
 };
 let left_mover_steel = () => {
-  b = b - 1;
-  if (b < 0) {
-    b = 0;
+  s = s - 1;
+  if (s < 0) {
+    s = 0;
   }
   l = l - movePer;
   if (l <= 0) {
-    l = 0;
+    l = 14 * 3;
   }
   for (const i of steelproduct) {
     if (product_page > 1) {
@@ -216,12 +224,16 @@ let platebuttonPrev = document.querySelector(".prev-plate");
 let platebuttonNext = document.querySelector(".next-plate");
 let plateproduct = document.getElementsByClassName("plate");
 console.log(plateproduct);
-
+let p = 0;
 let right_mover_plate = () => {
-  b = b + 1;
+  if (l > 42) {
+    l = 0;
+  }
+  l = 0;
+  p = p + 1;
   l = l + movePer;
-  if (b == 4) {
-    b = 0;
+  if (p == 4) {
+    p = 0;
     l = 0;
   }
 
@@ -233,13 +245,13 @@ let right_mover_plate = () => {
   }
 };
 let left_mover_plate = () => {
-  b = b - 1;
-  if (b < 0) {
-    b = 0;
+  p = p - 1;
+  if (p < 0) {
+    p = 0;
   }
   l = l - movePer;
   if (l <= 0) {
-    l = 0;
+    l = 14 * 3;
   }
   for (const i of plateproduct) {
     if (product_page > 1) {

@@ -149,7 +149,7 @@ form {
 .login_menu {
   position: absolute;
   position: fixed;
-  top: 55px;
+  top: 60px;
   height: 280px;
   width: 100%;
   width: 230px;
@@ -227,7 +227,7 @@ a {
 
 .read-more {
   position: absolute;
-  top: 47px;
+  top: 50px;
   height: 200px;
   width: 100%;
   width: 230px;
@@ -331,7 +331,7 @@ li {
   justify-content: center;
   text-align: center;
   align-items: center;
-  padding-top: 100px;
+  /* padding-top: 100px; */
 }
 
 .menubar p {

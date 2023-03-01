@@ -109,7 +109,7 @@ let left_mover = () => {
   console.log(t, l);
   l = l - movePer;
   if (l <= 0) {
-    l = 14 * 3;
+    l = 0;
   }
   for (const i of product) {
     if (product_page > 1) {
@@ -156,7 +156,7 @@ let left_mover_beauty = () => {
   }
   l = l - movePer;
   if (l <= 0) {
-    l = 14 * 3;
+    l = 0;
   }
   console.log(b, l);
   for (const i of beautyproduct) {
@@ -204,7 +204,7 @@ let left_mover_steel = () => {
   }
   l = l - movePer;
   if (l <= 0) {
-    l = 14 * 3;
+    l = 0;
   }
   for (const i of steelproduct) {
     if (product_page > 1) {
@@ -251,7 +251,7 @@ let left_mover_plate = () => {
   }
   l = l - movePer;
   if (l <= 0) {
-    l = 14 * 3;
+    l = 0;
   }
   console.log(p, l);
   for (const i of plateproduct) {
@@ -326,8 +326,8 @@ function myFunction() {
       let sp = document.createElement("p");
       let tp = document.createElement("p");
       fp.className = "mb-0 fs-6 af";
-      fp.style.color="#024f6b";
-      fdiv.style.backgroundColor="white";
+      fp.style.color = "#024f6b";
+      fdiv.style.backgroundColor = "white";
       sp.className = "mb-0 text-warning";
       tp.className = "mb-0 text-secondary bef";
       imgdiv.className = "d-flex flex-column align-items-center";
@@ -335,20 +335,18 @@ function myFunction() {
       if (dataArray[i].category == "consumable") {
         document.getElementById("electronic-menu").style.backgroundColor =
           "#cee2eb";
-      } 
-      if(dataArray[i].category=="Steel"){
-        document.getElementById("ss").style.backgroundColor =
-        "#cee2eb"; 
       }
-      if(dataArray[i].category=="HR Plate"){
+      if (dataArray[i].category == "Steel") {
+        document.getElementById("ss").style.backgroundColor = "#cee2eb";
+      }
+      if (dataArray[i].category == "HR Plate") {
         document.getElementById("mobile-menu").style.backgroundColor =
-        "#cee2eb";    
+          "#cee2eb";
       }
 
       imgdiv.appendChild(img);
       fdiv.className = "w-25 px-5 py-2";
-      
-      
+
       img.style.height = "186px";
       img.src = dataArray[i].img;
       fp.innerText = dataArray[i].name;

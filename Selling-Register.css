@@ -191,7 +191,7 @@ form:focus-within {
 /* dashboard design  */
 .sel-dash{
      height: 600px;
-     
+    
      /* border: 5px solid red; */
 } 
 
@@ -211,5 +211,4 @@ form:focus-within {
   width: 24%;
   font-size: 19px;
   left: 3%;
-  
 }

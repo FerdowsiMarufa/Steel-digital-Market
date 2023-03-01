@@ -40,7 +40,7 @@ function goDashboard(){
           let mName=document.getElementById("mName").value;
           let lName=document.getElementById("lName").value; 
          
-          console.log(fName);
+          
           localStorage.setItem("Name",fName+" "+mName+" "+lName);
           window.location.href = "Dashboard.html";
                

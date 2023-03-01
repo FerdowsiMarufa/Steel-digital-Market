@@ -16,8 +16,20 @@
     <!-- <h1 class="text-center mt-5">
       Welcome <span class="text-primary" id="Name"></span> For Become Our Seller
     </h1> -->
-    <div>
-          <img src="/Seller-img/Deshboard.jpg" alt="">
+    <div class="sel-dash d-flex flex-column align-items-center justify-content-center">
+          <div class="img-div ">
+          <img src="/Seller-img/Deshboard.jpg" class="img-fluid" alt="">
+          <div class="name-div">
+           <h2 class="name-pos">
+            Welcome <span class="text-primary" id="Name"></span>
+           </h2>
+          </div>
+          
+           <h3 class="greet">
+           Welcome to your seller dashboard! This is your hub for managing your products and sales on our platform.
+           </h3>
+        
+        </div>
     </div>
     <!-- <img src="/Seller-Register-img/check-circle.svg" alt=""> -->
   </body>
@@ -25,8 +37,18 @@
   <script>
     let Name = document.getElementById("Name");
     let uName = localStorage.getItem("Name");
-    console.log(uName);
-    Name.innerText = uName;
+   
+    if(uName.length==2){
+     
+      Name.innerText="Imran Mustafiz";
+    } 
+    else{
+      
+      Name.innerText = uName;
+    }
+   
+     
+       
     localStorage.clear();
   </script>
 </html>

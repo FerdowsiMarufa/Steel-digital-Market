@@ -104,5 +104,5 @@ for (let i = 0; i < checkbox.length; i++) {
 window.onscroll = () => {
   document.querySelector(".header").style.boxShadow =
     "0 0.5rem 1.5rem rgba(0, 0, 0, 0.1)";
-  document.querySelector(".menu-bar-display").style.display = "none";
+  // document.querySelector(".menu-bar-display").style.display = "none";
 };

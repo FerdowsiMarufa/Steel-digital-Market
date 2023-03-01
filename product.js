@@ -77,7 +77,11 @@ for (let i = 0; i < checkbox.length; i++) {
       console.log(productName);
       singleproduct.forEach((element) => {
         let name = element.querySelector("span").textContent.toLowerCase();
-        if (name.indexOf(productName) != -1) {
+        if (name[0].indexOf(productName[0]) != -1) {
+          element.style.height = "320px";
+          element.style.width = "225px";
+          element.querySelector("img").style.height = "200px";
+          element.querySelector("img").style.width = "200px";
           element.style.display = "flex";
           x = 1;
           console.log("x1 :", x);
@@ -100,5 +104,5 @@ for (let i = 0; i < checkbox.length; i++) {
 window.onscroll = () => {
   document.querySelector(".header").style.boxShadow =
     "0 0.5rem 1.5rem rgba(0, 0, 0, 0.1)";
-  document.querySelector(".menu-bar-display").style.display = "none";
+  // document.querySelector(".menu-bar-display").style.display = "none";
 };

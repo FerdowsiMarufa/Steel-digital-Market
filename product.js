@@ -3,28 +3,35 @@ let x;
 let allproduct = document.querySelector(".product-row");
 let singleproduct = document.querySelectorAll(".card");
 console.log(singleproduct);
+// for create json data -------------------------------------
+let i=0;
+let objAll=[];
+console.log(singleproduct.forEach((element)=>{
+  let key="id"+i;
+let obj={
+    category:"Steel",
+    name:"",
+    img:"",
+    after_price:"",
+    before_price:""
 
-// let i=0;
-// console.log(singleproduct.forEach((element)=>{
-//   let key="id"+i;
-// let obj={
-//     name:"",
-//     img:"",
-//     after_price:"",
-//     before_price:""
+};
 
-// };
-
-//     console.log(element.querySelector("img"));
-//     obj.name=element.querySelector("span").textContent.toLowerCase();
-//     obj.img=element.querySelector("img").src;
-//     obj.after_price=element.getElementsByClassName("after-price")[0].innerHTML;
-//     obj.before_price=element.getElementsByClassName("before-price")[0].innerHTML;
-//     console.log(obj);
-
-//      localStorage.setItem(key,JSON.stringify(obj));
-//      i++;
-// }));
+    console.log(element.querySelector("img"));
+    obj.name=element.querySelector("span").textContent.toLowerCase();
+    obj.img=element.querySelector("img").src;
+    obj.after_price=element.getElementsByClassName("after-price")[0].innerHTML;
+    obj.before_price=element.getElementsByClassName("before-price")[0].innerHTML;
+    
+       
+    // localStorage.setItem(key,JSON.stringify(obj));
+       objAll.push(obj);
+     
+     i++;
+}));
+let pre=document.querySelector("#msg pre"); 
+pre.textContent=JSON.stringify(objAll,'',2);
+// -----------------------------------------
 
 // console.log(localStorage.length);
 let searchbox = document.querySelector("#search-input");

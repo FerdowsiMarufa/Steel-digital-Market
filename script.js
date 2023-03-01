@@ -306,6 +306,7 @@ function myFunction() {
   document.getElementById("after-ban").style.display = "none";
   document.getElementById("electronic-menu").style.backgroundColor = "white";
   document.getElementById("mobile-menu").style.backgroundColor = "white";
+  document.getElementById("ss").style.backgroundColor = "white";
   let show = document.getElementById("show-search");
   show.innerHTML = ` <section id="show-search" class="bg-light pt-3">
    <div id="items" class="w-100 d-flex flex-wrap bg-light">
@@ -332,10 +333,16 @@ function myFunction() {
       if (dataArray[i].category == "consumable") {
         document.getElementById("electronic-menu").style.backgroundColor =
           "#cee2eb";
-      } else {
-        document.getElementById("mobile-menu").style.backgroundColor =
-          "#cee2eb";
+      } 
+      if(dataArray[i].category=="Steel"){
+        document.getElementById("ss").style.backgroundColor =
+        "#cee2eb"; 
       }
+      if(dataArray[i].category=="HR Plate"){
+        document.getElementById("mobile-menu").style.backgroundColor =
+        "#cee2eb";    
+      }
+
       imgdiv.appendChild(img);
       fdiv.className = "w-25 px-5 py-2";
       img.style.height = "186px";

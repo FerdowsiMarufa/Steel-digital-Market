@@ -75,7 +75,7 @@ login.onclick = () => {
 let buttonPrev = document.querySelector(".prev");
 let buttonNext = document.querySelector(".next");
 let product = document.getElementsByClassName("e-product");
-// console.log(product);
+console.log(product);
 let product_page = Math.ceil(product.length / 6);
 let l = 0;
 let t = 0;
@@ -84,12 +84,13 @@ let movePer = 14;
 
 let right_mover = () => {
   t = t + 1;
-  if (t == 4) {
+
+  console.log(t, l);
+  l = l + movePer;
+  if (t == 5) {
     t = 0;
     l = 0;
   }
-  console.log(t);
-  l = l + movePer;
   if (product == 1) {
     l = 0;
   }
@@ -102,11 +103,11 @@ let left_mover = () => {
   if (t < 0) {
     t = 0;
   }
-  console.log(t);
+  console.log(t, l);
   l = l - movePer;
-  if (l <= 0) {
-    l = 0;
-  }
+  // if (l <= 0) {
+  //   l = 0;
+  // }
   for (const i of product) {
     if (product_page > 1) {
       i.style.left = "-" + l + "%";
@@ -125,15 +126,16 @@ buttonPrev.onclick = () => {
 let beautybuttonPrev = document.querySelector(".prev-beauty");
 let beautybuttonNext = document.querySelector(".next-beauty");
 let beautyproduct = document.getElementsByClassName("beauty");
-// console.log(beautyproduct);
+console.log(beautyproduct);
 
 let right_mover_beauty = () => {
   b = b + 1;
+  l = l + movePer;
   if (b == 4) {
     b = 0;
     l = 0;
   }
-  l = l + movePer;
+  console.log(b, l);
   if (beautyproduct == 1) {
     l = 0;
   }
@@ -150,6 +152,7 @@ let left_mover_beauty = () => {
   if (l <= 0) {
     l = 0;
   }
+  console.log(b, l);
   for (const i of beautyproduct) {
     if (product_page > 1) {
       i.style.left = "-" + l + "%";
@@ -168,15 +171,16 @@ beautybuttonPrev.onclick = () => {
 let steelbuttonPrev = document.querySelector(".prev-steel");
 let steelbuttonNext = document.querySelector(".next-steel");
 let steelproduct = document.getElementsByClassName("steel");
-// console.log(steelproduct);
+console.log(steelproduct);
 
 let right_mover_steel = () => {
   b = b + 1;
+  l = l + movePer;
   if (b == 4) {
     b = 0;
     l = 0;
   }
-  l = l + movePer;
+
   if (steelproduct == 1) {
     l = 0;
   }
@@ -215,11 +219,12 @@ console.log(plateproduct);
 
 let right_mover_plate = () => {
   b = b + 1;
+  l = l + movePer;
   if (b == 4) {
     b = 0;
     l = 0;
   }
-  l = l + movePer;
+
   if (plateproduct == 1) {
     l = 0;
   }
@@ -248,32 +253,6 @@ platebuttonNext.onclick = () => {
 platebuttonPrev.onclick = () => {
   left_mover_plate();
 };
-
-// let searchForm = document.querySelector("#search-form");
-// let products = document.querySelector(".product-slider");
-// let product2 = products.querySelectorAll(".product");
-// let searchbar = document.querySelector("#search-input");
-
-// const searchProduct = () => {
-//   const value = searchbar.value.toLowerCase();
-//   console.log(value);
-//   product2.forEach((element) => {
-//     let name = element.querySelector("h5").textContent.toLowerCase();
-//     if (name.indexOf(value) != -1) {
-//       element.style.display = "flex";
-//     } else {
-//       element.style.display = "none";
-//     }
-//   });
-// };
-// searchForm.addEventListener("keyup", searchProduct);
-
-//Product page
-
-// window.onscroll = () => {
-//   document.querySelector(".header").style.boxShadow =
-//     "0 0.5rem 1.5rem rgba(0, 0, 0, 0.6);";
-// };
 
 // product search
 

@@ -353,6 +353,10 @@ li {
 }
 
 /********************** pop up login */
+/* 
+.login-shadow {
+  position: absolute;
+} */
 .login-none {
   position: absolute;
   top: 17%;
@@ -556,10 +560,10 @@ li {
 .card {
   border: none;
 }
-.products {
+/* .products {
   width: 200px;
   height: 350px;
-}
+} */
 .banner-button {
   background-color: var(--main-color);
 }

@@ -325,7 +325,9 @@ function myFunction() {
       let fp = document.createElement("p");
       let sp = document.createElement("p");
       let tp = document.createElement("p");
-      fp.className = "text-primary mb-0 fs-6 af";
+      fp.className = "mb-0 fs-6 af";
+      fp.style.color="#024f6b";
+      fdiv.style.backgroundColor="white";
       sp.className = "mb-0 text-warning";
       tp.className = "mb-0 text-secondary bef";
       imgdiv.className = "d-flex flex-column align-items-center";
@@ -345,6 +347,8 @@ function myFunction() {
 
       imgdiv.appendChild(img);
       fdiv.className = "w-25 px-5 py-2";
+      
+      
       img.style.height = "186px";
       img.src = dataArray[i].img;
       fp.innerText = dataArray[i].name;

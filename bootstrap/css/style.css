@@ -339,6 +339,8 @@ li {
   font-size: 13px;
   opacity: 0.95;
   color: #181414;
+   margin-bottom: 0;
+   padding-bottom: 1px;
   text-align: center;
 }
 /* .menu-item {
@@ -647,6 +649,7 @@ li {
   text-align: center;
 }
 
+
 /* .card-body p {
   font-weight: 700;
 }
@@ -655,6 +658,11 @@ li {
 }
 .card-body p {
 } */
+
+/* search-items */
+#items{
+   margin-left: 55px;
+}
 
 .product-slider .product-bannder {
   z-index: 10;

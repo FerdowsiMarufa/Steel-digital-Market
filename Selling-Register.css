@@ -207,8 +207,12 @@ form:focus-within {
 
 .greet{
   position: absolute;
-  top: 34%;
+  top: 29%;
   width: 24%;
   font-size: 19px;
   left: 3%;
+}
+.congo{
+   color: #e07e08;
+   font-size: 28px;
 }

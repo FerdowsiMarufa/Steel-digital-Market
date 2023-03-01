@@ -1,6 +1,9 @@
 * {
   text-decoration: none;
 }
+body {
+  background: #dddfe2;
+}
 
 hr {
   padding-top: -9px !important;
@@ -194,14 +197,15 @@ hr {
 }
 
 /* list */
+
 .list ul li {
   font-size: 12.5px;
-  color:#302f2f;
+  color: #302f2f;
   cursor: pointer;
 }
 .list ul li label {
   cursor: pointer;
-  color:#302f2f;
+  color: #302f2f;
   font-weight: 400;
 }
 .list .gray {

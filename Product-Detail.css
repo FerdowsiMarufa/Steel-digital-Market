@@ -246,6 +246,7 @@ body {
 .checkbox {
   width: 25px;
   height: 25px;
+  margin-left: 10px;
 }
 .pc {
   height: 100px;

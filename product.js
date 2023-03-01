@@ -2,7 +2,7 @@
 let x;
 let allproduct = document.querySelector(".product-row");
 let singleproduct = document.querySelectorAll(".card");
-console.log(singleproduct);
+// console.log(singleproduct);
 // for create json data -------------------------------------
 // let i=0;
 // let objAll=[];

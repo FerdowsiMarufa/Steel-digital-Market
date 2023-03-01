@@ -72,6 +72,7 @@ login.onclick = () => {
 
 // slider
 
+// // slider
 let buttonPrev = document.querySelector(".prev");
 let buttonNext = document.querySelector(".next");
 let product = document.getElementsByClassName("e-product");
@@ -123,7 +124,7 @@ buttonPrev.onclick = () => {
   left_mover();
 };
 
-//beauty slider//
+// beauty slider//
 
 let beautybuttonPrev = document.querySelector(".prev-beauty");
 let beautybuttonNext = document.querySelector(".next-beauty");
@@ -226,17 +227,16 @@ let plateproduct = document.getElementsByClassName("plate");
 console.log(plateproduct);
 let p = 0;
 let right_mover_plate = () => {
+  p = p + 1;
   if (l > 42) {
     l = 0;
   }
-  l = 0;
-  p = p + 1;
   l = l + movePer;
   if (p == 4) {
     p = 0;
     l = 0;
   }
-
+  console.log(p, l);
   if (plateproduct == 1) {
     l = 0;
   }
@@ -253,6 +253,7 @@ let left_mover_plate = () => {
   if (l <= 0) {
     l = 14 * 3;
   }
+  console.log(p, l);
   for (const i of plateproduct) {
     if (product_page > 1) {
       i.style.left = "-" + l + "%";

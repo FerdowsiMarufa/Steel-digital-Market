@@ -513,7 +513,7 @@ li {
 }
 .fashion-more {
   position: absolute;
-  top: 100px;
+  top: 96px;
   height: 460px;
   width: 100%;
   width: 450px;
@@ -542,9 +542,9 @@ li {
   background-color: #eeeded;
   color: var(--main-color);
 }
-.fashion-more li:hover i {
+/* .fashion-more li:hover i {
   display: block;
-}
+} */
 
 .fashion-more i {
   font-size: 8px;

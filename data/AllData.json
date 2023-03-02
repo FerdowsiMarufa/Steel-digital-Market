@@ -1,109 +1,5 @@
 [
-    {
-      "category": "galvanize",
-      "img": "images/galvanize/g-1.jpg",
-      "name": "Alum (Aluminum Sulphate)",
-      "after_price": "39,166",
-      "before_price": "42,999"
-    },
-    {
-      "category": "galvanize",
-      "img": "images/galvanize/g-2.jpg",
-      "name": "Ammonium Chloride",
-      "after_price": "39,166",
-      "before_price": "42,999"
-    },
-    {
-      "category": "galvanize",
-      "img": "images/galvanize/g-3.jpg",
-      "name": "Alum (Aluminum Sulphate)",
-      "after_price": "39,166",
-      "before_price": "42,999"
-    },
-    {
-      "category": "galvanize",
-      "img": "images/galvanize/g4.jpg",
-      "name": "Alum (Aluminum Sulphate)",
-      "after_price": "39,166",
-      "before_price": "42,999"
-    },
-    {
-      "category": "galvanize",
-      "img": "images/galvanize/g5.jpg",
-      "name": "Alum (Aluminum Sulphate)",
-      "after_price": "39,166",
-      "before_price": "42,999"
-    },
-    {
-      "category": "galvanize",
-      "img": "images/galvanize/g-6.jpg",
-      "name": "Alum (Aluminum Sulphate)",
-      "after_price": "39,166",
-      "before_price": "42,999"
-    },
-    {
-      "category": "galvanize",
-      "img": "images/galvanize/g7.jpg",
-      "name": "Alum (Aluminum Sulphate)",
-      "after_price": "39,166",
-      "before_price": "42,999"
-    },
-    {
-      "category": "galvanize",
-      "img": "images/galvanize/g8.jpg",
-      "name": "Alum (Aluminum Sulphate)",
-      "after_price": "39,166",
-      "before_price": "42,999"
-    },
-    {
-      "category": "galvanize",
-      "img": "images/galvanize/g9.jpg",
-      "name": "Alum (Aluminum Sulphate)",
-      "after_price": "39,166",
-      "before_price": "42,999"
-    },
-    {
-      "category": "galvanize",
-      "img": "images/galvanize/g10.jpg",
-      "name": "Alum (Aluminum Sulphate)",
-      "after_price": "39,166",
-      "before_price": "42,999"
-    },
-    {
-      "category": "galvanize",
-      "img": "images/galvanize/g11.jpg",
-      "name": "Alum (Aluminum Sulphate)",
-      "after_price": "39,166",
-      "before_price": "42,999"
-    },
-    {
-      "category": "galvanize",
-      "img": "images/galvanize/g12.jpg",
-      "name": "Alum (Aluminum Sulphate)",
-      "after_price": "39,166",
-      "before_price": "42,999"
-    },
-    {
-      "category": "galvanize",
-      "img": "images/galvanize/g13.jpg",
-      "name": "Alum (Aluminum Sulphate)",
-      "after_price": "39,166",
-      "before_price": "42,999"
-    },
-    {
-      "category": "galvanize",
-      "img": "images/galvanize/g14.jpg",
-      "name": "Alum (Aluminum Sulphate)",
-      "after_price": "39,166",
-      "before_price": "42,999"
-    },
-    {
-      "category": "galvanize",
-      "img": "images/galvanize/g15.jpg",
-      "name": "Alum (Aluminum Sulphate)",
-      "after_price": "39,166",
-      "before_price": "42,999"
-    },
+    
   {
       "category": "consumable",
       "img": "images/consumable/c1.jpg",
@@ -419,6 +315,112 @@
       "img": "http://127.0.0.1:5501/Real-Images/SS%20Plate/splate15.jpg",
       "after_price": "39,166",
       "before_price": "42,999"
+    },
+    {
+      "category": "galvanize",
+      "img": "images/galvanize/g-1.jpg",
+      "name": "Alum (Aluminum Sulphate)",
+      "after_price": "39,166",
+      "before_price": "42,999"
+    },
+    {
+      "category": "galvanize",
+      "img": "images/galvanize/g-2.jpg",
+      "name": "Ammonium Chloride",
+      "after_price": "39,166",
+      "before_price": "42,999"
+    },
+    {
+      "category": "galvanize",
+      "img": "images/galvanize/g-3.jpg",
+      "name": "Alum (Aluminum Sulphate)",
+      "after_price": "39,166",
+      "before_price": "42,999"
+    },
+    {
+      "category": "galvanize",
+      "img": "images/galvanize/g4.jpg",
+      "name": "Alum (Aluminum Sulphate)",
+      "after_price": "39,166",
+      "before_price": "42,999"
+    },
+    {
+      "category": "galvanize",
+      "img": "images/galvanize/g5.jpg",
+      "name": "Alum (Aluminum Sulphate)",
+      "after_price": "39,166",
+      "before_price": "42,999"
+    },
+    {
+      "category": "galvanize",
+      "img": "images/galvanize/g-6.jpg",
+      "name": "Alum (Aluminum Sulphate)",
+      "after_price": "39,166",
+      "before_price": "42,999"
+    },
+    {
+      "category": "galvanize",
+      "img": "images/galvanize/g7.jpg",
+      "name": "Alum (Aluminum Sulphate)",
+      "after_price": "39,166",
+      "before_price": "42,999"
+    },
+    {
+      "category": "galvanize",
+      "img": "images/galvanize/g8.jpg",
+      "name": "Alum (Aluminum Sulphate)",
+      "after_price": "39,166",
+      "before_price": "42,999"
+    },
+    {
+      "category": "galvanize",
+      "img": "images/galvanize/g9.jpg",
+      "name": "Alum (Aluminum Sulphate)",
+      "after_price": "39,166",
+      "before_price": "42,999"
+    },
+    {
+      "category": "galvanize",
+      "img": "images/galvanize/g10.jpg",
+      "name": "Alum (Aluminum Sulphate)",
+      "after_price": "39,166",
+      "before_price": "42,999"
+    },
+    {
+      "category": "galvanize",
+      "img": "images/galvanize/g11.jpg",
+      "name": "Alum (Aluminum Sulphate)",
+      "after_price": "39,166",
+      "before_price": "42,999"
+    },
+    {
+      "category": "galvanize",
+      "img": "images/galvanize/g12.jpg",
+      "name": "Alum (Aluminum Sulphate)",
+      "after_price": "39,166",
+      "before_price": "42,999"
+    },
+    {
+      "category": "galvanize",
+      "img": "images/galvanize/g13.jpg",
+      "name": "Alum (Aluminum Sulphate)",
+      "after_price": "39,166",
+      "before_price": "42,999"
+    },
+    {
+      "category": "galvanize",
+      "img": "images/galvanize/g14.jpg",
+      "name": "Alum (Aluminum Sulphate)",
+      "after_price": "39,166",
+      "before_price": "42,999"
+    },
+    {
+      "category": "galvanize",
+      "img": "images/galvanize/g15.jpg",
+      "name": "Alum (Aluminum Sulphate)",
+      "after_price": "39,166",
+      "before_price": "42,999"
     }
+
   
   ]

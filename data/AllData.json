@@ -209,6 +209,216 @@
       "name": "Adhesive Tape",
       "after_price": "Multicolor",
       "before_price": "766"
+    },
+    {
+      "category": "HR Plate",
+      "name": "nde sheet plate",
+      "img": "http://127.0.0.1:5501/Real-Images/Hr%20Plates%20&%20HR%20Coil/hp1.jpg",
+      "after_price": "39,166",
+      "before_price": "42,999"
+    },
+    {
+      "category": "HR Plate",
+      "name": "nde sheet plate",
+      "img": "http://127.0.0.1:5501/Real-Images/Hr%20Plates%20&%20HR%20Coil/hp2.jpg",
+      "after_price": "33,166",
+      "before_price": "35,999"
+    },
+    {
+      "category": "HR Plate",
+      "name": "nde  carbon sheet plate",
+      "img": "http://127.0.0.1:5501/Real-Images/Hr%20Plates%20&%20HR%20Coil/hp3.jpg",
+      "after_price": "16,166",
+      "before_price": "19,999"
+    },
+    {
+      "category": "HR Plate",
+      "name": "nde sheet plate",
+      "img": "http://127.0.0.1:5501/Real-Images/Hr%20Plates%20&%20HR%20Coil/hp4.jpg",
+      "after_price": "55,166",
+      "before_price": "56,999"
+    },
+    {
+      "category": "HR Plate",
+      "name": " nde sheet plate",
+      "img": "http://127.0.0.1:5501/Real-Images/Hr%20Plates%20&%20HR%20Coil/hp5.jpg",
+      "after_price": "22,166",
+      "before_price": "23,999"
+    },
+    {
+      "category": "HR Plate",
+      "name": "tata sheet plate",
+      "img": "http://127.0.0.1:5501/Real-Images/Hr%20Plates%20&%20HR%20Coil/hp6.jpg",
+      "after_price": "39,166",
+      "before_price": "42,999"
+    },
+    {
+      "category": "HR Plate",
+      "name": " prime sheet plate",
+      "img": "http://127.0.0.1:5501/Real-Images/Hr%20Plates%20&%20HR%20Coil/hp7.jpg",
+      "after_price": "40,166",
+      "before_price": "42,999"
+    },
+    {
+      "category": "HR Plate",
+      "name": "jsw carbon sheet plate",
+      "img": "http://127.0.0.1:5501/Real-Images/Hr%20Plates%20&%20HR%20Coil/hp8.jpg",
+      "after_price": "60,166",
+      "before_price": "63,999"
+    },
+    {
+      "category": "HR Plate",
+      "name": " tata  sheet plate",
+      "img": "http://127.0.0.1:5501/Real-Images/Hr%20Plates%20&%20HR%20Coil/hp9.jpg",
+      "after_price": "39,166",
+      "before_price": "42,999"
+    },
+    {
+      "category": "HR Plate",
+      "name": "prime  carbon sheet plate",
+      "img": "http://127.0.0.1:5501/Real-Images/Hr%20Plates%20&%20HR%20Coil/hp10.jpg",
+      "after_price": "39,166",
+      "before_price": "42,999"
+    },
+    {
+      "category": "HR Plate",
+      "name": "nde carbon",
+      "img": "http://127.0.0.1:5501/Real-Images/Hr%20Plates%20&%20HR%20Coil/hp11.jpg",
+      "after_price": "39,166",
+      "before_price": "42,999"
+    },
+    {
+      "category": "HR Plate",
+      "name": "jsw sheet plate",
+      "img": "http://127.0.0.1:5501/Real-Images/Hr%20Plates%20&%20HR%20Coil/hp12.jpg",
+      "after_price": "39,166",
+      "before_price": "42,999"
+    },
+    {
+      "category": "HR Plate",
+      "name": "tata sheet plate",
+      "img": "http://127.0.0.1:5501/Real-Images/Hr%20Plates%20&%20HR%20Coil/hp13.jpg",
+      "after_price": "39,166",
+      "before_price": "42,999"
+    },
+    {
+      "category": "HR Plate",
+      "name": "nde carbon sheet plate",
+      "img": "http://127.0.0.1:5501/Real-Images/Hr%20Plates%20&%20HR%20Coil/hp14.jpg",
+      "after_price": "39,166",
+      "before_price": "42,999"
+    },
+    {
+      "category": "HR Plate",
+      "name": "jsw sheet plate",
+      "img": "http://127.0.0.1:5501/Real-Images/Hr%20Plates%20&%20HR%20Coil/hp15.jpg",
+      "after_price": "39,166",
+      "before_price": "42,999"
+    },
+    {
+      "category": "Steel",
+      "name": "nde  stainless steel plate  ",
+      "img": "http://127.0.0.1:5501/Real-Images/SS%20Plate/splate1.jpg",
+      "after_price": "39,166",
+      "before_price": "42,999"
+    },
+    {
+      "category": "Steel",
+      "name": "nde stainless steel plate",
+      "img": "http://127.0.0.1:5501/Real-Images/SS%20Plate/splate2.jpg",
+      "after_price": "33,166",
+      "before_price": "35,999"
+    },
+    {
+      "category": "Steel",
+      "name": "nde  stainless steel plate",
+      "img": "http://127.0.0.1:5501/Real-Images/SS%20Plate/splate3.jpg",
+      "after_price": "16,166",
+      "before_price": "19,999"
+    },
+    {
+      "category": "Steel",
+      "name": "nde stainless steel plate",
+      "img": "http://127.0.0.1:5501/Real-Images/SS%20Plate/splate4.jpg",
+      "after_price": "55,166",
+      "before_price": "56,999"
+    },
+    {
+      "category": "Steel",
+      "name": " nde stainless steel plate",
+      "img": "http://127.0.0.1:5501/Real-Images/SS%20Plate/splate5.jpg",
+      "after_price": "22,166",
+      "before_price": "23,999"
+    },
+    {
+      "category": "Steel",
+      "name": "tata stainless steel plate",
+      "img": "http://127.0.0.1:5501/Real-Images/SS%20Plate/splate6.jpg",
+      "after_price": "39,166",
+      "before_price": "42,999"
+    },
+    {
+      "category": "Steel",
+      "name": " prime stainless steelplate",
+      "img": "http://127.0.0.1:5501/Real-Images/SS%20Plate/splate7.jpg",
+      "after_price": "40,166",
+      "before_price": "42,999"
+    },
+    {
+      "category": "Steel",
+      "name": "jsw stainless steel plate",
+      "img": "http://127.0.0.1:5501/Real-Images/SS%20Plate/splate8.jpg",
+      "after_price": "60,166",
+      "before_price": "63,999"
+    },
+    {
+      "category": "Steel",
+      "name": " tata  stainless steel plate",
+      "img": "http://127.0.0.1:5501/Real-Images/SS%20Plate/splate9.jpg",
+      "after_price": "39,166",
+      "before_price": "42,999"
+    },
+    {
+      "category": "Steel",
+      "name": "prime stainless steel plate",
+      "img": "http://127.0.0.1:5501/Real-Images/SS%20Plate/splate10.jpg",
+      "after_price": "39,166",
+      "before_price": "42,999"
+    },
+    {
+      "category": "Steel",
+      "name": "nde stainless steel plate",
+      "img": "http://127.0.0.1:5501/Real-Images/SS%20Plate/splate11.jpg",
+      "after_price": "39,166",
+      "before_price": "42,999"
+    },
+    {
+      "category": "Steel",
+      "name": "jsw stainless steel plate",
+      "img": "http://127.0.0.1:5501/Real-Images/SS%20Plate/splate12.jpg",
+      "after_price": "39,166",
+      "before_price": "42,999"
+    },
+    {
+      "category": "Steel",
+      "name": "tata stainless steel plate",
+      "img": "http://127.0.0.1:5501/Real-Images/SS%20Plate/splate13.jpg",
+      "after_price": "39,166",
+      "before_price": "42,999"
+    },
+    {
+      "category": "Steel",
+      "name": "nde stainless steel plate",
+      "img": "http://127.0.0.1:5501/Real-Images/SS%20Plate/splate14.jpg",
+      "after_price": "39,166",
+      "before_price": "42,999"
+    },
+    {
+      "category": "Steel",
+      "name": "jsw stainless steel plate",
+      "img": "http://127.0.0.1:5501/Real-Images/SS%20Plate/splate15.jpg",
+      "after_price": "39,166",
+      "before_price": "42,999"
     }
   
   ]

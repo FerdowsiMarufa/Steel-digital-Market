@@ -186,3 +186,33 @@ form:focus-within {
   line-height: 24px;
   color: rgb(96, 112, 128);
 }
+
+
+/* dashboard design  */
+.sel-dash{
+     height: 600px;
+    
+     /* border: 5px solid red; */
+} 
+
+.img-div{
+  position: relative;
+}
+.name-div{
+  position: absolute;
+  top: 32%;
+  right: 8%;
+  width: 279px;
+}
+
+.greet{
+  position: absolute;
+  top: 29%;
+  width: 24%;
+  font-size: 19px;
+  left: 3%;
+}
+.congo{
+   color: #e07e08;
+   font-size: 28px;
+}

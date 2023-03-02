@@ -149,7 +149,7 @@ form {
 .login_menu {
   position: absolute;
   position: fixed;
-  top: 55px;
+  top: 60px;
   height: 280px;
   width: 100%;
   width: 230px;
@@ -227,7 +227,7 @@ a {
 
 .read-more {
   position: absolute;
-  top: 47px;
+  top: 50px;
   height: 200px;
   width: 100%;
   width: 230px;
@@ -331,7 +331,7 @@ li {
   justify-content: center;
   text-align: center;
   align-items: center;
-  padding-top: 100px;
+  /* padding-top: 100px; */
 }
 
 .menubar p {
@@ -339,6 +339,8 @@ li {
   font-size: 13px;
   opacity: 0.95;
   color: #181414;
+  margin-bottom: 0;
+  padding-bottom: 1px;
   text-align: center;
 }
 /* .menu-item {
@@ -508,16 +510,26 @@ li {
 .fashion {
   position: relative;
 }
-.fashion-display {
+.fashion-display,
+.clean-display,
+.allen-display,
+.bolt-display,
+.fual-display,
+.hard-display {
   display: none;
 }
 
-.fashion:hover .fashion-display {
+.fashion:hover .fashion-display,
+.clean:hover .clean-display,
+.allen:hover .allen-display,
+.bolt:hover .bolt-display,
+.fual:hover .fual-display,
+.hard:hover .hard-display {
   display: block;
 }
 .fashion-more {
   position: absolute;
-  top: 96px;
+  top: 93px;
   height: 460px;
   width: 100%;
   width: 450px;
@@ -655,6 +667,11 @@ li {
 }
 .card-body p {
 } */
+
+/* search-items */
+#items {
+  margin-left: 55px;
+}
 
 .product-slider .product-bannder {
   z-index: 10;

@@ -15,6 +15,9 @@ hr {
 .Logo-Container a {
   text-decoration: none;
 }
+.body-containner {
+  margin-left: 80px !important;
+}
 
 .categories span {
   font-size: 13px;
@@ -33,6 +36,12 @@ hr {
 .box {
   border: none;
 }
+.card {
+  width: 20%;
+}
+/* .card img {
+  width: 99%;
+} */
 .body-card {
   display: block;
 }
@@ -55,10 +64,6 @@ hr {
 .star {
   color: rgb(231, 169, 34);
   font-size: 13px;
-}
-
-.box img {
-  width: 40px;
 }
 
 /*************** menu bar **************/

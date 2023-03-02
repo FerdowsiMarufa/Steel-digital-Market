@@ -360,21 +360,23 @@ li {
   position: relative;
 }
 .menu-display {
-  display: none;
+  /* display: none; */
+  z-index: 20;
+  position: absolute;
 }
 
 .menu-item:hover .menu-display {
   display: block;
 }
 .menu-more {
-  position: absolute;
-  top: 95px;
+  /* position: absolute; */
+  top: 94.5px;
   height: 460px;
   width: 400px;
   background-color: white;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
-  transform: translateX(-33%);
-  display: none;
+  /* transform: translateX(-33%); */
+  /* display: none; */
   z-index: 20;
   border: 2px solid rgb(207, 207, 207);
   border-top: 1px solid rgb(207, 207, 207);

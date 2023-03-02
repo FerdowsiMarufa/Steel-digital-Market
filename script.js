@@ -24,7 +24,7 @@ input_search.onclick = () => {
   input_search.style.value;
 };
 
-let recentArray = ["mobile", "phone"];
+let recentArray = [];
 form_search.addEventListener("submit", (e) => {
   e.preventDefault();
   recentArray.unshift(input_search.value);
@@ -333,8 +333,7 @@ function myFunction() {
       imgdiv.className = "d-flex flex-column align-items-center";
       // console.log(dataArray[i].category);
       if (dataArray[i].category == "consumable") {
-        document.getElementById("electronic-menu").style.backgroundColor =
-          "#cee2eb";
+        document.getElementById(".menu-name").style.backgroundColor = "#cee2eb";
       }
       if (dataArray[i].category == "Steel") {
         document.getElementById("ss").style.backgroundColor = "#cee2eb";
@@ -375,4 +374,9 @@ function myFunction() {
   // } else {
   //   window.location.href = "/electronics.html";
   // }
+}
+
+function myFunction2() {
+  console.log("hi marufaa");
+  window.location.href = "/Product-Detail.html";
 }

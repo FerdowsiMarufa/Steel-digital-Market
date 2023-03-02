@@ -6,10 +6,10 @@
 :root {
   --main-color: #3a98b9;
   --second-color: #0a8bba;
-  --x: #f1f3f6;
+  --x: #f4fcff;
 }
 body {
-  background-color: #f4fcff;
+  background-color: #dce7eb;
 }
 .logo-img {
   height: 70px;

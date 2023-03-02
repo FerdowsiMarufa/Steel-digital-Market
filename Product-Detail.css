@@ -5,8 +5,8 @@ body {
   font-size: 14px;
   background-color: #f1f3f6;
 }
-section{
-    background-color: #fff;
+section {
+  background-color: #fff;
 }
 .add-cart {
   padding: 18px 8px;
@@ -94,7 +94,8 @@ section{
   color: var(--main-color);
 }
 .exchange {
-  background-color: #f5faff;
+  /* background-color: #f5faff; */
+  background-color: aliceblue;
   border-top: 1px solid #e0e0e0;
   border-right: 1px solid #e0e0e0;
   border-left: 1px solid #e0e0e0;
@@ -102,6 +103,7 @@ section{
 }
 .exchange-with {
   font-size: 14px;
+  background-color: aliceblue;
 }
 .up-to {
   font-weight: 600;
@@ -207,6 +209,8 @@ section{
 }
 .product-des {
   width: 55rem;
+  /* background-color: #eff4f7; */
+  background-color: aliceblue;
 }
 .bezel {
   font-size: 20px;
@@ -375,6 +379,7 @@ section{
 .card-bod {
   width: 25rem;
   height: 10rem;
+  background-color: aliceblue;
 }
 .carousel-control-next,
 .carousel-control-prev {

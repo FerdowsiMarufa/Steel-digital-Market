@@ -1,215 +1,5 @@
 [
-    {
-      "category": "galvanize",
-      "img": "images/galvanize/g-1.jpg",
-      "name": "Alum (Aluminum Sulphate)",
-      "after_price": "39,166",
-      "before_price": "42,999"
-    },
-    {
-      "category": "galvanize",
-      "img": "images/galvanize/g-2.jpg",
-      "name": "Ammonium Chloride",
-      "after_price": "39,166",
-      "before_price": "42,999"
-    },
-    {
-      "category": "galvanize",
-      "img": "images/galvanize/g-3.jpg",
-      "name": "Alum (Aluminum Sulphate)",
-      "after_price": "39,166",
-      "before_price": "42,999"
-    },
-    {
-      "category": "galvanize",
-      "img": "images/galvanize/g4.jpg",
-      "name": "Alum (Aluminum Sulphate)",
-      "after_price": "39,166",
-      "before_price": "42,999"
-    },
-    {
-      "category": "galvanize",
-      "img": "images/galvanize/g5.jpg",
-      "name": "Alum (Aluminum Sulphate)",
-      "after_price": "39,166",
-      "before_price": "42,999"
-    },
-    {
-      "category": "galvanize",
-      "img": "images/galvanize/g-6.jpg",
-      "name": "Alum (Aluminum Sulphate)",
-      "after_price": "39,166",
-      "before_price": "42,999"
-    },
-    {
-      "category": "galvanize",
-      "img": "images/galvanize/g7.jpg",
-      "name": "Alum (Aluminum Sulphate)",
-      "after_price": "39,166",
-      "before_price": "42,999"
-    },
-    {
-      "category": "galvanize",
-      "img": "images/galvanize/g8.jpg",
-      "name": "Alum (Aluminum Sulphate)",
-      "after_price": "39,166",
-      "before_price": "42,999"
-    },
-    {
-      "category": "galvanize",
-      "img": "images/galvanize/g9.jpg",
-      "name": "Alum (Aluminum Sulphate)",
-      "after_price": "39,166",
-      "before_price": "42,999"
-    },
-    {
-      "category": "galvanize",
-      "img": "images/galvanize/g10.jpg",
-      "name": "Alum (Aluminum Sulphate)",
-      "after_price": "39,166",
-      "before_price": "42,999"
-    },
-    {
-      "category": "galvanize",
-      "img": "images/galvanize/g11.jpg",
-      "name": "Alum (Aluminum Sulphate)",
-      "after_price": "39,166",
-      "before_price": "42,999"
-    },
-    {
-      "category": "galvanize",
-      "img": "images/galvanize/g12.jpg",
-      "name": "Alum (Aluminum Sulphate)",
-      "after_price": "39,166",
-      "before_price": "42,999"
-    },
-    {
-      "category": "galvanize",
-      "img": "images/galvanize/g13.jpg",
-      "name": "Alum (Aluminum Sulphate)",
-      "after_price": "39,166",
-      "before_price": "42,999"
-    },
-    {
-      "category": "galvanize",
-      "img": "images/galvanize/g14.jpg",
-      "name": "Alum (Aluminum Sulphate)",
-      "after_price": "39,166",
-      "before_price": "42,999"
-    },
-    {
-      "category": "galvanize",
-      "img": "images/galvanize/g15.jpg",
-      "name": "Alum (Aluminum Sulphate)",
-      "after_price": "39,166",
-      "before_price": "42,999"
-    },
-  {
-      "category": "consumable",
-      "img": "images/consumable/c1.jpg",
-      "name": "Adhesive Tape",
-      "after_price": "60,166",
-      "before_price": "63,999"
-    },
-    {
-      "category": "consumable",
-      "img": "images/consumable/c2.jpg",
-      "name": "Air Nozzle",
-      "after_price": "39,166",
-      "before_price": "42,999"
-    },
-    {
-      "category": "consumable",
-      "img": "images/consumable/c3.jpg",
-      "name": "Air Solinoid Valve",
-      "after_price": "39,166",
-      "before_price": "42,999"
-    },
-    {
-      "category": "consumable",
-      "img": "images/consumable/c4.jpg",
-      "name": "Anchor Nut",
-      "after_price": "39,166",
-      "before_price": "42,999"
-    },
-    {
-      "category": "consumable",
-      "img": "images/consumable/c5.jpg",
-      "name": "Bottom Wheel",
-      "after_price": "39,166",
-      "before_price": "42,999"
-    },
-    {
-      "category": "consumable",
-      "img": "images/consumable/c6.jpg",
-      "name": "Carbid Drill Screw",
-      "after_price": "39,166",
-      "before_price": "42,999"
-    },
-    {
-      "category": "consumable",
-      "img": "images/consumable/c7.jpg",
-      "name": "Air Solinoid Valve",
-      "after_price": "39,166",
-      "before_price": "42,999"
-    },
-    {
-      "category": "consumable",
-      "img": "images/consumable/c8.jpg",
-      "name": "Anchor Nut",
-      "after_price": "39,166",
-      "before_price": "42,999"
-    },
-    {
-      "category": "consumable",
-      "img": "images/consumable/c9.jpg",
-      "name": "BatteryTerminal Cover",
-      "after_price": "3,166",
-      "before_price": "3,999"
-    },
-    {
-      "category": "consumable",
-      "img": "images/consumable/c11.jpg",
-      "name": "Carbid Drill Screw",
-      "after_price": "Black",
-      "before_price": "1,166"
-    },
-    {
-      "category": "consumable",
-      "img": "images/consumable/c-12.jpg",
-      "name": "Battery Terminal Cover",
-      "after_price": "Pink, Golden, silver",
-      "before_price": "6,16"
-    },
-    {
-      "category": "consumable",
-      "img": "images/consumable/c10.jpg",
-      "name": "Carbid Drill Screw",
-      "after_price": "Pink, Golden, silver",
-      "before_price": "6,16"
-    },
-  
-    {
-      "category": "consumable",
-      "img": "images/consumable/c13.jpg",
-      "name": "Anchor Nut",
-      "after_price": "Pink, Golden, silver",
-      "before_price": "6,16"
-    },
-    {
-      "category": "consumable",
-      "img": "images/consumable/c14.jpg",
-      "name": "Air Nozzle",
-      "after_price": "green",
-      "before_price": "866"
-    },
-    {
-      "category": "consumable",
-      "img": "images/consumable/c15.jpg",
-      "name": "Adhesive Tape",
-      "after_price": "Multicolor",
-      "before_price": "766"
-    },
+    
     {
       "category": "HR Plate",
       "name": "NDE sheet plate",
@@ -419,6 +209,218 @@
       "img": "http://127.0.0.1:5501/Real-Images/SS%20Plate/splate15.jpg",
       "after_price": "39,166",
       "before_price": "42,999"
+    },
+    {
+      "category": "galvanize",
+      "img": "images/galvanize/g-1.jpg",
+      "name": "Alum (Aluminum Sulphate)",
+      "after_price": "39,166",
+      "before_price": "42,999"
+    },
+    {
+      "category": "galvanize",
+      "img": "images/galvanize/g-2.jpg",
+      "name": "Ammonium Chloride",
+      "after_price": "39,166",
+      "before_price": "42,999"
+    },
+    {
+      "category": "galvanize",
+      "img": "images/galvanize/g-3.jpg",
+      "name": "Alum (Aluminum Sulphate)",
+      "after_price": "39,166",
+      "before_price": "42,999"
+    },
+    {
+      "category": "galvanize",
+      "img": "images/galvanize/g4.jpg",
+      "name": "Alum (Aluminum Sulphate)",
+      "after_price": "39,166",
+      "before_price": "42,999"
+    },
+    {
+      "category": "galvanize",
+      "img": "images/galvanize/g5.jpg",
+      "name": "Alum (Aluminum Sulphate)",
+      "after_price": "39,166",
+      "before_price": "42,999"
+    },
+    {
+      "category": "galvanize",
+      "img": "images/galvanize/g-6.jpg",
+      "name": "Alum (Aluminum Sulphate)",
+      "after_price": "39,166",
+      "before_price": "42,999"
+    },
+    {
+      "category": "galvanize",
+      "img": "images/galvanize/g7.jpg",
+      "name": "Alum (Aluminum Sulphate)",
+      "after_price": "39,166",
+      "before_price": "42,999"
+    },
+    {
+      "category": "galvanize",
+      "img": "images/galvanize/g8.jpg",
+      "name": "Alum (Aluminum Sulphate)",
+      "after_price": "39,166",
+      "before_price": "42,999"
+    },
+    {
+      "category": "galvanize",
+      "img": "images/galvanize/g9.jpg",
+      "name": "Alum (Aluminum Sulphate)",
+      "after_price": "39,166",
+      "before_price": "42,999"
+    },
+    {
+      "category": "galvanize",
+      "img": "images/galvanize/g10.jpg",
+      "name": "Alum (Aluminum Sulphate)",
+      "after_price": "39,166",
+      "before_price": "42,999"
+    },
+    {
+      "category": "galvanize",
+      "img": "images/galvanize/g11.jpg",
+      "name": "Alum (Aluminum Sulphate)",
+      "after_price": "39,166",
+      "before_price": "42,999"
+    },
+    {
+      "category": "galvanize",
+      "img": "images/galvanize/g12.jpg",
+      "name": "Alum (Aluminum Sulphate)",
+      "after_price": "39,166",
+      "before_price": "42,999"
+    },
+    {
+      "category": "galvanize",
+      "img": "images/galvanize/g13.jpg",
+      "name": "Alum (Aluminum Sulphate)",
+      "after_price": "39,166",
+      "before_price": "42,999"
+    },
+    {
+      "category": "galvanize",
+      "img": "images/galvanize/g14.jpg",
+      "name": "Alum (Aluminum Sulphate)",
+      "after_price": "39,166",
+      "before_price": "42,999"
+    },
+    {
+      "category": "galvanize",
+      "img": "images/galvanize/g15.jpg",
+      "name": "Alum (Aluminum Sulphate)",
+      "after_price": "39,166",
+      "before_price": "42,999"
+    },
+    {
+      "category": "consumable",
+      "img": "images/consumable/c1.jpg",
+      "name": "Adhesive Tape",
+      "after_price": "60,166",
+      "before_price": "63,999"
+    },
+    {
+      "category": "consumable",
+      "img": "images/consumable/c2.jpg",
+      "name": "Air Nozzle",
+      "after_price": "39,166",
+      "before_price": "42,999"
+    },
+    {
+      "category": "consumable",
+      "img": "images/consumable/c3.jpg",
+      "name": "Air Solinoid Valve",
+      "after_price": "39,166",
+      "before_price": "42,999"
+    },
+    {
+      "category": "consumable",
+      "img": "images/consumable/c4.jpg",
+      "name": "Anchor Nut",
+      "after_price": "39,166",
+      "before_price": "42,999"
+    },
+    {
+      "category": "consumable",
+      "img": "images/consumable/c5.jpg",
+      "name": "Bottom Wheel",
+      "after_price": "39,166",
+      "before_price": "42,999"
+    },
+    {
+      "category": "consumable",
+      "img": "images/consumable/c6.jpg",
+      "name": "Carbid Drill Screw",
+      "after_price": "39,166",
+      "before_price": "42,999"
+    },
+    {
+      "category": "consumable",
+      "img": "images/consumable/c7.jpg",
+      "name": "Air Solinoid Valve",
+      "after_price": "39,166",
+      "before_price": "42,999"
+    },
+    {
+      "category": "consumable",
+      "img": "images/consumable/c8.jpg",
+      "name": "Anchor Nut",
+      "after_price": "39,166",
+      "before_price": "42,999"
+    },
+    {
+      "category": "consumable",
+      "img": "images/consumable/c9.jpg",
+      "name": "BatteryTerminal Cover",
+      "after_price": "3,166",
+      "before_price": "3,999"
+    },
+    {
+      "category": "consumable",
+      "img": "images/consumable/c11.jpg",
+      "name": "Carbid Drill Screw",
+      "after_price": "Black",
+      "before_price": "1,166"
+    },
+    {
+      "category": "consumable",
+      "img": "images/consumable/c-12.jpg",
+      "name": "Battery Terminal Cover",
+      "after_price": "Pink, Golden, silver",
+      "before_price": "6,16"
+    },
+    {
+      "category": "consumable",
+      "img": "images/consumable/c10.jpg",
+      "name": "Carbid Drill Screw",
+      "after_price": "Pink, Golden, silver",
+      "before_price": "6,16"
+    },
+  
+    {
+      "category": "consumable",
+      "img": "images/consumable/c13.jpg",
+      "name": "Anchor Nut",
+      "after_price": "Pink, Golden, silver",
+      "before_price": "6,16"
+    },
+    {
+      "category": "consumable",
+      "img": "images/consumable/c14.jpg",
+      "name": "Air Nozzle",
+      "after_price": "green",
+      "before_price": "866"
+    },
+    {
+      "category": "consumable",
+      "img": "images/consumable/c15.jpg",
+      "name": "Adhesive Tape",
+      "after_price": "Multicolor",
+      "before_price": "766"
     }
+
   
   ]

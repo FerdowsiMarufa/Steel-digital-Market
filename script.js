@@ -308,8 +308,8 @@ function myFunction() {
   document.getElementById("mobile-menu").style.backgroundColor = "white";
   document.getElementById("ss").style.backgroundColor = "white";
   let show = document.getElementById("show-search");
-  show.innerHTML = ` <section id="show-search" class="bg-light pt-3">
-   <div id="items" class="w-100 d-flex flex-wrap bg-light">
+  show.innerHTML = ` <section id="show-search" class="pt-3">
+   <div id="items" class="w-100 d-flex flex-wrap">
          
        </div>
     </section>`;
@@ -358,7 +358,7 @@ function myFunction() {
       fdiv.appendChild(tp);
       items.appendChild(fdiv);
 
-      fdiv.className = "py-5";
+      fdiv.className = "py-5 me-2 mb-2";
       fdiv.style.padding = "3px 20px";
       fdiv.style.width = "18%";
       img.style.width = "190px";

@@ -6,9 +6,10 @@
 :root {
   --main-color: #3a98b9;
   --second-color: #0a8bba;
+  --x: #f1f3f6;
 }
 body {
-  background: #f1f3f6;
+  background-color: #f4fcff;
 }
 .logo-img {
   height: 70px;
@@ -354,6 +355,60 @@ li {
   color: var(--main-color);
 }
 
+/* menu     hr, ss , bolt hover */
+.menu-item {
+  position: relative;
+}
+.menu-display {
+  display: none;
+}
+
+.menu-item:hover .menu-display {
+  display: block;
+}
+.menu-more {
+  position: absolute;
+  top: 95px;
+  height: 460px;
+  width: 400px;
+  background-color: white;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  transform: translateX(-33%);
+  display: none;
+  z-index: 20;
+  border: 2px solid rgb(207, 207, 207);
+  border-top: 1px solid rgb(207, 207, 207);
+}
+.menu-list {
+  /* box-shadow: -5px -0px 5px rgba(0, 0, 0, 0.1), 5px 5px 5px rgba(0, 0, 0, 0.1); */
+  text-align: start;
+}
+.list-indiviual {
+  /* box-shadow: -3px -0px 100px rgba(0, 0, 0, 0.1), 5px 5px 5px rgba(0, 0, 0, 0.1); */
+  background-color: #e8eef5;
+}
+.menu-more li {
+  color: #000000;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 8px 14px;
+  margin-left: -25px;
+  margin-right: 10px;
+}
+.menu-more li:hover {
+  background-color: #ddecf5;
+  color: var(--second-color);
+}
+/* .fashion-more li:hover i {
+  display: block;
+} */
+
+.menu-more i {
+  font-size: 8px;
+  margin-top: 6px;
+  display: none;
+}
+
 /********************** pop up login */
 /* 
 .login-shadow {
@@ -506,68 +561,6 @@ li {
 }
 /*pop up  create account end */
 
-/* fashion */
-.fashion {
-  position: relative;
-}
-.fashion-display,
-.clean-display,
-.allen-display,
-.bolt-display,
-.fual-display,
-.hard-display {
-  display: none;
-}
-
-.fashion:hover .fashion-display,
-.clean:hover .clean-display,
-.allen:hover .allen-display,
-.bolt:hover .bolt-display,
-.fual:hover .fual-display,
-.hard:hover .hard-display {
-  display: block;
-}
-.fashion-more {
-  position: absolute;
-  top: 93px;
-  height: 460px;
-  width: 100%;
-  width: 450px;
-  background-color: white;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
-  transform: translateX(-33%);
-  display: none;
-  z-index: 20;
-}
-.fashion-list {
-  box-shadow: -5px -0px 5px rgba(0, 0, 0, 0.1), 5px 5px 5px rgba(0, 0, 0, 0.1);
-  text-align: start;
-}
-.list-indiviual {
-  box-shadow: -3px -0px 100px rgba(0, 0, 0, 0.1), 5px 5px 5px rgba(0, 0, 0, 0.1);
-}
-.fashion-more li {
-  color: #000000;
-  font-size: 13px;
-  font-weight: 500;
-  padding: 8px 14px;
-  margin-left: -18px;
-  margin-right: 15px;
-}
-.fashion-more li:hover {
-  background-color: #eeeded;
-  color: var(--main-color);
-}
-/* .fashion-more li:hover i {
-  display: block;
-} */
-
-.fashion-more i {
-  font-size: 8px;
-  margin-top: 6px;
-  display: none;
-}
-
 /* product */
 .card {
   border: none;
@@ -686,7 +679,7 @@ li {
 
 .carousel-button {
   position: absolute;
-  z-index: 20;
+  z-index: 2;
   background: none;
   border: none;
   font-size: 5rem;

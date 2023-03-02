@@ -2,7 +2,7 @@
   text-decoration: none;
 }
 body {
-  background: #dddfe2;
+  background-color: #f0f8fb !important;
 }
 
 hr {
@@ -27,7 +27,7 @@ hr {
   text-decoration: none;
 }
 .card:hover {
-  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
 
 .box {
@@ -111,9 +111,8 @@ hr {
   /* box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1); */
   display: none;
 }
-.menu-hover .div2,
-.menu-hover .div4 {
-  background-color: #f4f3f5;
+.div2 {
+  background-color: #f3f9ff;
   height: 550px;
 }
 
@@ -130,7 +129,7 @@ hr {
   cursor: pointer;
   text-align: start;
   font-weight: 500;
-  color: #857d7d;
+  color: #383737;
 }
 /**************** pop up on hover end*/
 
@@ -196,7 +195,15 @@ hr {
   color: var(--second-color);
 }
 
-/* list */
+.list {
+  width: 307px;
+  margin-top: 10px;
+  padding: 24px;
+  background-color: #fff;
+  margin-right: 1rem;
+  margin-top: 2rem;
+  border-radius: 5px;
+}
 
 .list ul li {
   font-size: 12.5px;
@@ -210,70 +217,13 @@ hr {
 }
 .list .gray {
   font-size: 14px;
+  font-weight: 500;
   color: #000000;
   margin-bottom: 6px;
 }
-
-/* login popup on :hover */
-
-/* 
-.login-button {
-  position: relative;
+.products-list {
+  margin-top: 3rem;
 }
-.login {
-  margin-top: 2px;
-}
-.login_menu {
-  position: absolute;
-  position: fixed;
-  top: 55px;
-  height: 280px;
-  width: 100%;
-  width: 230px;
-  background-color: white;
-  box-shadow: -5px -0px 5px rgba(0, 0, 0, 0.1), 5px 5px 5px rgba(0, 0, 0, 0.1);
-  transform: translateX(-30%);
-  display: none;
-}
-.login_menu.active {
-  display: block;
-}
-.login_menu::before {
-  position: absolute;
-
-  content: "";
-  margin-left: 110px;
-  top: -10px;
-  border-top: 0px solid transparent;
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent;
-  border-bottom: 10px solid white;
-}
-a {
-  text-decoration: none;
-}
-
-.login-button:hover .login_menu {
-  display: block;
-}
-
-.login_menu_list {
-  height: 100%;
-  max-width: 100%;
-  background-color: white;
-  box-shadow: -5px -0px 5px rgba(0, 0, 0, 0.1), 5px 5px 5px rgba(0, 0, 0, 0.1);
-  padding: 5px 20px;
-  font-size: 15px;
-}
- 
-.login_menu_top {
-  display: flex;
-  justify-content: space-between;
-}
-.login_menu_top a:hover {
-  text-decoration: underline;
-}
-  */
 
 /* product not found page */
 

@@ -379,7 +379,7 @@ section {
 .card-bod {
   width: 25rem;
   height: 10rem;
-  background-color: aliceblue;
+  /* background-color: aliceblue; */
 }
 .carousel-control-next,
 .carousel-control-prev {

@@ -211,6 +211,9 @@ section {
 .product-des {
   width: 55rem;
   /* background-color: #eff4f7; */
+  /* background-color: aliceblue; */
+}
+.color-alice {
   background-color: aliceblue;
 }
 .bezel {
@@ -279,11 +282,12 @@ section {
   box-shadow: 0 1px 2px 0 rgb(0 0 0 / 26%);
   border: none;
   font-size: 14px;
-  color: #212121;
+  color: #fff;
   padding: 16px 36px;
   cursor: pointer;
   margin: 18px 18px 0 0;
   font-weight: 500;
+  background-color: #76b1d1;
 }
 .rat-rev {
   font-weight: 500;
